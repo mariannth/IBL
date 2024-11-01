@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container my-4">
+        <h1 class="text-center">Catálogo de Productos</h1>
+        
+        <div class="row mb-3">
+            <div class="col">
+                <input id="productInput" type="text" class="form-control" placeholder="Nombre del producto">
+            </div>
+            <div class="col">
+                <button onclick="agregarProduct()" class="btn btn-primary">Agregar producto</button>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col">
+                <input id="searchInput" type="text" class="form-control" placeholder="Buscar un producto">
+            </div>
+            <div class="col">
+                <button onclick="buscarProduct()" class="btn btn-info">Buscar producto</button>
+            </div>
+        </div>
+
+        <div id="servicios" class="row">
+            <!-- Aquí se agregarán las tarjetas de productos -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
