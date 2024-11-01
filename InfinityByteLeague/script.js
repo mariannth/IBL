@@ -64,15 +64,13 @@ function agregarProducto() {
 }
 
 // Función para buscar un producto en el catálogo
-     function searchInput() {
+     function buscarProdcuto() {
         const searchInput = document.getElementById("buscarInput").value.trim()
      // Obtener el valor del campo de búsqueda
      if (searchInput) {
          // Verificar si el campo de búsqueda no está vacío
-     const filtrarProductos = servicios.filter(product=> Aquí falta algo ) {
-
-     }
-
+     const filtrarProductos = servicios.filter(product=> product.includes(searchInput));
+     displayCatalog(filtrarProductos); 
      // Filtrar el arreglo del catálogo para obtener productos que incluyan el texto buscado
      // Mostrar solo los productos que coinciden con la búsqueda
      }else {
