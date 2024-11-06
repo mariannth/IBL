@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfiniteByteLeague - Pagina principal</title>
+
+    <link rel="stylesheet" href="/assets/pagina_principal.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body sticky-top" data-bs-theme="dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#"><img src="/assets/img/cooperation.png"
+                                alt="Icon 1" width="20" height="20"> Acerca de nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><img src="/assets/img/investment.png" alt="Icon 1"
+                                width="20" height="20"> Cotizar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><img src="/assets/img/design.png" alt="Icon 1"
+                                width="20" height="20"> Contactanos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><img src="/assets/img/employee.png" alt="Icon 1"
+                                width="20" height="20"> Registro</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><img src="/assets/img/account.png" alt="Icon 1"
+                                width="20" height="20"> Inicia sesión</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><img src="/assets/img/digital-services.png"
+                                alt="Icon 3" width="20" height="20"> Compras</a></li>
+                </ul>
+            </div>
+            <a class="navbar-brand ms-auto" href="#"><img src="/assets/img/ibl_logo.png" alt="Logo" width="55"
+                    height="55" class="d-inline-block align-text-top"></a>
+        </div>
+    </nav>
+    <!-- Título de bienvenida -->
+    <h1 id="welcomeMessage" class="text-center py-5">Bienvenido a Infinite_Byte_League!</h1>
+    <!-- Carrusel de imágenes -->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url('/assets/img/ibl_banner.png');"></div>
+            <div class="carousel-item" style="background-image: url('/assets/img/ibl_banner.png');"></div>
+            <div class="carousel-item" style="background-image: url('/assets/img/ibl_banner.png');"></div>
+        </div>
+    </div>
+    <!-- Contenedor de texto e imágenes -->
+    <div class="container my-5">
+        <div class="row">
+            <!-- Columna para los textos -->
+            <div class="col-md-6 d-flex flex-column">
+                <div class="mb-4">
+                    <h3>Cotiza tu estrategia de negocios</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis labore eligendi nulla, ullam
+                        non consequatur eos dolore laboriosam vel! Temporibus consequatur ipsam nulla? Non, animi
+                        obcaecati voluptatibus esse velit ut.</p>
+                </div>
+                <div class="mb-4 d-flex flex-column">
+                    <h3>Texto 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, neque magni molestias voluptas
+                        hic libero illo ipsum! Enim sequi possimus exercitationem, unde distinctio voluptate libero,
+                        quis aspernatur aliquid voluptatibus excepturi.</p>
+                </div>
+                <div class="mb-4">
+                    <h3>Texto 3</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem aperiam facilis commodi fugit
+                        culpa aut maxime, beatae voluptate ducimus ipsum cumque, consequuntur quos! Fuga consectetur
+                        praesentium dolorum cupiditate numquam sapiente!</p>
+                </div>
+            </div>
+            <!-- Columna para las imágenes -->
+            <div class="col-md-6 d-flex flex-column justify-content-between">
+                <div class="mb-4">
+                    <img src="/assets/img/ibl_logo.png" alt="Imagen 1" class="img-fluid">
+                </div>
+                <div class="mb-4">
+                    <img src="/assets/img/ibl_logo.png" alt="Imagen 2" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-5">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="flex-fill me-4">
+                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dolorem nisi explicabo corrupti
+                    tenetur illo ut, sint omnis fuga id tempora magni beatae, recusandae possimus minus ullam. Magni, ea
+                    adipisci.</h2>
+            </div>
+            <!-- Mapa centrado -->
+            <div class="flex-fill">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d530.0298034581058!2d-99.22272777450254!3d18.770369129257016!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2smx!4v1730863454322!5m2!1sen!2smx"
+                    width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center mt-auto">
+        <div class="container py-4">
+            <section class="mb-4">
+                <!-- Redes sociales - Experimental-->
+                <a href="#!" class="btn text-white btn-floating m-1" style="background-color: #3b5998;"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="#!" class="btn text-white btn-floating m-1" style="background-color: #55acee;"><i
+                        class="fab fa-twitter"></i></a>
+                <a href="#!" class="btn text-white btn-floating m-1" style="background-color: #dd4b39;"><i
+                        class="fab fa-google"></i></a>
+                <a href="#!" class="btn text-white btn-floating m-1" style="background-color: #ac2bac;"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="#!" class="btn text-white btn-floating m-1" style="background-color: #0082ca;"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="#!" class="btn text-white btn-floating m-1" style="background-color: #333333;"><i
+                        class="fab fa-github"></i></a>
+            </section>
+        </div>
+        <div class="text-center py-3" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2024 InfiniteByteLeague.com
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="/assets/pagina_principal.js"></script>
+</body>
+
+</html>
