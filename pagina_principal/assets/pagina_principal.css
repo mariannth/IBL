@@ -1,0 +1,26 @@
+#welcomeMessage{
+    color: blue;
+    text-align: center;
+    background-color: rgba(0, 3, 14, 0.842);
+    font-size: 3em;
+}
+
+
+
+.carousel-item {
+    background-size: cover;        
+    background-position: center;   
+    height: 45em;                 
+}
+
+/* transición de suavizado */
+.carousel-item {
+    transition: background-image 15s ease-in-out;
+}
+
+.img-custom-size {
+    max-width: 100%; /* Asegura que las imágenes no se desborden del contenedor */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    max-height: 250px; /* Puedes ajustar este valor según sea necesario */
+}
+
