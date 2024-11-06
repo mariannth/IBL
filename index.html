@@ -1,0 +1,97 @@
+<!--Esqueleto del carrito de compras-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Carrito</title>
+    <!--Agregando bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+	<!-- Contenedor principal para organizar el contenido de la página -->
+	<div class="container">
+		<!-- Título principal de la sección del carrito -->
+		<h1>Carrito</h1>
+		<!-- Línea horizontal para separar secciones visualmente -->
+		<hr>
+		<!-- Tabla para mostrar los elementos añadidos al carrito -->
+		<table class="table">
+			<thead>
+			  <tr>
+				<!-- Encabezado de las columnas de la tabla -->
+				<th scope="col">#</th>
+				<th scope="col">Item</th>
+				<th scope="col">Cantidad</th>
+				<th scope="col">Acción</th>
+				<th scope="col">Total</th>
+			  </tr>
+			</thead>
+			<!-- Cuerpo de la tabla que se rellenará dinámicamente con los productos -->
+			<tbody id="items"></tbody>
+			<!-- Pie de la tabla que indica el estado del carrito -->
+		</table>
+
+		<!-- Contenedor para las tarjetas de productos -->
+		<div class="row" id="cards"></div>
+	</div>
+
+	<!-- Plantilla para el pie del carrito con el total de productos y botón para vaciar -->
+	<template id="template-footer">
+        <th scope="row" colspan="2">Total productos</th>
+        <td>10</td>
+        <td>
+        <!-- Botón para vaciar todo el carrito -->
+        <button class="btn btn-danger btn-sm" id="vaciar-carrito">Vaciar mi carrito</button>
+        </td>
+        <td class="font-weight-bold">$ <span>5000</span></td> <!--ejemplo precio-->
+    </template>
+
+    <!-- Plantilla para cada producto en el carrito -->
+    <template id="template-carrito">
+      <tr>
+        <th scope="row">Pr</th>
+        <td>Curso</td>
+        <td>1</td>
+        <td>
+            <!-- Botones para aumentar o disminuir la cantidad de un producto -->
+            <button class="btn btn-info btn-sm">+</button>
+            <button class="btn btn-danger btn-sm">-</button>
+        </td>
+        <td>$ <span>500</span></td> <!--ejemplo precio individual--> 
+      </tr>
+    </template>
+
+	<!-- Plantilla para las tarjetas de productos disponibles para comprar -->
+	<template id="template-card">
+		<div class="col-12 mb-2 col-md-4">
+		  <div class="card">
+			  <!-- Imagen del producto -->
+			  <img src="XXX" alt="" class="card-img-top">
+			<div class="card-body">
+			  <!-- Título del producto -->
+			  <h5>Titulo</h5>
+			  <!-- Precio del producto -->
+			  <p>precio</p>
+			  <!-- Botón para añadir el producto al carrito -->
+			  <button class="btn btn-dark">Comprar</button>
+			</div>
+		  </div>
+		</div>
+	</template>
+
+<!-- Enlace al archivo JavaScript para la funcionalidad -->
+	<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
