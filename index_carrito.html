@@ -337,19 +337,21 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Carrito</title>
-    <!--Agregando bootstrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<!-- Agregando Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<!-- Enlace al archivo CSS personalizado -->
+	<link rel="stylesheet" href="styles_carrito.css">
 </head>
 <body>
 	<!-- Contenedor principal para organizar el contenido de la página -->
-	<div class="container">
+	<div class="container mt-5">
 		<!-- Título principal de la sección del carrito -->
-		<h1>Carrito</h1>
+		<h1 class="text-center mb-4">Carrito de Compras</h1>
 		<!-- Línea horizontal para separar secciones visualmente -->
 		<hr>
 		<!-- Tabla para mostrar los elementos añadidos al carrito -->
-		<table class="table">
-			<thead>
+		<table class="table table-hover">
+			<thead class="thead-dark">
 			  <tr>
 				<!-- Encabezado de las columnas de la tabla -->
 				<th scope="col">#</th>
@@ -361,7 +363,6 @@
 			</thead>
 			<!-- Cuerpo de la tabla que se rellenará dinámicamente con los productos -->
 			<tbody id="items"></tbody>
-			<!-- Pie de la tabla que indica el estado del carrito -->
 		</table>
 
 		<!-- Contenedor para las tarjetas de productos -->
@@ -396,29 +397,30 @@
 
 	<!-- Plantilla para las tarjetas de productos disponibles para comprar -->
 	<template id="template-card">
-		<div class="col-12 mb-2 col-md-4">
-		  <div class="card">
+		<div class="col-12 mb-4 col-md-4">
+		  <div class="card h-100 shadow">
 			  <!-- Imagen del producto -->
-			  <img src="XXX" alt="" class="card-img-top">
+			  <img src="XXX" alt="Imagen del producto" class="card-img-top img-fluid">
 			<div class="card-body">
 			  <!-- Título del producto -->
-			  <h5>Titulo</h5>
+			  <h5 class="card-title">Título</h5>
 			  <!-- Precio del producto -->
-			  <p>precio</p>
+			  <p class="card-text font-weight-bold">Precio</p>
 			  <!-- Botón para añadir el producto al carrito -->
-			  <button class="btn btn-dark">Comprar</button>
+			  <button class="btn btn-primary">Comprar</button>
 			</div>
 		  </div>
 		</div>
 	</template>
 
-<!-- Enlace al archivo JavaScript para la funcionalidad -->
+	<!-- Enlace al archivo JavaScript para la funcionalidad -->
 	<script src="script.js"></script>
 </body>
 </html>
 
 
 
+<<<<<<< HEAD:index.html
 
 
 
@@ -428,3 +430,5 @@
 
 
 >>>>>>> d879558 (creo que estaban mal subidos, va el esqueleto de carrito)
+=======
+>>>>>>> 11f2cd0 (Ahí va el carrito. Salu2):index_carrito.html
