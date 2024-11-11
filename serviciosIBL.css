@@ -1,16 +1,31 @@
+<<<<<<< HEAD
 /* Reset de estilos */ 
+=======
+/* Reset de estilos */
+>>>>>>> 32826cf (Agrego la página de servicios ya actualizada y estilizada)
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+<<<<<<< HEAD
+=======
+@import url('https://fonts.googleapis.com/css2?family=Codec+Pro:wght@400;600&display=swap');
+body {
+    font-family: 'Codec Pro'
+}
+>>>>>>> 32826cf (Agrego la página de servicios ya actualizada y estilizada)
 
 /* Barra de navegación */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+<<<<<<< HEAD
     padding: 05px 10px;
+=======
+    padding: 10px 20px;
+>>>>>>> 32826cf (Agrego la página de servicios ya actualizada y estilizada)
     background-color:#020f1f;
 }
 
@@ -111,12 +126,17 @@ body {
     max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
+<<<<<<< HEAD
     text-align:center;
+=======
+    text-align: center;
+>>>>>>> 32826cf (Agrego la página de servicios ya actualizada y estilizada)
 }
 
 .productos h2 {
     font-size: 2rem;
     margin-bottom: 20px;
+<<<<<<< HEAD
     color: #00c2ff;
 }
 
@@ -337,5 +357,92 @@ body {
     .social-media {
         flex-direction: column;
         gap: 10px;
+=======
+    color: #ffff;
+}
+
+/* Contenedor de las tarjetas de productos */
+.contenedor-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Cada tarjeta de producto */
+.producto {
+    width: 100%;
+    max-width: 300px;
+    background-color:#ffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* Estilos para la sección de información del producto */
+.producto-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.producto-info img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.producto-info h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+.producto-info p {
+    font-size: 1rem;
+    color: #777;
+}
+
+.producto-info button {
+    background-color: #00c2ff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.producto-info button:hover {
+    background-color:#020f1f;
+}
+
+/* Descripción adicional (oculta por defecto) */
+.producto-descripcion {
+    display: none;
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-size: 1rem;
+    color: #333;
+    text-align: left;
+}
+
+/* Efecto al pasar el ratón por encima de la tarjeta */
+.producto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries para hacer el contenedor responsivo */
+@media (max-width: 768px) {
+    .contenedor-productos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .producto {
+        max-width: 90%;
+>>>>>>> 32826cf (Agrego la página de servicios ya actualizada y estilizada)
     }
 }
