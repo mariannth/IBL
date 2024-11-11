@@ -9,12 +9,15 @@
     box-sizing: border-box;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 @import url('https://fonts.googleapis.com/css2?family=Codec+Pro:wght@400;600&display=swap');
 body {
     font-family: 'Codec Pro'
 }
 >>>>>>> 32826cf (Agrego la página de servicios ya actualizada y estilizada)
+=======
+>>>>>>> eebff75 (Actualización del footer responsivo)
 
 /* Barra de navegación */
 .navbar {
@@ -22,10 +25,14 @@ body {
     justify-content: space-between;
     align-items: center;
 <<<<<<< HEAD
+<<<<<<< HEAD
     padding: 05px 10px;
 =======
     padding: 10px 20px;
 >>>>>>> 32826cf (Agrego la página de servicios ya actualizada y estilizada)
+=======
+    padding: 05px 10px;
+>>>>>>> eebff75 (Actualización del footer responsivo)
     background-color:#020f1f;
 }
 
@@ -450,7 +457,7 @@ body {
 
 /*Footer RS*/
 .social-icon {
-    display: inline-flexbox;
+    display: flexbox;
     width: 40px;
     height: 40px;
     background-color: #00c2ff;
@@ -501,14 +508,14 @@ body {
 
 /* Sección de redes sociales */
 .social-media {
-    display: flex;
+    display: inline-block;
     justify-content: center;
     gap: 15px;
 }
 
 /* Estilos de los íconos de redes sociales */
 .social-icon {
-    display: inline-flexbox;
+    display: inline-block;
     width: 40px;
     height: 40px;
     background-color: #282120;
