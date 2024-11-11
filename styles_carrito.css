@@ -1,6 +1,6 @@
 /* General */
 body {
-    font-family: 'Codec Pro', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: #282120;
     color: #20e5f6;
     margin: 0;
@@ -9,20 +9,20 @@ body {
 /* Estilo para el título */
 h1 {
     color: #00c2ff;
-    font-family: 'Codec Pro', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
 
 /* Subtítulos y párrafos */
 p, li, a {
     color: #20e5f6;
-    font-family: 'Codec Pro', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Navbar */
 .navbar {
     background-color: #282120;
-    font-family: 'Codec Pro', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .navbar .nav-link,
