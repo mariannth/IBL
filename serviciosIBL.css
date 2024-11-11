@@ -4,17 +4,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css2?family=Codec+Pro:wght@400;600&display=swap');
-body {
-    font-family: 'Codec Pro'
-}
 
 /* Barra de navegación */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 05px 10px;
     background-color:#020f1f;
 }
 
@@ -212,7 +208,7 @@ body {
 
 /*Footer RS*/
 .social-icon {
-    display: inline-flexbox;
+    display: flexbox;
     width: 40px;
     height: 40px;
     background-color: #00c2ff;
@@ -263,14 +259,14 @@ body {
 
 /* Sección de redes sociales */
 .social-media {
-    display: flex;
+    display: inline-block;
     justify-content: center;
     gap: 15px;
 }
 
 /* Estilos de los íconos de redes sociales */
 .social-icon {
-    display: inline-flexbox;
+    display: inline-block;
     width: 40px;
     height: 40px;
     background-color: #282120;
