@@ -12,66 +12,64 @@
   </head>
 
 
-  <body>
+<body>
+    <div class="container"> <!-- Contenedor principal centrado -->
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h1 class="text-center mb-4">Formulario de Cotización</h1>
+          
+        <!-- Empieza formulario -->
+        <form id="appointment-form">
+            <!-- Nombre -->
+            <div class="mb-3">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" id="name" name="user_name" class="form-control">
+            </div>
 
+            <!-- Correo electrónico -->
+            <div class="mb-3">
+                <label for="mail" class="form-label">Correo electrónico</label>
+                <input type="email" id="mail" name="user_mail" class="form-control">
+            </div>
 
-   <div class="containerform" id="formularios">
-      <h1>Formulario de cotización</h1>
-        
-      <form>
-        <label for="name">Nombre</label> <br>
-        <input type="text" id="name"  name="user_name"7> <br>
-        
-        <label for="mail">Correo electrónico:</label> <br>
-        <input type="email" id="mail" name="user_mail" /> <br>
-        
-        <label for="phone">Telefono:</label><br>
-        <input type="phone" id="phone" name="number_phone" /> <br>
-   
-        <div class="row" text-align="center">
-          <div class="col-md-4 col-md-offset-4">
-            <div class="jumbotron"> //TENGO DUDADAS    NO LO SABO !!!!!!!
+            <!-- Teléfono -->
+            <div class="mb-3">
+                <label for="phone" class="form-label">Teléfono</label>
+                <input type="tel" id="phone" name="number_phone" class="form-control">
+            </div>
 
+            <!-- Selección de servicios -->
+            <div class="mb-3">
+                <label for="seleccion" class="form-label">Selecciona uno de nuestros servicios</label>
+                <select id="seleccion" class="form-select">
+                    <option value="" selected>Seleccione una opción</option>
+                    <option value="web">Desarrollo de páginas web</option>
+                    <option value="app">Desarrollo de aplicaciones</option>
+                    <option value="consulting">Consultoría</option>
+                </select>
+            </div>
 
-          <p>Selecciona uno de nuestros servicios<p>
+            <!-- Mensaje -->
+            <div class="mb-3">
+                <label for="msg" class="form-label">Mensaje</label>
+                <textarea id="msg" name="user_message" class="form-control"></textarea>
+            </div>
 
-        <select id="seleccion" class="estilo" onchange="seleccion()"> <br>
-            <option id="blanco"></option>
-            <option id="opcion1">Desarrollo de paginas web</option>
-            <option id="opcion2">Desarrollo de aplicaciones </option>
-            <option id="opcion3">Consultoria</option>
-        </select>
+            <!-- Fecha de cotización -->
+            <div class="mb-3">
+                <label for="appointment-date" class="form-label">Selecciona una fecha</label>
+                <input type="date" id="appointment-date" name="appointment_date" class="form-control" required>
+            </div>
+
+            <!-- Botones -->
+            <div class="d-flex justify-content-between">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="reset" class="btn btn-secondary">Regresar</button>
+            </div>
+        </form>
+            </div>
+        </div>
     </div>
-
-    <br>
-
-   
-      <label for="msg">Mensaje:</label> <br>
-      <textarea id="msg" name="user_message"></textarea><br>
-
-
-    <form id="appointment-form">
-        <label for="appointment-date">Selecciona una fecha:</label> <br>
-        <input type="date" id="appointment-date" name="appointment-date" required>
-        <br><br>
-        <input type="submit" value="Enviar"> <br>
-    </form> 
-    <br>
-
-  <!-- NO SE SI PONERLO 
-    <div class="button">
-        <button type="submit">Enviar duda o cotización</button>
-      </li>
-    <br>
-   --> 
-
-    <div class="button">
-        <button type="reset">Regresar</button> <br>
-      </div>
-  </form>
-
-
-
 
 
 
