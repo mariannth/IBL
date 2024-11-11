@@ -1,0 +1,305 @@
+/* Reset de estilos */ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 05px 10px;
+    background-color:#020f1f;
+}
+
+/* Estilo del logo */
+.navbar .logo a {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo img {
+    width: 70px;  /* Ajusta el tamaño del logo */
+    height: auto;
+}
+
+/* Estilo del menú */
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar ul li a:hover {
+    color:#20e5f6;
+}
+
+/* Menú hamburguesa (oculto en pantallas grandes) */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    
+}
+
+.hamburger span {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none;  /* Ocultar los enlaces en pantallas pequeñas */
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color:#020f1f;
+        padding: 10px 0;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .navbar ul li a {
+        font-size: 20px;
+    }
+
+    /* Mostrar menú cuando se active la clase .active */
+    .navbar.active ul {
+        display: flex;
+    }
+
+    /* Mostrar el menú hamburguesa en pantallas pequeñas */
+    .hamburger {
+        display: flex;
+    }
+}
+
+/*Productos*/ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:"Montserrat", sans-serif;
+    background-color: #020f1f;
+}
+
+/* Contenedor de productos */
+.productos {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.productos h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffff;
+}
+
+/* Contenedor de las tarjetas de productos */
+.contenedor-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Cada tarjeta de producto */
+.producto {
+    width: 100%;
+    max-width: 300px;
+    background-color:#ffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* Estilos para la sección de información del producto */
+.producto-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.producto-info img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.producto-info h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+.producto-info p {
+    font-size: 1rem;
+    color: #777;
+}
+
+.producto-info button {
+    background-color: #00c2ff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.producto-info button:hover {
+    background-color:#020f1f;
+}
+
+/* Descripción adicional (oculta por defecto) */
+.producto-descripcion {
+    display: none;
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-size: 1rem;
+    color: #333;
+    text-align: left;
+}
+
+/* Efecto al pasar el ratón por encima de la tarjeta */
+.producto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries para hacer el contenedor responsivo */
+@media (max-width: 768px) {
+    .contenedor-productos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .producto {
+        max-width: 90%;
+    }
+}
+
+
+/*Footer RS*/
+.social-icon {
+    display: flexbox;
+    width: 40px;
+    height: 40px;
+    background-color: #00c2ff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px; /* Para centrar el icono */
+    transition: background-color 0.3s;
+}
+
+.social-icon i {
+    color: white;
+    font-size: 20px; /* Ajusta el tamaño del ícono */
+}
+
+.social-icon:hover {
+    background-color: #0077B5;
+}
+
+/* Colores específicos para cada red social */
+.facebook:hover {
+    background-color: #020f1f;
+}
+
+.instagram:hover {
+    background-color: #020f1f;
+}
+
+/* Footer */
+.footer {
+    background-color: #020f1f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer .footer-contenido {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Sección de redes sociales */
+.social-media {
+    display: inline-block;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Estilos de los íconos de redes sociales */
+.social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #282120;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: background-color 0.3s;
+}
+
+.social-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Efecto hover para los íconos */
+.social-icon:hover {
+    background-color: #4CAF50; /* Color verde cuando el icono es hover */
+}
+
+/* Colores específicos para cada red social */
+.facebook:hover {
+    background-color: #3b5998;
+}
+
+.instagram:hover {
+    background-color: #E4405F;
+}
+
+
+/* Media Query para móviles */
+@media (max-width: 768px) {
+    .social-media {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
