@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Google Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<<<<<<< HEAD
     <!-- iconos -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"
@@ -77,11 +78,127 @@
             <br><br>
     </main>
 
+=======
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="styles_M.css">
+
+</head>
+
+<body class="bg-light">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#"><span class="material-icons">business</span> IBL</a>
+                <!-- Botón de Menú Responsive -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Menú -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <span class="material-icons">home</span> Inicio
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#acerca">
+                                Acerca de nosotros
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicios">
+                                Nuestros servicios
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">
+                                Contáctanos
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <!-- Carrito de Compras -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#carrito">
+                                <span class="material-icons">shopping_cart</span> Carrito
+                            </a>
+                        </li>
+                        <!-- Usuario -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarUser" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="material-icons">person</span> Usuario
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarUser">
+                                <li><a class="dropdown-item" href="#configuracion">Configurar Usuario</a></li>
+                                <li><a class="dropdown-item" href="#logout">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container mt-5">
+            <h2>Confirmación de Compra</h2>
+            <div class="card mb-4">
+                <div class="card-header">Resumen del Pedido</div>
+                <div class="card-body">
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Servicio 1
+                            <div>
+                                <span class="material-icons">edit</span>
+                                <input type="number" class="form-control d-inline" style="width: 60px;" min="1"
+                                    value="1">
+                                <span class="badge badge-primary">$100</span>
+                            </div>
+                            <span class="precio badge badge-primary badge-pill">$150</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Servicio 2
+                            <div>
+                                <span class="material-icons">edit</span>
+                                <input type="number" class="form-control d-inline" style="width: 60px;" min="1"
+                                    value="1">
+                                <span class="badge badge-primary">$100</span>
+                            </div>
+                            <span class="precio badge badge-primary badge-pill">$150</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Servicio 3
+                            <div>
+                                <span class="material-icons">edit</span>
+                                <input type="number" class="form-control d-inline" style="width: 60px;" min="1"
+                                    value="1">
+                                <span class="badge badge-primary">$100</span>
+                            </div>
+                            <span class="precio badge badge-primary badge-pill">$150</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center font-weight-bold">
+                            Total a Pagar
+                            <span id="totalPrecio" class="badge badge-success badge-pill">$450</span>
+                        </li>
+                    </ul>
+                    <button id="continuarCompra" class="btn btn-primary btn-block mt-3">Continuar Compra</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="text-center py-4">
+        <p>&copy; 2024 Infinity Byte League - Todos los derechos reservados</p>
+    </footer>
+>>>>>>> d1437be (Actualización de proceso de compra)
     <script>
         document.getElementById('continuarCompra').onclick = () => {
             window.location.href = 'pago.html';
         };
     </script>
+<<<<<<< HEAD
 
     <!--Footer-->
     <div id="footer"></div>
@@ -101,6 +218,34 @@
     <script src="./js/script.js"></script>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+=======
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Scripts de Bootstrap y JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Actualizar precio total
+        function actualizarPrecio(element) {
+            const item = element.closest('li');
+            const precioUnitario = parseFloat(element.getAttribute('data-precio'));
+            const cantidad = parseInt(element.value);
+            const precioTotal = precioUnitario * cantidad;
+            item.querySelector('.precio').innerText = `$${precioTotal}`;
+            actualizarTotal();
+        }
+
+        // Calcular el precio total de todos los servicios
+        function actualizarTotal() {
+            let total = 0;
+            document.querySelectorAll('.precio').forEach(precio => {
+                total += parseFloat(precio.innerText.replace('$', ''));
+            });
+            document.getElementById('totalPrecio').innerText = `$${total}`;
+        }
+    </script>
+>>>>>>> d1437be (Actualización de proceso de compra)
 </body>
 
 </html>
