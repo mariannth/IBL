@@ -111,97 +111,133 @@ body {
     max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
-    text-align: center;
+    text-align:center;
 }
 
 .productos h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #ffff;
+    color: #00c2ff;
 }
 
-/* Contenedor de las tarjetas de productos */
-.contenedor-productos {
+/* Contenedor principal */
+.contenedor {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 20px;
-}
-
-/* Cada tarjeta de producto */
-.producto {
-    width: 100%;
-    max-width: 300px;
-    background-color:#ffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-}
-
-/* Estilos para la sección de información del producto */
-.producto-info {
     padding: 20px;
-    text-align: center;
 }
 
-.producto-info img {
-    width: 100%;
-    border-radius: 10px;
-    object-fit: cover;
+/* Lista de servicios */
+.servicios {
+    flex: 1 1 200px;
 }
 
-.producto-info h3 {
-    font-size: 1.5rem;
-    margin: 15px 0;
+.lista-servicios {
+    list-style-type: none;
+    padding: 0;
 }
 
-.producto-info p {
-    font-size: 1rem;
-    color: #777;
+.lista-servicios li {
+    margin-bottom: 10px;
 }
 
-.producto-info button {
+.servicio-btn {
+    padding: 12px;
     background-color: #00c2ff;
     color: white;
-    padding: 10px 15px;
     border: none;
-    border-radius: 5px;
-    font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    font-size: 18px;
+    width: 100%;
+    border-radius: 5px;
 }
 
-.producto-info button:hover {
-    background-color:#020f1f;
+.servicio-btn:hover {
+    background-color: #20e5f6;
 }
 
-/* Descripción adicional (oculta por defecto) */
-.producto-descripcion {
-    display: none;
+/* Detalle de cada servicio */
+.detalle-servicio {
+    flex: 2 1 600px;
+}
+
+.servicio-info {
+    display: none; /* Ocultar todos los detalles por defecto */
+    background-color:white;
     padding: 20px;
-    background-color: #f9f9f9;
-    font-size: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.servicio-imagen {
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el precio (superior derecho) */
+.precio {
+    font-size: 1.5em;
     color: #333;
-    text-align: left;
+    text-align: right;
+    margin-bottom: 10px;
 }
 
-/* Efecto al pasar el ratón por encima de la tarjeta */
-.producto:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+/* Justificar el texto y alinearlo a la izquierda */
+.descripcion {
+    text-align: justify;
+    margin-bottom: 20px;
 }
 
-/* Media Queries para hacer el contenedor responsivo */
+/* Estilo para el botón */
+.agregar-carrito {
+    padding: 12px;
+    background-color: #00c2ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.agregar-carrito:hover {
+    background-color: #20e5f6;
+}
+
+/* Mostrar servicio activo */
+.servicio-info.active {
+    display: block;
+}
+
+/* Estilos para dispositivos pequeños (móviles) */
 @media (max-width: 768px) {
-    .contenedor-productos {
+    .contenedor {
         flex-direction: column;
-        align-items: center;
+        gap: 10px;
     }
 
-    .producto {
-        max-width: 90%;
+    .servicios, .detalle-servicio {
+        flex: 1 1 100%;
+    }
+
+    .servicio-btn {
+        font-size: 16px;
+    }
+
+    .servicio-info {
+        margin-top: 10px;
+    }
+}
+
+/* Estilos para dispositivos muy pequeños (pantallas de 480px o menos) */
+@media (max-width: 480px) {
+    .servicio-btn {
+        font-size: 14px;
     }
 }
 
