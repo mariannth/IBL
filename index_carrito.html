@@ -9,50 +9,55 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<!-- Enlace al archivo CSS personalizado -->
 	<link rel="stylesheet" href="styles_carrito.css">
-	
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> 
 	
 	<!-- Bootstrap CSS
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     Google Icons 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     CSS Personalizado 
-    <link rel="stylesheet" href="styles_M.css">-->
+    <link rel="stylesheet" href="styles_M.css">
+	
+	Bootstrap CSS 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    Google Icons
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    CSS Personalizado 
+    <link rel="stylesheet" href="">
+
+En HTML pueden usar esto para meter íconos, bootstrap y css y no les cause conflicto, en ese orden
+	-->
 
 </head>
 <body>
-	<!-- Barra de navegación sticky -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <div class="container-fluid">
-            <!-- Logo -->
-            <a class="navbar-brand" href="#"><span class="material-icons">IBL</span></a>
-            <!-- Botón de Menú Responsive -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- Menú -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#acerca">Acerca de Nosotros</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#servicios" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Servicios
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#cotizaciones">Cotizaciones</a></li>
-                            <li><a class="dropdown-item" href="#contacto">Contáctanos</a></li>
-                        </ul>
-                    </li>
-                </ul>
+	<header>
+        <nav class="navbar">
+            <div class="logo">
+                <!-- Agregamos la imagen del logo dentro del enlace -->
+                <a href="#">
+                    <img src="LogoIBL.png" alt="Infinity Byte League" class="logo-img">
+                </a>
             </div>
-        </div>
-    </nav>
+            <ul class="menu">
+                <li><a href="#"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="serviciosIBL.html">Servicios</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Cotiza con nosotros</a></li>
+                <li><a href="#"><i class="fas fa-shopping-cart"></i> Carrito</a></li>
+                <li><a href="#"><i class="fas fa-user"></i> Log In</a></li>
+                <li class="search-container">
+                    <input type="text" placeholder="Buscar...">
+                    <button> Buscar <i class="fas fa-search"></i></button>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
 	<!-- Contenedor principal para organizar el contenido de la página -->
 	<div class="container mt-5">
 		<!-- Título principal de la sección del carrito -->
@@ -67,7 +72,7 @@
 				<th scope="col">#</th>
 				<th scope="col">Item</th>
 				<th scope="col">Cantidad</th>
-				<th scope="col">Acción</th>
+				<th scope="col">Descripción</th>
 				<th scope="col">Total</th>
 			  </tr>
 			</thead>
@@ -122,7 +127,22 @@
 		  </div>
 		</div>
 	</template>
-
+<!--Footer-->
+	<footer class="footer">
+		<div class="footer-contenido">
+			<p>&copy; 2024 Infinity Byte League | Todos los derechos reservados.</p>
+			<div class="social-media">
+				<a href="https://www.facebook.com/profile.php?id=61568204116183" target="_blank" class="social-icon facebook" title="Facebook">
+					<i class="fab fa-facebook-f"></i>
+				</a>
+			
+				<a href="https://www.instagram.com/ibl_development?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="social-icon instagram" title="Instagram">
+					<i class="fab fa-instagram"></i>
+				</a>
+				
+			</div>
+		</div>
+	</footer>
 	<!-- Enlace al archivo JavaScript para la funcionalidad -->
 	<script src="script.js"></script>
 </body>
