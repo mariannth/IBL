@@ -359,37 +359,24 @@
 
 En HTML pueden usar esto para meter íconos, bootstrap y css y no les cause conflicto, en ese orden
 	-->
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- iconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"
+        integrity="sha512-K6I4HO1D+E1SVzzBc7C8uV35HlXk5sZfztSzX3LTGtF2/B0IUy5yKZ9zT/8GrdyxEs5XHP1yI9fRQafZfiFZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="styles_M.css">
+</head>
 
 </head>
 <body>
-	<header>
-        <nav class="navbar">
-            <div class="logo">
-                <!-- Agregamos la imagen del logo dentro del enlace -->
-                <a href="#">
-                    <img src="LogoIBL.png" alt="Infinity Byte League" class="logo-img">
-                </a>
-            </div>
-            <ul class="menu">
-                <li><a href="#"><i class="fas fa-home"></i> Inicio</a></li>
-                <li><a href="serviciosIBL.html">Servicios</a></li>
-                <li><a href="#">Sobre Nosotros</a></li>
-                <li><a href="#">Cotiza con nosotros</a></li>
-                <li><a href="#"><i class="fas fa-shopping-cart"></i> Carrito</a></li>
-                <li><a href="#"><i class="fas fa-user"></i> Log In</a></li>
-                <li class="search-container">
-                    <input type="text" placeholder="Buscar...">
-                    <button> Buscar <i class="fas fa-search"></i></button>
-                </li>
-            </ul>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
-    </header>
+	<body class="bg-light d-flex flex-column min-vh-100">
+		<div id="header"></div>
+		<main class="flex-grow-1">
+			<div class="container mt-5">
+				<h2>Carrito de compras</h2>
 	<!-- Contenedor principal para organizar el contenido de la página -->
 	<div class="container mt-5">
 		<!-- Título principal de la sección del carrito -->
@@ -460,21 +447,18 @@ En HTML pueden usar esto para meter íconos, bootstrap y css y no les cause conf
 		</div>
 	</template>
 <!--Footer-->
-	<footer class="footer">
-		<div class="footer-contenido">
-			<p>&copy; 2024 Infinity Byte League | Todos los derechos reservados.</p>
-			<div class="social-media">
-				<a href="https://www.facebook.com/profile.php?id=61568204116183" target="_blank" class="social-icon facebook" title="Facebook">
-					<i class="fab fa-facebook-f"></i>
-				</a>
-			
-				<a href="https://www.instagram.com/ibl_development?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="social-icon instagram" title="Instagram">
-					<i class="fab fa-instagram"></i>
-				</a>
-				
-			</div>
-		</div>
-	</footer>
+    <div id="footer"></div>
+    <script>
+        function loadComponent(id, file) {
+            fetch(file)
+                .then(response => response.text())
+                .then(data => document.getElementById(id).innerHTML = data)
+                .catch(error => console.error('Error loading component:', error));
+        }
+
+        loadComponent("header", "header.html");
+        loadComponent("footer", "footer.html");
+    </script>
 	<!-- Enlace al archivo JavaScript para la funcionalidad -->
 	<script src="script.js"></script>
 </body>
