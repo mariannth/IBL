@@ -3,11 +3,10 @@
 
 /* Fuente predeterminada */
 body {
-    font-family: 'Codec Pro, sans-serif';
+    font-family: 'Codec Pro', sans-serif;
     background-color: #020f1f;
     color: #ffffff;
 }
-/*HEADER*/ 
 
 /* Ajustes Navbar */
 .navbar {
@@ -15,6 +14,7 @@ body {
     background-color: #020f1f !important;
     
 }
+
 .navbar-brand img {
     width: 40px;
     height: 40px;
@@ -59,16 +59,13 @@ body {
 .btn-primary:hover {
     background-color: #20e5f6;
 }
-/*TERMINA HEADER*/
 
-/*CARD PARA PRODUCTOS*/
 .card {
     background-color: #282120;
     color: #ffffff;
     border: none;
 }
 
-/*FOOTER*/
 footer {
     background-color: #000a63;
 }
