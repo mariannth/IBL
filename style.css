@@ -1,104 +1,83 @@
-*
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .body{
 #fondo{
-color:#020f1f
+color:#ffffff;
     } 
 }
 .header{
     background-color: #020f1f;
 }
 .container{
-    color:#020f1f;
+    .text-uppercase{color:#ffffff;
+        .border-star{color: #20e5f6;
+        }
 }
+}
+/* Importar fuente Codec Pro */
+@import url('https://fonts.googleapis.com/css2?family=Codec+Pro:wght@400;600&display=swap');
 
-/*Footer RS*/
-.footer {
+/* Fuente predeterminada */
+body {
+    font-family: 'Codec Pro, sans-serif';
     background-color: #020f1f;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    color: #ffffff;
 }
+/*HEADER*/ 
 
-.footer .footer-contenido {
-    max-width: 1200px;
-    margin: 0 auto;
+/* Ajustes Navbar */
+.navbar {
+    background-color: #000a63;
+    background-color: #020f1f !important;
+    
 }
-
-.footer p {
-    font-size: 1rem;
-    margin-bottom: 20px;
-}
-
-/* Sección de redes sociales */
-.social-media {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-/* Estilos de los íconos de redes sociales */
-.social-icon {
-    display: inline-flexbox;
+.navbar-brand img {
     width: 40px;
     height: 40px;
+}
+.nav-link {
+    color: #ffffff !important;
+    color: #20e5f6 !important;
+}
+
+.nav-link:hover {
+    color: #00c2ff !important;
+}
+
+.navbar-brand {
+    font-family: 'Codec Pro', sans-serif;
+    color: #20e5f6 !important;
+}
+
+.navbar-toggler {
+    border-color: #20e5f6;
+}
+
+.dropdown-menu {
     background-color: #282120;
-    border-radius: 50%;
-    overflow: hidden;
-    transition: background-color 0.3s;
 }
 
-.social-icon img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.dropdown-item {
+    color: #ffffff;
 }
 
-/* Efecto hover para los íconos */
-.social-icon:hover {
-    background-color: #4CAF50; /* Color verde cuando el icono es hover */
-}
-
-/* Colores específicos para cada red social */
-.facebook:hover {
-    background-color: #3b5998;
-}
-
-.instagram:hover {
-    background-color: #E4405F;
-}
-
-
-/* Media Query para móviles */
-@media (max-width: 768px) {
-    .social-media {
-        flex-direction: column;
-        gap: 10px;
-    }
-}
-.social-icon {
-    display: inline-flexbox;
-    width: 40px;
-    height: 40px;
+.dropdown-item:hover {
     background-color: #00c2ff;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 40px; /* Para centrar el icono */
-    transition: background-color 0.3s;
+    color: #020f1f;
 }
-.social-icon i {
-    color: white;
-    font-size: 20px; /* Ajusta el tamaño del ícono */
+
+/* Botones personalizados */
+.btn-primary {
+    background-color: #00c2ff;
+    border-color: #00c2ff;
 }
-.social-icon:hover {
-    background-color: #0077B5;
+
+.btn-primary:hover {
+    background-color: #20e5f6;
 }
-/* Colores específicos para cada red social */
-.facebook:hover {
-    background-color: #020f1f;
-}
-.instagram:hover {
-    background-color: #020f1f;
-}
+/*TERMINA HEADER*/
