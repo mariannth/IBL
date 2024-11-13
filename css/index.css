@@ -1,0 +1,172 @@
+/* Asegura que el body ocupe todo el alto de la ventana */
+html, body {
+    height: 100%; /* El body y html deben ocupar el 100% de la altura de la ventana */
+    margin: 0; /* Elimina márgenes predeterminados */
+    background-color: #020f1f;
+}
+
+#mensajeBienvenida {
+    color: #00c2ff;
+    text-align: center;
+    font-size: 3.5em;
+    padding: 30px 0;
+    background-color: #020f1f;
+}
+.container {
+    margin-bottom: 30px;
+}
+/* Estilo para los encabezados dentro de las leyendas */
+.carousel-caption h5 {
+    font-size: 3.2rem; /* Aumenta el tamaño de los encabezados */
+    font-weight: bold; /* Hace los encabezados en negrita */
+    margin-bottom: 10px; /* Añade espacio debajo del encabezado */
+}
+/* Estilo para los párrafos dentro de las leyendas */
+.carousel-caption p {
+    font-size: 2.2rem; /* Tamaño de fuente para los párrafos */
+    margin-bottom: 0; /* Elimina el margen inferior */
+}
+/* Estilos para la caja izquierda (Texto) */
+.caja-izquierda {
+    flex: 1;
+    /* Esto asegura que el contenido ocupe el espacio disponible */
+    padding: 20px;
+}
+
+/* Estilos para el título en la caja izquierda */
+.titulo-h3 {
+    color: #ffffff;
+    font-size: 4em;
+    margin-bottom: 20px;
+    /* Separación entre título y texto */
+}
+
+/* Estilos para los textos dentro de .caja-izquierda */
+.texto-index {
+    font-size: 1.1em;
+    color: #ffffff; 
+    line-height: 1.6; /* Mejor espaciado entre líneas */
+}
+
+/* Estilos para la caja derecha (Imagen) */
+.caja-derecha {
+    flex: 1; /* Hace que la imagen ocupe el espacio disponible */
+    text-align: center; /* Centra la imagen */
+    padding: 20px;
+}
+
+/* Estilos para la imagen dentro de .caja-derecha */
+.caja-derecha img {
+    max-width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 8px; /* Bordes redondeados para la imagen */
+}
+
+.reverse {
+    display: flex;
+    flex-direction: row-reverse; /* Invierte la dirección de las cajas (texto a la derecha y imagen a la izquierda) */
+    gap: 20px; /* Espacio entre las cajas */
+}
+
+/* Caja izquierda (Texto) */
+.caja-izquierda {
+    flex: 1;
+    padding: 20px;
+    border-radius: 18px;
+}
+/* Títulos dentro de la caja izquierda */
+.titulo-h3 {
+    color: #20e5f6;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+/* Estilos para los párrafos en la caja de texto */
+.texto-index {
+    font-size: 1.25em;
+    color: #ffffff;
+    line-height: 1.9;
+}
+/* El iframe que contiene el mapa de Google */
+.caja-derecha iframe {
+    width: 100%;
+    height: 400px; /* Ajusta el alto del mapa */
+    border: 0; /* Elimina el borde alrededor del mapa */
+    border-radius: 18px; /* Bordes redondeados para el mapa */
+}
+/* Estilos para la disposición del contenedor con flexbox */
+.container {
+    display: flex;
+    justify-content: space-between; /* Distribuye las cajas de forma equitativa */
+    align-items: center; /* Alinea los elementos al centro */
+    gap: 50px; /* Espacio entre los elementos */
+}
+
+/* Contenedor principal que incluye el footer */
+.main-container {
+    min-height: 100%; /* Asegura que el contenedor ocupe todo el espacio disponible */
+    display: flex;
+    flex-direction: column;
+}
+
+/* El contenido principal se estira para ocupar todo el espacio disponible */
+.content {
+    flex: 1; /* Esto hace que el contenido ocupe el espacio restante */
+}
+
+/* Importar fuente Codec Pro */
+@import url('https://fonts.googleapis.com/css2?family=Codec+Pro:wght@400;600&display=swap');
+
+/* Fuente predeterminada */
+
+
+
+/* Ajustes Navbar */
+.navbar {
+    background-color: #000a63;
+    background-color: #020f1f !important;
+    
+}
+.navbar-brand img {
+    width: 40px;
+    height: 40px;
+}
+.nav-link {
+    color: #ffffff !important;
+    color: #20e5f6 !important;
+}
+
+.nav-link:hover {
+    color: #00c2ff !important;
+}
+
+.navbar-brand {
+    font-family: 'Codec Pro', sans-serif;
+    color: #20e5f6 !important;
+}
+
+.navbar-toggler {
+    border-color: #20e5f6;
+}
+
+.dropdown-menu {
+    background-color: #282120;
+}
+
+.dropdown-item {
+    color: #ffffff;
+}
+
+.dropdown-item:hover {
+    background-color: #00c2ff;
+    color: #020f1f;
+}
+
+/* Botones personalizados */
+.btn-primary {
+    background-color: #00c2ff;
+    border-color: #00c2ff;
+}
+
+.btn-primary:hover {
+    background-color: #20e5f6;
+}
