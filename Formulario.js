@@ -26,6 +26,13 @@ document.getElementById("formulario-cotizacion").addEventListener("submit", func
         alert("Por favor, ingresa tu número de teléfono.");
         return; // Detiene el envío si falta el teléfono
     }
+    
+    // Verificar si el campo "teléfono" tiene solo números
+    if (isNaN(telefono)) {
+    alert("Por favor, ingresa solo números en el campo de teléfono.");
+    return; // Detiene el envío si hay letras u otros caracteres
+    }
+
 
     // Verificar si el campo "servicio" está vacío
     if (!servicio) {
