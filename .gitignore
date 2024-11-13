@@ -8,6 +8,5 @@ node_modules/
 **/node_modules/
 >>>>>>> 139547e (agregando datos al archivo gitignore)
 InfinityByteLeague/
-IBL/
 package-lock.json
 package.json
