@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* Reset de estilos */ 
 =======
 /* Reset de estilos */
@@ -22,9 +23,22 @@ body {
 >>>>>>> 32826cf (Agrego la página de servicios ya actualizada y estilizada)
 =======
 >>>>>>> eebff75 (Actualización del footer responsivo)
+=======
+/* Importar fuente Codec Pro */
+@import url('https://fonts.googleapis.com/css2?family=Codec+Pro:wght@400;600&display=swap');
+>>>>>>> 86ebe9c (usando la plantilla para el header)
 
-/* Barra de navegación */
+/* Fuente predeterminada */
+body {
+    font-family: 'Codec Pro, sans-serif';
+    background-color: #020f1f;
+    color: #ffffff;
+}
+/*HEADER/ 
+
+/* Ajustes Navbar */
 .navbar {
+<<<<<<< HEAD
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -77,47 +91,57 @@ body {
     flex-direction: column;
     cursor: pointer;
     gap: 5px;
+=======
+    background-color: #000a63;
+    background-color: #020f1f !important;
+>>>>>>> 86ebe9c (usando la plantilla para el header)
     
 }
-
-.hamburger span {
-    width: 30px;
-    height: 3px;
-    background-color: white;
+.navbar-brand img {
+    width: 40px;
+    height: 40px;
+}
+.nav-link {
+    color: #ffffff !important;
+    color: #20e5f6 !important;
 }
 
-/* Media Query para pantallas pequeñas */
-@media (max-width: 768px) {
-    .navbar ul {
-        display: none;  /* Ocultar los enlaces en pantallas pequeñas */
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background-color:#020f1f;
-        padding: 10px 0;
-    }
-
-    .navbar ul li {
-        margin: 10px 0;
-    }
-
-    .navbar ul li a {
-        font-size: 20px;
-    }
-
-    /* Mostrar menú cuando se active la clase .active */
-    .navbar.active ul {
-        display: flex;
-    }
-
-    /* Mostrar el menú hamburguesa en pantallas pequeñas */
-    .hamburger {
-        display: flex;
-    }
+.nav-link:hover {
+    color: #00c2ff !important;
 }
+
+.navbar-brand {
+    font-family: 'Codec Pro', sans-serif;
+    color: #20e5f6 !important;
+}
+
+.navbar-toggler {
+    border-color: #20e5f6;
+}
+
+.dropdown-menu {
+    background-color: #282120;
+}
+
+.dropdown-item {
+    color: #ffffff;
+}
+
+.dropdown-item:hover {
+    background-color: #00c2ff;
+    color: #020f1f;
+}
+
+/* Botones personalizados */
+.btn-primary {
+    background-color: #00c2ff;
+    border-color: #00c2ff;
+}
+
+.btn-primary:hover {
+    background-color: #20e5f6;
+}
+/*TERMINA HEADER/
 
 /*Productos*/ 
 * {
@@ -373,6 +397,7 @@ body {
     .social-media {
         flex-direction: column;
         gap: 10px;
+<<<<<<< HEAD
 =======
     color: #ffff;
 =======
@@ -605,3 +630,7 @@ body {
         gap: 10px;
     }
 }
+=======
+    }
+}
+>>>>>>> 86ebe9c (usando la plantilla para el header)

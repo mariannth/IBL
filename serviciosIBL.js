@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+<<<<<<< HEAD
 =======
 // productos
 =======
@@ -67,3 +68,5 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 >>>>>>> 32826cf (Agrego la página de servicios ya actualizada y estilizada)
+=======
+>>>>>>> 86ebe9c (usando la plantilla para el header)
