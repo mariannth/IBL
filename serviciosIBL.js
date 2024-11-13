@@ -30,8 +30,4 @@ document.addEventListener('DOMContentLoaded', function() {
             mostrarDetalleServicio(servicioId);
         });
     });
-<<<<<<< HEAD
 });
-=======
-});
->>>>>>> a2c7c9b3f9f47d08ff86860f697512fcfc5d5410
