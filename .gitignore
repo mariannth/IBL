@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 **/node_modules/
+=======
+node_modules/
+>>>>>>> 1c95f2a (Creación del gitignore para la carpeta de IBL y npm)
 InfinityByteLeague/
 package-lock.json
 package.json
