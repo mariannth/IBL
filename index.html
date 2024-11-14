@@ -4,11 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>InfiniteByteLeague - Página Principal</title>
-
-    <link rel="icon" type="image/x-icon" href="/src/img/ibl_logo.jpg">
-
+    <title>Confirmación de Compra - IBL</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Google Icons -->
@@ -18,179 +14,125 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"
         integrity="sha512-K6I4HO1D+E1SVzzBc7C8uV35HlXk5sZfztSzX3LTGtF2/B0IUy5yKZ9zT/8GrdyxEs5XHP1yI9fRQafZfiFZw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="./css/styles_M.css">
     <link rel="stylesheet" href="/css/index.css">
 </head>
-
 <body class="bg-light d-flex flex-column min-vh-100">
-    <header>
-        <!-- Menú Fijo -->
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <img src="./src/img/ibl_logo.jpg" alt="Logo Empresa" class="d-inline-block align-text-center">
-                    IBL
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+    <div id="header"></div>
+    <main class="flex-grow-1">
+        <!-- Sección con Carrusel de imágenes -->
+        <section id="carouselSection">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./src/img/carrouselNegocios.jpg" class="d-block w-100" alt="IBLallrightsreserved">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Bytes pensados para ti, hechas por nosotros.</h5>
+                            <p>Estamos comprometidos a satisfacer todas sus necesidades con la mejor liga de
+                                desarrolladores
+                                en la web.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./src/img/carrouselServicios.jpg" class="d-block w-100" alt="IBLallrightsreserved">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>"Tu negocio, tu web, nuestra pasión"</h5>
+                            <p>Nos dedicamos a crear experiencias digitales únicas que reflejan la esencia de tu
+                                empresa,
+                                impulsando su crecimiento y éxito en el mundo online.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./src/img/carrouselConecta.jpg" class="d-block w-100" alt="IBLallrightsreserved">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>"Webs que conectan, diseños que impactan"</h5>
+                            <p>Más que desarrollo, creamos soluciones digitales innovadoras y estratégicas que
+                                transforman
+                                tu negocio, ayudándote a crecer, adaptarte y liderar en el mundo digital actual.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
                 </button>
-                <!-- Menú -->
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html"> <i class="fa-solid fa-house"></i>
-                                Inicio</a></li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="acerca_nosotros.html">
-                                <i class="fa-solid fa-users"></i>
-                                Acerca de nosotros
-                            </a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="index.html"> <i
-                                    class="fa-solid fa-magnifying-glass"></i>
-                                Nuestros servicios</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contactanos.html"> <i
-                                    class="fa-regular fa-address-book"></i>
-                                Contáctanos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="cotiza.html"> <i
-                                    class="fa-solid fa-dollar-sign"></i>
-                                Cotiza Ahora!</a></li>
-                    </ul>
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="carrito_compras.html">
-                                <i class="fa-solid fa-cart-shopping"></i>
-                                Carrito
-                            </a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarUser" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa-solid fa-user"></i>
-                                Bienvenido "Usuario"
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarUser">
-                                <li><a class="dropdown-item" href="#configuracion">Configurar Usuario</a></li>
-                                <li><a class="dropdown-item" href="#logout">Logout</a></li>
-                            </ul>
-                        </li>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </section>
+        <!-- Título de bienvenida -->
+        <section>
+            <h1 id="mensajeBienvenida" class="text-center py-5">¡Bienvenido a Infinite Byte League!</h1>
+            <!-- Sección de servicios con texto e imagen -->
+            <div class="container">
+                <div class="caja-izquierda">
+                    <h3 class="titulo-h3">¿Comó nace Infinite Byte League?</h3>
+                    <p class="texto-index">En un entorno donde la transformación digital es clave, las MiPyMES enfrentan
+                        dificultades para acceder a soluciones tecnológicas asequibles y personalizadas. La falta de
+                        desarrolladores capacitados agrava esta situación, limitando su capacidad para adaptarse al
+                        mercado digital. Según el INEGI (2019), el 50% de las nuevas empresas en México desaparecen en
+                        dos años, y el 31% cierra en el segundo año, principalmente por la falta de financiamiento y el
+                        escaso uso de tecnología.
+                    </p>
+                </div>
+                <div class="caja-derecha">
+                    <img src="/src/img/carrouselConecta.jpg" alt="conectandoConElMundo" class="img-fluid">
+                </div>
+            </div>
+            <!-- Segunda sección con contenido invertido -->
+            <div class="container reverse">
+                <div class="caja-izquierda">
+                    <h3 class="titulo-h3">El público objetivo de Infinity Byte League.</h3>
+                    <p class="texto-index"> Incluye
+                    </p>
+                </div>
+                <div class="caja-derecha">
+                    <img src="/src/img/carrouselNegocios.jpg" alt="trabajoEnEquipo" class="img-fluid">
+                </div>
+            </div>
+            <!-- Sección de público objetivo -->
+            <div class="container">
+                <div class="caja-izquierda">
+                    <h3 class="titulo-h3">Infinity Byte League Headquarters</h3>
+                    <p class="texto-index"> IBL </p>
+                </div>
+                <div class="caja-derecha">
+                    <!-- Mapa de Google ajustado -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d530.0298034581058!2d-99.22272777450254!3d18.770369129257016!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2smx!4v1730863454322!5m2!1sen!2smx"
+                        width="50%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
 
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <!-- Sección con Carrusel de imágenes -->
-    <section id="carouselSection">
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="/src/img/carrouselNegocios.jpg" class="d-block w-100" alt="IBLallrightsreserved">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Bytes pensados para ti, hechas por nosotros.</h5>
-                        <p>Estamos comprometidos a satisfacer todas sus necesidades con la mejor liga de desarrolladores
-                            en la web.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/carrouselServicios.jpg" class="d-block w-100" alt="IBLallrightsreserved">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>"Tu negocio, tu web, nuestra pasión"</h5>
-                        <p>Nos dedicamos a crear experiencias digitales únicas que reflejan la esencia de tu empresa,
-                            impulsando su crecimiento y éxito en el mundo online.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/carrouselConecta.jpg" class="d-block w-100" alt="IBLallrightsreserved">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>"Webs que conectan, diseños que impactan"</h5>
-                        <p>Más que desarrollo, creamos soluciones digitales innovadoras y estratégicas que transforman
-                            tu negocio, ayudándote a crecer, adaptarte y liderar en el mundo digital actual.</p>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Siguiente</span>
-            </button>
-        </div>
-    </section>
-    <!-- Título de bienvenida -->
-    <section>
-        <h1 id="mensajeBienvenida" class="text-center py-5">¡Bienvenido a Infinite Byte League!</h1>
-        <!-- Sección de servicios con texto e imagen -->
-        <div class="container">
-            <div class="caja-izquierda">
-                <h3 class="titulo-h3">¿Comó nace Infinite Byte League?</h3>
-                <p class="texto-index">En un entorno donde la transformación digital es clave, las MiPyMES enfrentan
-                    dificultades para acceder a soluciones tecnológicas asequibles y personalizadas. La falta de
-                    desarrolladores capacitados agrava esta situación, limitando su capacidad para adaptarse al
-                    mercado digital. Según el INEGI (2019), el 50% de las nuevas empresas en México desaparecen en
-                    dos años, y el 31% cierra en el segundo año, principalmente por la falta de financiamiento y el
-                    escaso uso de tecnología.
-                </p>
-            </div>
-            <div class="caja-derecha">
-                <img src="/src/img/carrouselConecta.jpg" alt="conectandoConElMundo" class="img-fluid">
-            </div>
-        </div>
-        <!-- Segunda sección con contenido invertido -->
-        <div class="container reverse">
-            <div class="caja-izquierda">
-                <h3 class="titulo-h3">El público objetivo de Infinity Byte League.</h3>
-                <p class="texto-index"> Incluye
-                </p>
-            </div>
-            <div class="caja-derecha">
-                <img src="/src/img/carrouselNegocios.jpg" alt="trabajoEnEquipo" class="img-fluid">
-            </div>
-        </div>
-        <!-- Sección de público objetivo -->
-        <div class="container">
-            <div class="caja-izquierda">
-                <h3 class="titulo-h3">Infinity Byte League Headquarters</h3>
-                <p class="texto-index"> IBL </p>
-            </div>
-            <div class="caja-derecha">
-                <!-- Mapa de Google ajustado -->
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d530.0298034581058!2d-99.22272777450254!3d18.770369129257016!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2smx!4v1730863454322!5m2!1sen!2smx"
-                    width="50%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
-
-        </main>
-        <!-- footer.html -->
-        <footer class="footer">
-            <div class="footer-contenido">
-                <p>&copy; 2024 Infinity Byte League | Todos los derechos reservados.</p>
-                <div class="social-media">
-                    <a href="https://www.facebook.com/profile.php?id=61568204116183" target="_blank"
-                        class="social-icon facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/ibl_development?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                        target="_blank" class="social-icon instagram" title="Instagram"><i
-                            class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </footer>
-        <script src="/js/index.js"></script>
-        <!-- Bootstrap JS -->
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-</body>
-
-</html>
+     <!--Footer-->
+     <div id="footer"></div>
+     <script>
+         function loadComponent(id, file) {
+             fetch(file)
+                 .then(response => response.text())
+                 .then(data => document.getElementById(id).innerHTML = data)
+                 .catch(error => console.error('Error loading component:', error));
+         }
+ 
+         loadComponent("header", "./src/header.html");
+         loadComponent("footer", "./src/footer.html");
+     </script>
+     <!-- Bootstrap JS -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+ </body>
+ 
+ </html>
