@@ -15,7 +15,7 @@
         integrity="sha512-K6I4HO1D+E1SVzzBc7C8uV35HlXk5sZfztSzX3LTGtF2/B0IUy5yKZ9zT/8GrdyxEs5XHP1yI9fRQafZfiFZw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- CSS Personalizado -->
-    <link rel="stylesheet" href="styles_M.css">
+    <link rel="stylesheet" href="./css/styles_M.css">
 </head>
 
 <body class="bg-light d-flex flex-column min-vh-100">
@@ -66,11 +66,11 @@
                 </div>
             </div>
         </div>
+        <br><br>
     </main>
+
     <!--Footer-->
     <div id="footer"></div>
-
-    <!-- Scripts de JavaScript -->
     <script>
         function loadComponent(id, file) {
             fetch(file)
@@ -82,6 +82,7 @@
         loadComponent("header", "./src/header.html");
         loadComponent("footer", "./src/footer.html");
     </script>
+
     <script>
         document.getElementById('continuarCompra').onclick = () => {
             window.location.href = 'pago.html';
@@ -118,4 +119,5 @@
     </script>
 
 </body>
+
 </html>
