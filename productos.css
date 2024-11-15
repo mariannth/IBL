@@ -3,11 +3,15 @@
 
 /* Fuente predeterminada */
 body {
-    font-family: 'Codec Pro, sans-serif';
+    font-family: 'Codec Pro', sans-serif;
     background-color: #020f1f;
-    color: #ffffff;
+    color: #20e5f6;
 }
-/*HEADER/ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 /* Ajustes Navbar */
 .navbar {
@@ -15,6 +19,7 @@ body {
     background-color: #020f1f !important;
     
 }
+
 .navbar-brand img {
     width: 40px;
     height: 40px;
@@ -59,160 +64,109 @@ body {
 .btn-primary:hover {
     background-color: #20e5f6;
 }
-/*TERMINA HEADER/
 
-/*Productos*/ 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.card {
+    background-color: #282120;
+    color: #ffffff;
+    border: none;
 }
 
-body {
-    font-family:"Montserrat", sans-serif;
+h1 {
+    text-align: center;
     background-color: #020f1f;
-}
-
-/* Contenedor de productos */
-.productos {
-    width: 100%;
-    max-width: 1200px;
-    margin: 20px auto;
+    color: white;
     padding: 20px;
-    text-align:center;
 }
 
-.productos h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #00c2ff;
-}
-
-/* Contenedor principal */
-.contenedor {
+.filters {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #020f1f;
+    margin: 20px 0;
+}
+
+.filter {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.filter select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.product-list {
+    display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 20px;
+    justify-content: center;
 }
 
-/* Lista de servicios */
-.servicios {
-    flex: 1 1 200px;
+.product-card {
+    width: 250px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
 }
 
-.lista-servicios {
-    list-style-type: none;
-    padding: 0;
+.product-card:hover {
+    transform: scale(1.05);
 }
 
-.lista-servicios li {
-    margin-bottom: 10px;
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
 
-.servicio-btn {
-    padding: 12px;
-    background-color: #00c2ff;
-    color: white;
-    border: none;
-    cursor: pointer;
+.product-card .product-info {
+    padding: 15px;
+}
+
+.product-card h4 {
     font-size: 18px;
-    width: 100%;
-    border-radius: 5px;
+    margin: 10px 0;
 }
 
-.servicio-btn:hover {
-    background-color: #20e5f6;
+.product-card p {
+    font-size: 14px;
+    color: #666;
 }
 
-/* Detalle de cada servicio */
-.detalle-servicio {
-    flex: 2 1 600px;
-}
-
-.servicio-info {
-    display: none; /* Ocultar todos los detalles por defecto */
-    background-color:white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
-
-.servicio-imagen {
-    width: 80%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
-
-/* Estilos para el precio (superior derecho) */
-.precio {
-    font-size: 1.5em;
-    color: #333;
-    text-align: right;
-    margin-bottom: 10px;
-}
-
-/* Justificar el texto y alinearlo a la izquierda */
-.descripcion {
-    text-align: justify;
-    margin-bottom: 20px;
-}
-
-/* Estilo para el botón */
-.agregar-carrito {
-    padding: 12px;
-    background-color: #00c2ff;
-    color: white;
-    border: none;
-    cursor: pointer;
+.product-card .price {
     font-size: 16px;
-    width: 100%;
-    border-radius: 5px;
+    font-weight: bold;
+    color: #333;
 }
 
-.agregar-carrito:hover {
-    background-color: #20e5f6;
-}
-
-/* Mostrar servicio activo */
-.servicio-info.active {
-    display: block;
-}
-
-/* Estilos para dispositivos pequeños (móviles) */
 @media (max-width: 768px) {
-    .contenedor {
+    .filters {
         flex-direction: column;
-        gap: 10px;
+        align-items: center;
     }
 
-    .servicios, .detalle-servicio {
-        flex: 1 1 100%;
-    }
-
-    .servicio-btn {
-        font-size: 16px;
-    }
-
-    .servicio-info {
-        margin-top: 10px;
+    .product-list {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
-/* Estilos para dispositivos muy pequeños (pantallas de 480px o menos) */
-@media (max-width: 480px) {
-    .servicio-btn {
-        font-size: 14px;
-    }
+footer {
+    background-color: #000a63;
 }
-
-
 /*Footer RS*/
 .social-icon {
-    display: flexbox;
+    display: inline-flexbox;
     width: 40px;
     height: 40px;
     background-color: #00c2ff;
@@ -221,30 +175,25 @@ body {
     line-height: 40px; /* Para centrar el icono */
     transition: background-color 0.3s;
 }
-
 .social-icon i {
     color: white;
     font-size: 20px; /* Ajusta el tamaño del ícono */
 }
-
 .social-icon:hover {
     background-color: #0077B5;
 }
-
 /* Colores específicos para cada red social */
 .facebook:hover {
     background-color: #020f1f;
 }
-
 .instagram:hover {
     background-color: #020f1f;
 }
-
 /* Footer */
 .footer {
     background-color: #020f1f;
     color: white;
-    padding: 20px;
+    padding: 20px 0;
     text-align: center;
     position: relative;
     bottom: 0;
@@ -260,17 +209,31 @@ body {
     font-size: 1rem;
     margin-bottom: 20px;
 }
+footer a {
+    color: #00c2ff;
+    /* Azul del logo */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
 
 /* Sección de redes sociales */
 .social-media {
-    display: inline-block;
+    display: flex;
     justify-content: center;
     gap: 15px;
 }
 
 /* Estilos de los íconos de redes sociales */
-.social-icon {
+.social-media {
     display: inline-block;
+    justify-content: center;
+    gap: 15px;
+}
+.social-icon {
+    display: inline-block; 
     width: 40px;
     height: 40px;
     background-color: #282120;
@@ -278,7 +241,6 @@ body {
     overflow: hidden;
     transition: background-color 0.3s;
 }
-
 .social-icon img {
     width: 100%;
     height: 100%;
@@ -306,4 +268,34 @@ body {
         flex-direction: column;
         gap: 10px;
     }
+}
+
+h2 {
+    color: #00c2ff;
+}
+
+button {
+    background-color: #00c2ff;
+    border-color: #00c2ff;
+}
+
+button:hover {
+    background-color: #20e5f6;
+}
+/* Secciones y contenido */
+section {
+    padding: 60px 0;
+    margin-top: 70px;
+}
+
+/* Estilos para animación al hacer scroll */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
 }
