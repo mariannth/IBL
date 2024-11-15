@@ -19,6 +19,7 @@ body {
     color: #ffffff;
 }
 /*HEADER*/ 
+
 /* Ajustes Navbar */
 .navbar {
     background-color: #000a63;
@@ -133,12 +134,6 @@ body {
         rgba(0,0,0,0.7)
         )
         ,url("valores.jpeg");
-}
-
-
-footer .container{
-    background-color: #e4d6d6;
-    height: 80px; 
 }
 
 @media (min-width: 800px){
