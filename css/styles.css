@@ -1,11 +1,16 @@
 /* -----Importar fuente Codec Pro -----*/
 @import url('https://fonts.googleapis.com/css2?family=Codec+Pro:wght@400;600&display=swap');
 
+<<<<<<< HEAD
 /* Reset de estilos */
+=======
+/* Reset de estilos*/
+>>>>>>> 49b449c (Actualización estructura de la página)
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+<<<<<<< HEAD
     /* Elimina cualquier fondo de todos los elementos globales */
 }
  
@@ -109,13 +114,32 @@ form {
     background-color: #000a63;
     background-color: #020f1f !important;
 
+=======
+}
+
+/*----- Estilos para body ------*/
+.body {
+    font-family: 'Codec Pro', sans-serif;
+    background-color: #020f1f;
+    color: #ffffff;
+}
+
+/* -----Estilos para la Navbar o menú -----*/ 
+.navbar {
+    background-color: #000a63;
+    background-color: #020f1f !important;
+    
+>>>>>>> 49b449c (Actualización estructura de la página)
 }
 
 .navbar-brand img {
     width: 40px;
     height: 40px;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 49b449c (Actualización estructura de la página)
 .nav-link {
     color: #ffffff !important;
     color: #20e5f6 !important;
@@ -152,7 +176,10 @@ form {
 footer {
     background-color: #000a63;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 49b449c (Actualización estructura de la página)
 /*Footer RS*/
 .social-icon {
     display: inline-flexbox;
@@ -161,6 +188,7 @@ footer {
     background-color: #00c2ff;
     border-radius: 50%;
     text-align: center;
+<<<<<<< HEAD
     line-height: 40px;
     /* Para centrar el icono */
     transition: background-color 0.3s;
@@ -176,11 +204,26 @@ footer {
     background-color: #0077B5;
 }
 
+=======
+    line-height: 40px; /* Para centrar el icono */
+    transition: background-color 0.3s;
+}
+.social-icon i {
+    color: white;
+    font-size: 20px; /* Ajusta el tamaño del ícono */
+}
+.social-icon:hover {
+    background-color: #0077B5;
+}
+>>>>>>> 49b449c (Actualización estructura de la página)
 /* Colores específicos para cada red social */
 .facebook:hover {
     background-color: #020f1f;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 49b449c (Actualización estructura de la página)
 .instagram:hover {
     background-color: #020f1f;
 }
@@ -204,7 +247,10 @@ footer {
     font-size: 1rem;
     margin-bottom: 20px;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 49b449c (Actualización estructura de la página)
 footer a {
     color: #00c2ff;
     /* Azul del logo */
@@ -228,9 +274,14 @@ footer a:hover {
     justify-content: center;
     gap: 15px;
 }
+<<<<<<< HEAD
 
 .social-icon {
     display: inline-block;
+=======
+.social-icon {
+    display: inline-block; 
+>>>>>>> 49b449c (Actualización estructura de la página)
     width: 40px;
     height: 40px;
     background-color: #282120;
@@ -238,7 +289,10 @@ footer a:hover {
     overflow: hidden;
     transition: background-color 0.3s;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 49b449c (Actualización estructura de la página)
 .social-icon img {
     width: 100%;
     height: 100%;
@@ -247,8 +301,12 @@ footer a:hover {
 
 /* Efecto hover para los íconos */
 .social-icon:hover {
+<<<<<<< HEAD
     background-color: #4CAF50;
     /* Color verde cuando el icono es hover */
+=======
+    background-color: #4CAF50; /* Color verde cuando el icono es hover */
+>>>>>>> 49b449c (Actualización estructura de la página)
 }
 
 /* Colores específicos para cada red social */
@@ -262,6 +320,7 @@ footer a:hover {
 
 /* ------CSS para index -----*/
 
+<<<<<<< HEAD
 .section-m1 {
     margin: 40px 0;
 }
@@ -551,6 +610,9 @@ button.normal {
 }
 
 #bindex {
+=======
+#bindex{
+>>>>>>> 49b449c (Actualización estructura de la página)
     background-color: #ffffff;
     font-family: 'Codec Pro', sans-serif;
     color: #ffffff;
@@ -681,6 +743,7 @@ h2 {
     padding: 10px;
 }
 
+<<<<<<< HEAD
 .container_login {
     background-color: #495057;
     /* background: rgb(255, 255, 255); */
@@ -689,6 +752,8 @@ h2 {
     box-shadow: 4px 4px 10px rgb(62, 175, 240);
 }
 
+=======
+>>>>>>> 49b449c (Actualización estructura de la página)
 .container {
     background: rgb(0, 0, 0);
     padding: 30px;
@@ -698,11 +763,16 @@ h2 {
 
 /* -----CSS para la pag sobre nosotros----- */
 
+<<<<<<< HEAD
 .container {
+=======
+.container{
+>>>>>>> 49b449c (Actualización estructura de la página)
     max-width: 1400px;
     margin: auto;
 }
 
+<<<<<<< HEAD
 .card {
     min-height: 350px;
     /* Ajusta según tu diseño */
@@ -723,21 +793,33 @@ h2 {
 
 
 #Acerca {
+=======
+#Acerca{
+>>>>>>> 49b449c (Actualización estructura de la página)
     background-color: #ffffff;
     color: #00eeffdc;
     text-align: center;
 }
 
+<<<<<<< HEAD
 #Acerca .container {
     padding: 20px 0px;
 }
 
 #Acerca h1 {
+=======
+#Acerca .container{
+    padding: 20px 0px;
+}
+
+#Acerca h1{
+>>>>>>> 49b449c (Actualización estructura de la página)
     margin-top: 0;
     font-size: 3.2em;
     color: #000a63;
 }
 
+<<<<<<< HEAD
 #Acerca p {
     color: #ffffff;
     font-size: 15px;
@@ -746,6 +828,16 @@ h2 {
 }
 
 #Acerca .carta {
+=======
+#Acerca p{
+    color: #ffffff;
+    font-size: 15px;
+    font-weight:lighter;
+    text-align: left;
+}
+
+#Acerca .carta{
+>>>>>>> 49b449c (Actualización estructura de la página)
     background-position: center center;
     background-size: cover;
     padding: 70px;
@@ -754,6 +846,7 @@ h2 {
 
 }
 
+<<<<<<< HEAD
 .carta:first-child {
     background-image: linear-gradient(0deg,
             rgba(0, 0, 0, 0.6),
@@ -770,6 +863,33 @@ h2 {
     background-image: linear-gradient(0deg,
             rgba(0, 0, 0, 0.7),
             rgba(0, 0, 0, 0.7)), url("./src/img/nosotros/valores.jpeg");
+=======
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+        )
+        ,url("./src/nosotros/mision.jpg");
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+        )
+        ,url("./src/nosotros/vision.jpeg");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+        )
+        ,url("./src/nosotros/valores.jpeg");
+>>>>>>> 49b449c (Actualización estructura de la página)
 }
 
 
@@ -798,8 +918,12 @@ h2 {
     color: #20e5f6;
 }
 
+<<<<<<< HEAD
 .table th,
 .table td {
+=======
+.table th, .table td {
+>>>>>>> 49b449c (Actualización estructura de la página)
     vertical-align: middle;
     color: #20e5f6;
 }
@@ -837,7 +961,11 @@ h2 {
 .card {
     border: 1px solid #00c2ff;
     border-radius: 8px;
+<<<<<<< HEAD
     background-color: #050c2e;
+=======
+    background-color: #282120;
+>>>>>>> 49b449c (Actualización estructura de la página)
     color: #20e5f6;
     transition: transform 0.3s ease;
 }
@@ -861,7 +989,10 @@ h2 {
     color: #20e5f6;
     font-family: 'Codec Pro', sans-serif;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 49b449c (Actualización estructura de la página)
 #vaciar-carrito {
     font-size: 14px;
     background-color: #ff3b3b;
@@ -874,7 +1005,11 @@ h2 {
 }
 
 /* -----CSS para productos (antes servicios)----- */
+<<<<<<< HEAD
 /*Productos*/
+=======
+/*Productos*/ 
+>>>>>>> 49b449c (Actualización estructura de la página)
 * {
     margin: 0;
     padding: 0;
@@ -882,7 +1017,11 @@ h2 {
 }
 
 body {
+<<<<<<< HEAD
     font-family: "Montserrat", sans-serif;
+=======
+    font-family:"Montserrat", sans-serif;
+>>>>>>> 49b449c (Actualización estructura de la página)
     background-color: #020f1f;
 }
 
@@ -892,7 +1031,11 @@ body {
     max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
+<<<<<<< HEAD
     text-align: center;
+=======
+    text-align:center;
+>>>>>>> 49b449c (Actualización estructura de la página)
 }
 
 .productos h2 {
@@ -945,9 +1088,14 @@ body {
 }
 
 .servicio-info {
+<<<<<<< HEAD
     display: none;
     /* Ocultar todos los detalles por defecto */
     background-color: white;
+=======
+    display: none; /* Ocultar todos los detalles por defecto */
+    background-color:white;
+>>>>>>> 49b449c (Actualización estructura de la página)
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -1000,6 +1148,10 @@ body {
 
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 49b449c (Actualización estructura de la página)
 /* -----Estilos generales para pantallas pequeñas ----- */
 @media (max-width: 600px) {
 
@@ -1014,6 +1166,7 @@ body {
         margin-bottom: 20px;
     }
 
+<<<<<<< HEAD
     /* Media Query para móviles */
     @media (max-width: 768px) {
         .social-media {
@@ -1022,6 +1175,8 @@ body {
         }
     }
 
+=======
+>>>>>>> 49b449c (Actualización estructura de la página)
     /* Imágenes ajustadas al ancho completo del contenedor en pantallas pequeñas */
     .caja-derecha-img img,
     .caja-reverse-img img,
@@ -1041,8 +1196,12 @@ body {
         gap: 10px;
     }
 
+<<<<<<< HEAD
     .servicios,
     .detalle-servicio {
+=======
+    .servicios, .detalle-servicio {
+>>>>>>> 49b449c (Actualización estructura de la página)
         flex: 1 1 100%;
     }
 
@@ -1054,7 +1213,10 @@ body {
         margin-top: 10px;
     }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 49b449c (Actualización estructura de la página)
 /* Estilos para dispositivos muy pequeños (pantallas de 480px o menos) */
 @media (max-width: 480px) {
     .servicio-btn {
@@ -1063,6 +1225,7 @@ body {
 }
 
 
+<<<<<<< HEAD
 h1{
     color: #00c2ff;
     font-weight: bold;
@@ -1070,6 +1233,10 @@ h1{
 h2 {
     color: #00c2ff;
 
+=======
+h2 {
+    color: #00c2ff;
+>>>>>>> 49b449c (Actualización estructura de la página)
 }
 
 button {
@@ -1080,7 +1247,10 @@ button {
 button:hover {
     background-color: #282120;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 49b449c (Actualización estructura de la página)
 /* Secciones y contenido */
 section {
     padding: 60px 0;
@@ -1099,17 +1269,27 @@ section {
     transform: translateY(0);
 }
 
+<<<<<<< HEAD
 @media (min-width: 800px) {
     header.container {
+=======
+@media (min-width: 800px){
+    header.container{
+>>>>>>> 49b449c (Actualización estructura de la página)
         flex-direction: row;
         justify-content: space-between;
     }
 
+<<<<<<< HEAD
     #Acerca .Nosotros {
+=======
+    #Acerca .Nosotros{
+>>>>>>> 49b449c (Actualización estructura de la página)
         display: flex;
         justify-content: center;
     }
 
+<<<<<<< HEAD
     #Acerca .p {
         display: block;
     }
@@ -1118,3 +1298,13 @@ section {
         padding: 50px;
     }
 }
+=======
+    #Acerca .p{
+        display: block;
+    }
+
+    #Acerca .carta{
+        padding: 50px;
+    }
+}
+>>>>>>> 49b449c (Actualización estructura de la página)
