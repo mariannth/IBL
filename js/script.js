@@ -11,7 +11,7 @@ for (let i = 0; i < 100; i++) {
   star.style.left = `${Math.random() * 100}vw`;
 
   // Duración de la animación aleatoria
-  star.style.animationDuration = `${2 + Math.random() * 3}s`;
+  star.style.animationDuration = `${12 + Math.random() * 18}s`;
 
   background.appendChild(star);
 }
