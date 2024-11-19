@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8e1c7ec (Actualización del login y rutas)
 // Selecciona el contenedor del fondo
 const background = document.querySelector('.background-animation');
 
@@ -12,11 +15,16 @@ for (let i = 0; i < 100; i++) {
   star.style.left = `${Math.random() * 100}vw`;
 
   // Duración de la animación aleatoria
+<<<<<<< HEAD
   star.style.animationDuration = `${12 + Math.random() * 18}s`;
+=======
+  star.style.animationDuration = `${2 + Math.random() * 3}s`;
+>>>>>>> 8e1c7ec (Actualización del login y rutas)
 
   background.appendChild(star);
 }
 
+<<<<<<< HEAD
 // Seleccionar todas las cards
 document.querySelectorAll('.card').forEach(card => {
     card.addEventListener('click', () => {
@@ -50,6 +58,9 @@ infoModal.addEventListener('hidden.bs.modal', () => {
 
 =======
 >>>>>>> 49b449c (Actualización estructura de la página)
+=======
+
+>>>>>>> 8e1c7ec (Actualización del login y rutas)
 
  // Captura el formulario y el campo de fecha
  const form = document.getElementById('appointment-form');

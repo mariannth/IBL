@@ -2,14 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Codec+Pro:wght@400;600&display=swap');
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* Reset de estilos */
 =======
 /* Reset de estilos*/
 >>>>>>> 49b449c (Actualización estructura de la página)
+=======
+/* Reset de estilos */
+>>>>>>> 8e1c7ec (Actualización del login y rutas)
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+<<<<<<< HEAD
 <<<<<<< HEAD
     /* Elimina cualquier fondo de todos los elementos globales */
 }
@@ -115,15 +120,85 @@ form {
     background-color: #020f1f !important;
 
 =======
+=======
+    /* Elimina cualquier fondo de todos los elementos globales */
+>>>>>>> 8e1c7ec (Actualización del login y rutas)
 }
 
 /*----- Estilos para body ------*/
 .body {
     font-family: 'Codec Pro', sans-serif;
-    background-color: #020f1f;
+    margin: 0;
+    padding: 0;
     color: #ffffff;
+    min-height: 100vh; /* Asegura que el body siempre ocupe al menos el 100% del viewport */
+    display: flex;
+    flex-direction: column; /* Alinea contenido en columnas (contenido + footer) */
+    background: linear-gradient(45deg, #020f1f, #000a63, #00c2ff);
+    background-size: 400% 400%;
+    animation: fondoMovimiento 10s ease infinite;
+    overflow: hidden; /* Evita que el fondo se extienda fuera del body */
 }
 
+/* Ajustes globales */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    /*overflow: default; /*Evita que el fondo se salga del viewport */
+  }
+  
+  /* Contenedor de fondo animado */
+  .background-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black; /* Fondo base */
+    overflow: hidden;
+    z-index: -1; /* Ubicar detrás del contenido principal */
+  }
+  
+  /* Estilo de las estrellas */
+  .star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: white;
+    border-radius: 50%;
+    animation: moveStars 5s linear infinite;
+  }
+  
+  /* Animación de movimiento de estrellas */
+  @keyframes moveStars {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(100vh);
+    }
+  }
+  
+  /* Contenido principal */
+  .content {
+    position: relative;
+    z-index: 1; /* Ubicar contenido encima del fondo */
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  form {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
 /* -----Estilos para la Navbar o menú -----*/ 
 .navbar {
     background-color: #000a63;
@@ -744,6 +819,9 @@ h2 {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8e1c7ec (Actualización del login y rutas)
 .container_login {
     background-color: #495057;
     /* background: rgb(255, 255, 255); */
@@ -752,8 +830,11 @@ h2 {
     box-shadow: 4px 4px 10px rgb(62, 175, 240);
 }
 
+<<<<<<< HEAD
 =======
 >>>>>>> 49b449c (Actualización estructura de la página)
+=======
+>>>>>>> 8e1c7ec (Actualización del login y rutas)
 .container {
     background: rgb(0, 0, 0);
     padding: 30px;
@@ -1149,9 +1230,12 @@ body {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 49b449c (Actualización estructura de la página)
+=======
+>>>>>>> 8e1c7ec (Actualización del login y rutas)
 /* -----Estilos generales para pantallas pequeñas ----- */
 @media (max-width: 600px) {
 
@@ -1307,4 +1391,10 @@ section {
         padding: 50px;
     }
 }
+<<<<<<< HEAD
 >>>>>>> 49b449c (Actualización estructura de la página)
+=======
+
+
+  
+>>>>>>> 8e1c7ec (Actualización del login y rutas)
