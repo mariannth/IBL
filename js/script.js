@@ -1,3 +1,22 @@
+// Selecciona el contenedor del fondo
+const background = document.querySelector('.background-animation');
+
+// Genera múltiples estrellas
+for (let i = 0; i < 100; i++) {
+  const star = document.createElement('div');
+  star.classList.add('star');
+
+  // Asigna una posición aleatoria
+  star.style.top = `${Math.random() * 100}vh`;
+  star.style.left = `${Math.random() * 100}vw`;
+
+  // Duración de la animación aleatoria
+  star.style.animationDuration = `${2 + Math.random() * 3}s`;
+
+  background.appendChild(star);
+}
+
+
 
  // Captura el formulario y el campo de fecha
  const form = document.getElementById('appointment-form');
