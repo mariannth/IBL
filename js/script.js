@@ -16,10 +16,14 @@ for (let i = 0; i < 100; i++) {
 
   // Duración de la animación aleatoria
 <<<<<<< HEAD
+<<<<<<< HEAD
   star.style.animationDuration = `${12 + Math.random() * 18}s`;
 =======
   star.style.animationDuration = `${2 + Math.random() * 3}s`;
 >>>>>>> 8e1c7ec (Actualización del login y rutas)
+=======
+  star.style.animationDuration = `${12 + Math.random() * 18}s`;
+>>>>>>> 597f90a (Actualización de velocidad de animación)
 
   background.appendChild(star);
 }
