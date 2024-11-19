@@ -1,145 +1,331 @@
-html,
+/* Importar fuente Codec Pro */
+@import url('https://fonts.googleapis.com/css2?family=Codec+Pro:wght@400;600&display=swap');
+
 body {
-    background-color: #ffffff;
     font-family: 'Codec Pro', sans-serif;
+    width: 100%;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+button.normal {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 20px 20px;
     color: #ffffff;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    background-color: transparent;
+    border-radius: 70px;
+    cursor: pointer;
+    border: #0077B5 solid;
+    outline: none;
+    transition: 0.3s;
 }
 
-#mensajeBienvenida {
-    color: #000a63;
-    text-align: center;
-    font-size: 3.5em;
-    padding: 30px 0;
-    background-color: #ffffff;
-    text-shadow: 2px 2px 15px #00c2ff;
-}
-
-/* Texto dentro de las cajas */
-.texto-index {
+#heroe button {
+    padding: 14px 80px 14px 65px;
+    color: #ffffff;
+    background-color: transparent;
+    border-radius: 25px;
+    cursor: pointer;
+    border: ridge;
+    background-repeat: no-repeat;
+    font-weight: 700;
     font-size: 20px;
-    color: #020f1f;
-    line-height: 1.9;
+    text-align: center;
 }
 
-/* Títulos dentro de las cajas */
-.titulo-h3 {
+#heroe button:hover {
+    background-color: #20e4f67a;
+    color: white;
+}
+
+
+
+
+
+
+
+
+#heroe {
+    background-image: url(/src/img/img_Jluis/heroe1.png);
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#heroe h4 {
+    padding-bottom: 15px;
+    color: #ffffff
+}
+
+#heroe h1 {
+    color: #ffffff;
+}
+
+#heroe h2 {
+    color: #ffffff;
+}
+
+#heroe p {
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+#productosDestacados {
+    text-align: center;
+}
+
+#productosDestacados h2 {
+    background-color: #000a65;
+    color: #ffffff;
+    font-size: 55px;
+    font-weight: 450;
+    line-height: 1.7em;
+}
+
+#productosDestacados p {
     color: #282120;
-    font-size: 35px;
+    font-size: 27px;
+    font-weight: 420;
+}
+
+#productosDestacados {
+    text-align: center;
+}
+
+#productosDestacados .contenedorProductos {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#productosDestacados .pro {
+    flex: auto;
+    width: 22%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #000a63;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px #e0e0e0;
+    margin: 15px;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#productosDestacados .pro:hover {
+    box-shadow: 20px 20px 30px #aaaaaa;
+}
+
+#productosDestacados .pro img {
+    width: 100%;
+    border-radius: 35px;
+}
+
+#productosDestacados .pro .des {
+    text-align: start;
+    padding: 10px 0;
+}
+
+#productosDestacados .pro .des span {
+    color: #282120;
+    font-size: 12px;
+}
+
+#productosDestacados .pro .des h5 {
+    padding-top: 7px;
+    color: #000a63;
+    font-size: 14px;
+}
+
+.star {
+    font-size: 12px;
+    color: #00c2ff;
+}
+
+#productosDestacados .pro .des h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #008616;
+}
+
+#productosDestacados .pro .cart {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #ecfdff;
+    font-weight: 500;
+    color: #000a63;
+    border: 1px solid #00c2ff;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(/src/img/img_Jluis/banneribl.png);
+    padding: 20px 20px;
+}
+
+#banner h4 {
+    color: white;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+#banner h2 {
+    color: white;
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+#banner h2 span {
+    color: rgb(255, 0, 0);
+    font-size: 30px;
+    padding: 10px 0;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px black
+}
+
+#banner button:hover {
+    background-color: #20e5f6;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contenedor principal que usa Flexbox para el carrusel y el formulario */
+.carousel-container {
+    display: flex;
+    width: 100%;
+    height: auto;   /* La altura del contenedor se ajustará al contenido */
+    margin-bottom: 30px; /* Espacio inferior */
+}
+
+/* Carrusel: ocupa 3/4 del espacio y se le da altura fija */
+#carouselExampleAutoplaying {
+    flex: 3;
+    max-width: 75%; /* 3/4 del ancho */
+    height: 400px;  /* Establece una altura fija para el carrusel */
+    overflow: hidden; /* Oculta el contenido que sobresalga */
+}
+
+/* Cuadro con el formulario: ocupa 1/4 del espacio */
+.image-box {
+    flex: 1;
+    background-color: #f4f4f4;   /* Fondo claro para resaltar el cuadro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Estilo del formulario */
+.subscription-form {
+    text-align: center;
+}
+
+.subscription-form h4 {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+.subscription-form p {
+    font-size: 16px;
+    color: #666;
     margin-bottom: 20px;
 }
 
-/* Estilo para los encabezados dentro del carrusel */
-.carousel-caption h5 {
-    font-size: 25px;
-    /* Aumenta el tamaño de los encabezados */
-    font-weight: bold;
-    /* Hace los encabezados en negrita */
+.subscription-form input {
+    width: 80%;
+    padding: 10px;
     margin-bottom: 10px;
-    /* Añade espacio debajo del encabezado */
-}
-
-/* Estilo para los párrafos dentro del carrusel */
-.carousel-caption p {
-    font-size: 25px;
-    /* Tamaño de fuente para los párrafos */
-    margin-bottom: 0;
-    /* Elimina el margen inferior */
-}
-
-/* El iframe que contiene el mapa de Google */
-.caja-derecha-mapa iframe {
-    width: 100%;
-    height: 350px;
-    /* Ajusta el alto del mapa */
-    border: 0;
-    /* Elimina el borde alrededor del mapa */
-    border-radius: 18px;
-    /* Bordes redondeados para el mapa */
-}
-
-/* Estilos generales para la sección */
-section {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
-    gap: 20px;
-}
-
-/* Estilos para las cajas */
-.caja-texto,
-.caja-derecha-img,
-.caja-reverse-texto,
-.caja-reverse-img,
-.caja-mapa {
-    flex: 1 1 45%;
-    padding: 20px;
     border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
 }
 
-/* Estilos para imágenes en las cajas */
-.caja-derecha-img img,
-.caja-reverse-img img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
+.subscription-form button {
+    width: 80%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
 }
 
-/* Efecto hover para las imágenes */
-.caja-derecha-img img:hover,
-.caja-reverse-img img:hover {
-    transform: scale(1.05);
+.subscription-form button:hover {
+    background-color: #0056b3;
 }
 
-/* Estilos para el mapa */
-.caja-mapa iframe {
-    width: 100%;
-    height: 250px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease;
-}
-
-.caja-mapa iframe:hover {
-    transform: scale(1.02);
-}
-
-/* Estilos generales para pantallas pequeñas */
-@media (max-width: 600px) {
-
-    /* Ajustar las cajas para que ocupen toda la pantalla */
-    .caja-texto,
-    .caja-derecha-img,
-    .caja-reverse-texto,
-    .caja-reverse-img,
-    .caja-mapa {
-        flex: 1 1 100%;
-        padding: 10px;
-        margin-bottom: 20px;
-    }
-
-    /* Imágenes ajustadas al ancho completo del contenedor en pantallas pequeñas */
-    .caja-derecha-img img,
-    .caja-reverse-img img,
-    .caja-mapa iframe {
-        max-width: 100%;
-        height: auto;
-        border-radius: 5px;
-        box-shadow: none;
-    }
+/* Estilos para las imágenes del carrusel */
+.carousel-inner img {
+    object-fit: cover;  /* Hace que la imagen cubra todo el espacio disponible sin distorsionarse */
+    width: 100%;        /* Ocupa todo el ancho */
+    height: 100%;       /* Asegura que la imagen tenga la altura correcta dentro del carrusel */
 }
 
 
 
 
-/* Importar fuente Codec Pro */
-@import url('https://fonts.googleapis.com/css2?family=Codec+Pro:wght@400;600&display=swap');
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Ajustes Navbar */
 .navbar {
@@ -313,35 +499,4 @@ footer a:hover {
         flex-direction: column;
         gap: 10px;
     }
-}
-
-h2 {
-    color: #00c2ff;
-}
-
-button {
-    background-color: #000a63;
-    border-color: #20e5f6;
-}
-
-button:hover {
-    background-color: #282120;
-}
-
-/* Secciones y contenido */
-section {
-    padding: 60px 0;
-    margin-top: 70px;
-}
-
-/* Estilos para animación al hacer scroll */
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-}
-
-.fade-in.show {
-    opacity: 1;
-    transform: translateY(0);
 }
