@@ -81,62 +81,77 @@
         <div class="row justify-content-center">
             <div class="col-md-6"> <br>
                 <h1 class="text-center mb-4">FORMULARIO DE COTIZACIÓN</h1> <br>
-                <H2 class="text-center fs-5"> Rellena el formulario y uno de nuestros asesores te contactará a la brevedad</H2> <br>
+                <H2 class="text-center fs-5"> Rellena el formulario para registrar el nuevo producto</H2> <br>
                 
 
 
 
 
-        <!-- INICIO FORMULARIO -->
-        <form id="formulario-cotizacion">
-            <!-- Nombre -->
-            <div class="mb-3">
-                <label for="nombre" class="form-label">Nombre</label>
-                <input type="text" id="nombre" name="nombre_usuario" class="form-control">
-            </div>
+    <!-- INICIO FORMULARIO -->
+    <!-- Selección de categoria -->
+     <div class="mb-3">
+        <label for="seleccion-categoria" class="form-label">Selecciona a que categoria pertenece el producto</label>
+        <select id="seleccion-categoria" class="form-select" required name="categoria_seleccionada">
+            <option value="" selected>Seleccione una opción</option>
+            <option value="computadoras">Computadoras y laptops</option>
+            <option value="perifericos">Cámaras webs, ratones, teclados, auriculares, audifonos, cables</option>
+            <option value="smartphones">Smartphones</option>
+            <option value="dispositivosmart">Smartwatch y VR</option>
+        </select>
+    </div>
 
-            <!-- Correo electrónico -->
-            <div class="mb-3">
-                <label for="correo" class="form-label">Correo electrónico</label>
-                <input type="email" id="correo" name="correo_usuario" class="form-control">
-            </div>
+        
+    <form id="formulario-cotizacion">
+    <!-- Nombre del producto -->
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre del producto</label>
+            <input type="text" id="nombre" name="nombre_usuario" class="form-control">
+        </div>
+            
+    <!-- Descripción -->
+        <div class="mb-3">
+            <label for="descripcion" class="form-label">Descripción</label>
+            <input type="text" id="descripcion" name="descripcion_producto" class="form-control">
+        </div>
 
-            <!-- Teléfono -->
-            <div class="mb-3">
-                <label for="telefono" class="form-label">Teléfono</label>
-                <input type="tel" id="telefono" name="numero_telefono" class="form-control">
-            </div>
+    <!-- Marca -->
+        <div class="mb-3">
+            <label for="marca" class="form-label">Marca</label>
+            <input type="text" id="marca" name="marca_producto" class="form-control">
+        </div>
 
-            <!-- Selección de servicios -->
-            <div class="mb-3">
-                <label for="seleccion-servicio" class="form-label">Selecciona uno de nuestros servicios</label>
-                <select id="seleccion-servicio" class="form-select">
-                    <option value="" selected>Seleccione una opción</option>
-                    <option value="web">Desarrollo de páginas web</option>
-                    <option value="app">Desarrollo de aplicaciones</option>
-                    <option value="consultoria">Consultoría</option>
-                </select>
-            </div>
+    <!-- Código SKU -->
+        <div class="mb-3">
+            <label for="codigo" class="form-label">Código SKU</label>
+            <input type="text" id="codigo" name="codigo_producto" class="form-control">
+        </div>
 
-            <!-- Mensaje -->
-            <div class="mb-3">
-                <label for="mensaje" class="form-label">Mensaje</label>
-                <textarea id="mensaje" name="mensaje_usuario" class="form-control"></textarea>
-            </div>
+            
+    <!-- Precio -->
+        <div class="mb-3">
+            <label for="precio" class="form-label">Precio</label>
+            <input type="text" id="precio" name="precio_producto" class="form-control">
+        </div>
 
-            <!-- Fecha de cotización -->
-            <div class="mb-3">
-                <label for="fecha-cotizacion" class="form-label">Selecciona una fecha</label>
-                <input type="date" id="fecha-cotizacion" name="fecha_cotizacion" class="form-control" required>
-            </div>
+    <!-- Stock -->
+        <div class="mb-3">
+            <label for="cantidad" class="form-label">Cantidad Disponible</label>
+            <input type="text" id="cantidad" name="cantidad_producto" class="form-control">
+        </div>
 
-            <!-- Botones -->
-            <div class="d-flex justify-content-between">
-                <button type="submit" class="btn btn-primary">Enviar</button>
-                <button type="reset" class="btn btn-secondary">Regresar</button>
-            </div>
+    <!-- Imagen del producto -->
+        <div class="mb-3">
+            <label for="imagen" class="form-label">Imagen del producto</label>
+            <input type="image" id="imagen" name="imagen_producto" class="form-control">
+        </div>
+
+    <!-- Botones -->
+        <div class="d-flex justify-content-between">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="reset" class="btn btn-secondary">Regresar</button>
+        </div>
         </form>
-            </div>
+        </div>
         </div>
     </div>
     <br>
