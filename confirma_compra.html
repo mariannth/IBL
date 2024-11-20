@@ -21,57 +21,71 @@
 <body class="bg-light d-flex flex-column min-vh-100">
     <div id="header"></div>
     <main class="flex-grow-1">
-        <div class="container my-5">
-            <h2>Confirmación de Compra</h2>
-            <div class="card mb-4">
-                <div class="card-header">Resumen del Pedido</div>
-                <div class="card-body">
-                    <ul class="list-group">
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                            Servicio 1
-                            <div>
-                                <span class="material-icons">edit</span>
+        <div class="background-animation"></div>
+        <div class="content">
+                <div class="col-md-10" style="margin: 0 auto;">
+                    <h2>Confirmación de Compra</h2>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Servicio 1
+                                    <div>
+                                        <!-- <span class="material-icons">edit</span>
                                 <input type="number" class="form-control d-inline" style="width: 60px;" min="1"
-                                    value="1">
-                                <span class="badge badge-primary">$100</span>
-                            </div>
-                            <span class="precio badge badge-primary badge-pill">$150</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                            Servicio 2
-                            <div>
-                                <span class="material-icons">edit</span>
+                                    value="1"> -->
+                                        <span class="badge badge-primary">$100</span>
+                                    </div>
+                                    <span class="precio badge badge-primary badge-pill">$150</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Servicio 2
+                                    <div>
+                                        <!-- <span class="material-icons">edit</span>
                                 <input type="number" class="form-control d-inline" style="width: 60px;" min="1"
-                                    value="1">
-                                <span class="badge badge-primary">$100</span>
-                            </div>
-                            <span class="precio badge badge-primary badge-pill">$150</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                            Servicio 3
-                            <div>
-                                <span class="material-icons">edit</span>
+                                    value="1"> -->
+                                        <span class="badge badge-primary">$100</span>
+                                    </div>
+                                    <span class="precio badge badge-primary badge-pill">$150</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Servicio 3
+                                    <div>
+                                        <!-- <span class="material-icons">edit</span>
                                 <input type="number" class="form-control d-inline" style="width: 60px;" min="1"
-                                    value="1">
-                                <span class="badge badge-primary">$100</span>
-                            </div>
-                            <span class="precio badge badge-primary badge-pill">$150</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center font-weight-bold">
-                            Total a Pagar
-                            <span id="totalPrecio" class="badge badge-success badge-pill">$450</span>
-                        </li>
-                    </ul>
-                    <button id="continuarCompra" class="btn btn-primary btn-block mt-3">Continuar Compra</button>
+                                    value="1"> -->
+                                        <span class="badge badge-primary">$100</span>
+                                    </div>
+                                    <span class="precio badge badge-primary badge-pill">$150</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center font-weight-bold">
+                                    Total a Pagar
+                                    <div>
+                                        <span class="badge badge-success badge-pill">$450</span>
+                                    </div>
+                                    <span class="precio badge badge-primary badge-pill">$450</span>
+                                    
+                                </li>
+                            </ul>
+                            <button id="continuarCompra" class="btn btn-primary btn-block mt-3">Continuar
+                                Compra</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <br><br>
+
+                <br><br>
     </main>
+
+    <script>
+        document.getElementById('continuarCompra').onclick = () => {
+            window.location.href = 'pago.html';
+        };
+    </script>
 
     <!--Footer-->
     <div id="footer"></div>
     <script>
+
         function loadComponent(id, file) {
             fetch(file)
                 .then(response => response.text())
@@ -83,41 +97,9 @@
         loadComponent("footer", "./components/footer.html");
     </script>
 
-    <script>
-        document.getElementById('continuarCompra').onclick = () => {
-            window.location.href = 'pago.html';
-        };
-    </script>
-
+    <script src="./js/script.js"></script>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-    <!-- Scripts de JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        // Actualizar precio total
-        function actualizarPrecio(element) {
-            const item = element.closest('li');
-            const precioUnitario = parseFloat(element.getAttribute('data-precio'));
-            const cantidad = parseInt(element.value);
-            const precioTotal = precioUnitario * cantidad;
-            item.querySelector('.precio').innerText = `$${precioTotal}`;
-            actualizarTotal();
-        }
-
-        // Calcular el precio total de todos los servicios
-        function actualizarTotal() {
-            let total = 0;
-            document.querySelectorAll('.precio').forEach(precio => {
-                total += parseFloat(precio.innerText.replace('$', ''));
-            });
-            document.getElementById('totalPrecio').innerText = `$${total}`;
-        }
-    </script>
-
 </body>
 
 </html>
