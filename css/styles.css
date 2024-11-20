@@ -101,6 +101,9 @@ form {
     color: #00c2ff;
     text-align: justify;
 }
+.modal_title{
+    color: #000a63;
+}
 /* -----Estilos para la Navbar o menú -----*/
 .navbar {
     background-color: #000a63;
