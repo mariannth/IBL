@@ -29,6 +29,9 @@ for (let i = 0; i < 100; i++) {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 57e26a1 (Actualización de Acerca de nosotros)
 // Seleccionar todas las cards
 document.querySelectorAll('.card').forEach(card => {
     card.addEventListener('click', () => {
@@ -36,6 +39,32 @@ document.querySelectorAll('.card').forEach(card => {
         const title = card.getAttribute('data-title');
         const content = card.getAttribute('data-content');
         const imgSrc = card.getAttribute('data-img');
+<<<<<<< HEAD
+=======
+
+        // Actualiza el contenido del modal
+        document.getElementById('infoModalLabel').textContent = title;
+        document.getElementById('modalContent').textContent = content;
+        document.getElementById('modalImage').src = imgSrc;
+
+        // Mostrar el modal
+        const modal = new bootstrap.Modal(document.getElementById('infoModal'));
+        modal.show();
+    });
+});
+
+
+// Forzar cierre y reinicio del modal al cerrarse
+const infoModal = document.getElementById('infoModal');
+infoModal.addEventListener('hidden.bs.modal', () => {
+    // Limpia los datos del modal
+    document.getElementById('infoModalLabel').textContent = '';
+    document.getElementById('modalContent').textContent = '';
+    document.getElementById('modalImage').src = '';
+});
+
+
+>>>>>>> 57e26a1 (Actualización de Acerca de nosotros)
 
         // Actualiza el contenido del modal
         document.getElementById('infoModalLabel').textContent = title;

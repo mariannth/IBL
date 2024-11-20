@@ -18,6 +18,7 @@
 <<<<<<< HEAD
     /* Elimina cualquier fondo de todos los elementos globales */
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
  
 /*----- Estilos para body ------*/
@@ -128,6 +129,9 @@ form {
 =======
 } 
 >>>>>>> 09ce30a (Actualización de registro y login, header, colores y más)
+=======
+}
+>>>>>>> 57e26a1 (Actualización de Acerca de nosotros)
 
 /*----- Estilos para body ------*/
 .body {
@@ -136,60 +140,68 @@ form {
     width: 100%;
     padding: 0;
     color: #ffffff;
-    min-height: 100vh; /* Asegura que el body siempre ocupe al menos el 100% del viewport */
+    min-height: 100vh;
+    /* Asegura que el body siempre ocupe al menos el 100% del viewport */
     display: flex;
-    flex-direction: column; /* Alinea contenido en columnas (contenido + footer) */
+    flex-direction: column;
+    /* Alinea contenido en columnas (contenido + footer) */
     background: linear-gradient(45deg, #020f1f, #000a63, #00c2ff);
     background-size: 400% 400%;
     animation: fondoMovimiento 10s ease infinite;
-    overflow: hidden; /* Evita que el fondo se extienda fuera del body */
+    overflow: hidden;
+    /* Evita que el fondo se extienda fuera del body */
 }
 
 /* Ajustes globales */
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
     /*overflow: default; /*Evita que el fondo se salga del viewport */
-  }
-  
-  /* Contenedor de fondo animado */
-  .background-animation {
+}
+
+/* Contenedor de fondo animado */
+.background-animation {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: #020f1f; /* Fondo base */
+    background: #020f1f;
+    /* Fondo base */
     overflow: hidden;
-    z-index: -1; /* Ubicar detrás del contenido principal */
-  }
-  
-  /* Estilo de las estrellas */
-  .star {
+    z-index: -1;
+    /* Ubicar detrás del contenido principal */
+}
+
+/* Estilo de las estrellas */
+.star {
     position: absolute;
     width: 2px;
     height: 2px;
     background-color: white;
     border-radius: 50%;
     animation: moveStars 5s linear infinite;
-  }
-  
-  /* Animación de movimiento de estrellas */
-  @keyframes moveStars {
+}
+
+/* Animación de movimiento de estrellas */
+@keyframes moveStars {
     from {
-      transform: translateY(0);
+        transform: translateY(0);
     }
+
     to {
-      transform: translateY(100vh);
+        transform: translateY(100vh);
     }
-  }
-  
-  /* Contenido principal */
-  .content {
+}
+
+/* Contenido principal */
+.content {
     position: relative;
-    z-index: 1; /* Ubicar contenido encima del fondo */
+    z-index: 1;
+    /* Ubicar contenido encima del fondo */
     /* display: flex; */
     justify-content: center;
     align-items: center;
@@ -199,22 +211,26 @@ html, body {
     box-sizing: border-box;
     text-align: center;
     color: #000a63;
-  }
-  
-  form {
+}
+
+form {
     background: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     text-align: center;
-  }
+}
 
-/* -----Estilos para la Navbar o menú -----*/ 
+/* -----Estilos para la Navbar o menú -----*/
 .navbar {
     background-color: #000a63;
     background-color: #020f1f !important;
+<<<<<<< HEAD
     
 >>>>>>> 49b449c (Actualización estructura de la página)
+=======
+
+>>>>>>> 57e26a1 (Actualización de Acerca de nosotros)
 }
 
 .navbar-brand img {
@@ -222,9 +238,13 @@ html, body {
     height: 40px;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 49b449c (Actualización estructura de la página)
+=======
+
+>>>>>>> 57e26a1 (Actualización de Acerca de nosotros)
 .nav-link {
     color: #ffffff !important;
     color: #20e5f6 !important;
@@ -262,9 +282,13 @@ footer {
     background-color: #000a63;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 49b449c (Actualización estructura de la página)
+=======
+
+>>>>>>> 57e26a1 (Actualización de Acerca de nosotros)
 /*Footer RS*/
 .social-icon {
     display: inline-flexbox;
@@ -273,6 +297,7 @@ footer {
     background-color: #00c2ff;
     border-radius: 50%;
     text-align: center;
+<<<<<<< HEAD
 <<<<<<< HEAD
     line-height: 40px;
     /* Para centrar el icono */
@@ -291,24 +316,39 @@ footer {
 
 =======
     line-height: 40px; /* Para centrar el icono */
+=======
+    line-height: 40px;
+    /* Para centrar el icono */
+>>>>>>> 57e26a1 (Actualización de Acerca de nosotros)
     transition: background-color 0.3s;
 }
+
 .social-icon i {
     color: white;
-    font-size: 20px; /* Ajusta el tamaño del ícono */
+    font-size: 20px;
+    /* Ajusta el tamaño del ícono */
 }
+
 .social-icon:hover {
     background-color: #0077B5;
 }
+<<<<<<< HEAD
 >>>>>>> 49b449c (Actualización estructura de la página)
+=======
+
+>>>>>>> 57e26a1 (Actualización de Acerca de nosotros)
 /* Colores específicos para cada red social */
 .facebook:hover {
     background-color: #020f1f;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 49b449c (Actualización estructura de la página)
+=======
+
+>>>>>>> 57e26a1 (Actualización de Acerca de nosotros)
 .instagram:hover {
     background-color: #020f1f;
 }
@@ -333,9 +373,13 @@ footer {
     margin-bottom: 20px;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 49b449c (Actualización estructura de la página)
+=======
+
+>>>>>>> 57e26a1 (Actualización de Acerca de nosotros)
 footer a {
     color: #00c2ff;
     /* Azul del logo */
@@ -360,6 +404,7 @@ footer a:hover {
     gap: 15px;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 .social-icon {
     display: inline-block;
@@ -367,6 +412,11 @@ footer a:hover {
 .social-icon {
     display: inline-block; 
 >>>>>>> 49b449c (Actualización estructura de la página)
+=======
+
+.social-icon {
+    display: inline-block;
+>>>>>>> 57e26a1 (Actualización de Acerca de nosotros)
     width: 40px;
     height: 40px;
     background-color: #282120;
@@ -375,9 +425,13 @@ footer a:hover {
     transition: background-color 0.3s;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 49b449c (Actualización estructura de la página)
+=======
+
+>>>>>>> 57e26a1 (Actualización de Acerca de nosotros)
 .social-icon img {
     width: 100%;
     height: 100%;
@@ -387,11 +441,16 @@ footer a:hover {
 /* Efecto hover para los íconos */
 .social-icon:hover {
 <<<<<<< HEAD
+<<<<<<< HEAD
     background-color: #4CAF50;
     /* Color verde cuando el icono es hover */
 =======
     background-color: #4CAF50; /* Color verde cuando el icono es hover */
 >>>>>>> 49b449c (Actualización estructura de la página)
+=======
+    background-color: #4CAF50;
+    /* Color verde cuando el icono es hover */
+>>>>>>> 57e26a1 (Actualización de Acerca de nosotros)
 }
 
 /* Colores específicos para cada red social */
@@ -411,11 +470,14 @@ footer a:hover {
     margin: 40px 0;
 }
 
+<<<<<<< HEAD
 =======
 .section-m1 {
     margin: 40px 0;
 }
 >>>>>>> 09ce30a (Actualización de registro y login, header, colores y más)
+=======
+>>>>>>> 57e26a1 (Actualización de Acerca de nosotros)
 button.normal {
     font-size: 14px;
     font-weight: 600;
@@ -447,10 +509,14 @@ button.normal {
     color: white;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 #heroe {
     background-image: url("./src/img/productos/img_Jluis/heroe1.png");
 =======
+=======
+
+>>>>>>> 57e26a1 (Actualización de Acerca de nosotros)
 #heroe {
     background-image: url(/src/img/img_Jluis/heroe1.png);
 >>>>>>> 09ce30a (Actualización de registro y login, header, colores y más)
@@ -642,42 +708,59 @@ button.normal {
     display: flex;
     width: 100%;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 57e26a1 (Actualización de Acerca de nosotros)
     height: auto;
     /* La altura del contenedor se ajustará al contenido */
     margin-bottom: 30px;
     /* Espacio inferior */
+<<<<<<< HEAD
 =======
     height: auto;   /* La altura del contenedor se ajustará al contenido */
     margin-bottom: 30px; /* Espacio inferior */
 >>>>>>> 09ce30a (Actualización de registro y login, header, colores y más)
+=======
+>>>>>>> 57e26a1 (Actualización de Acerca de nosotros)
 }
 
 /* Carrusel: ocupa 3/4 del espacio y se le da altura fija */
 #carouselExampleAutoplaying {
     flex: 3;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 57e26a1 (Actualización de Acerca de nosotros)
     max-width: 75%;
     /* 3/4 del ancho */
     height: 400px;
     /* Establece una altura fija para el carrusel */
     overflow: hidden;
     /* Oculta el contenido que sobresalga */
+<<<<<<< HEAD
 =======
     max-width: 75%; /* 3/4 del ancho */
     height: 400px;  /* Establece una altura fija para el carrusel */
     overflow: hidden; /* Oculta el contenido que sobresalga */
 >>>>>>> 09ce30a (Actualización de registro y login, header, colores y más)
+=======
+>>>>>>> 57e26a1 (Actualización de Acerca de nosotros)
 }
 
 /* Cuadro con el formulario: ocupa 1/4 del espacio */
 .image-box {
     flex: 1;
 <<<<<<< HEAD
+<<<<<<< HEAD
     background-color: #f4f4f4;
     /* Fondo claro para resaltar el cuadro */
 =======
     background-color: #f4f4f4;   /* Fondo claro para resaltar el cuadro */
 >>>>>>> 09ce30a (Actualización de registro y login, header, colores y más)
+=======
+    background-color: #f4f4f4;
+    /* Fondo claro para resaltar el cuadro */
+>>>>>>> 57e26a1 (Actualización de Acerca de nosotros)
     display: flex;
     justify-content: center;
     align-items: center;
@@ -726,12 +809,16 @@ button.normal {
 /* Estilos para las imágenes del carrusel */
 .carousel-inner img {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 57e26a1 (Actualización de Acerca de nosotros)
     object-fit: cover;
     /* Hace que la imagen cubra todo el espacio disponible sin distorsionarse */
     width: 100%;
     /* Ocupa todo el ancho */
     height: 100%;
     /* Asegura que la imagen tenga la altura correcta dentro del carrusel */
+<<<<<<< HEAD
 }
 
 #bindex {
@@ -745,6 +832,11 @@ button.normal {
 >>>>>>> 09ce30a (Actualización de registro y login, header, colores y más)
 #bindex{
 >>>>>>> 49b449c (Actualización estructura de la página)
+=======
+}
+
+#bindex {
+>>>>>>> 57e26a1 (Actualización de Acerca de nosotros)
     background-color: #ffffff;
     font-family: 'Codec Pro', sans-serif;
     color: #ffffff;
@@ -902,15 +994,22 @@ h2 {
 /* -----CSS para la pag sobre nosotros----- */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .container {
 =======
 .container{
 >>>>>>> 49b449c (Actualización estructura de la página)
+=======
+.container {
+>>>>>>> 57e26a1 (Actualización de Acerca de nosotros)
     max-width: 1400px;
     margin: auto;
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 57e26a1 (Actualización de Acerca de nosotros)
 .card {
     min-height: 350px;
     /* Ajusta según tu diseño */
@@ -931,14 +1030,18 @@ h2 {
 
 
 #Acerca {
+<<<<<<< HEAD
 =======
 #Acerca{
 >>>>>>> 49b449c (Actualización estructura de la página)
+=======
+>>>>>>> 57e26a1 (Actualización de Acerca de nosotros)
     background-color: #ffffff;
     color: #00eeffdc;
     text-align: center;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 #Acerca .container {
     padding: 20px 0px;
@@ -952,11 +1055,19 @@ h2 {
 
 #Acerca h1{
 >>>>>>> 49b449c (Actualización estructura de la página)
+=======
+#Acerca .container {
+    padding: 20px 0px;
+}
+
+#Acerca h1 {
+>>>>>>> 57e26a1 (Actualización de Acerca de nosotros)
     margin-top: 0;
     font-size: 3.2em;
     color: #000a63;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 #Acerca p {
     color: #ffffff;
@@ -968,14 +1079,21 @@ h2 {
 #Acerca .carta {
 =======
 #Acerca p{
+=======
+#Acerca p {
+>>>>>>> 57e26a1 (Actualización de Acerca de nosotros)
     color: #ffffff;
     font-size: 15px;
-    font-weight:lighter;
+    font-weight: lighter;
     text-align: left;
 }
 
+<<<<<<< HEAD
 #Acerca .carta{
 >>>>>>> 49b449c (Actualización estructura de la página)
+=======
+#Acerca .carta {
+>>>>>>> 57e26a1 (Actualización de Acerca de nosotros)
     background-position: center center;
     background-size: cover;
     padding: 70px;
@@ -985,10 +1103,14 @@ h2 {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 57e26a1 (Actualización de Acerca de nosotros)
 .carta:first-child {
     background-image: linear-gradient(0deg,
             rgba(0, 0, 0, 0.6),
             rgba(0, 0, 0, 0.6)), url("./src/img/nosotros/mision.jpg");
+<<<<<<< HEAD
 }
 
 .carta:nth-child(2) {
@@ -1009,17 +1131,17 @@ h2 {
         rgba(0,0,0,0.6)
         )
         ,url("./src/nosotros/mision.jpg");
+=======
+>>>>>>> 57e26a1 (Actualización de Acerca de nosotros)
 }
 
-.carta:nth-child(2){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.6),
-        rgba(0,0,0,0.6)
-        )
-        ,url("./src/nosotros/vision.jpeg");
+.carta:nth-child(2) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)), url("./src/img/nosotros/vision.jpeg");
 }
 
+<<<<<<< HEAD
 .carta:nth-child(3){
     background-image: linear-gradient(
         0deg,
@@ -1028,6 +1150,12 @@ h2 {
         )
         ,url("./src/nosotros/valores.jpeg");
 >>>>>>> 49b449c (Actualización estructura de la página)
+=======
+.carta:nth-child(3) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)), url("./src/img/nosotros/valores.jpeg");
+>>>>>>> 57e26a1 (Actualización de Acerca de nosotros)
 }
 
 
@@ -1057,11 +1185,16 @@ h2 {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .table th,
 .table td {
 =======
 .table th, .table td {
 >>>>>>> 49b449c (Actualización estructura de la página)
+=======
+.table th,
+.table td {
+>>>>>>> 57e26a1 (Actualización de Acerca de nosotros)
     vertical-align: middle;
     color: #20e5f6;
 }
@@ -1132,9 +1265,13 @@ h2 {
     font-family: 'Codec Pro', sans-serif;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 49b449c (Actualización estructura de la página)
+=======
+
+>>>>>>> 57e26a1 (Actualización de Acerca de nosotros)
 #vaciar-carrito {
     font-size: 14px;
     background-color: #ff3b3b;
@@ -1148,10 +1285,14 @@ h2 {
 
 /* -----CSS para productos (antes servicios)----- */
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*Productos*/
 =======
 /*Productos*/ 
 >>>>>>> 49b449c (Actualización estructura de la página)
+=======
+/*Productos*/
+>>>>>>> 57e26a1 (Actualización de Acerca de nosotros)
 * {
     margin: 0;
     padding: 0;
@@ -1160,10 +1301,14 @@ h2 {
 
 body {
 <<<<<<< HEAD
+<<<<<<< HEAD
     font-family: "Montserrat", sans-serif;
 =======
     font-family:"Montserrat", sans-serif;
 >>>>>>> 49b449c (Actualización estructura de la página)
+=======
+    font-family: "Montserrat", sans-serif;
+>>>>>>> 57e26a1 (Actualización de Acerca de nosotros)
     background-color: #020f1f;
 }
 
@@ -1174,10 +1319,14 @@ body {
     margin: 20px auto;
     padding: 20px;
 <<<<<<< HEAD
+<<<<<<< HEAD
     text-align: center;
 =======
     text-align:center;
 >>>>>>> 49b449c (Actualización estructura de la página)
+=======
+    text-align: center;
+>>>>>>> 57e26a1 (Actualización de Acerca de nosotros)
 }
 
 .productos h2 {
@@ -1231,6 +1380,7 @@ body {
 
 .servicio-info {
 <<<<<<< HEAD
+<<<<<<< HEAD
     display: none;
     /* Ocultar todos los detalles por defecto */
     background-color: white;
@@ -1238,6 +1388,11 @@ body {
     display: none; /* Ocultar todos los detalles por defecto */
     background-color:white;
 >>>>>>> 49b449c (Actualización estructura de la página)
+=======
+    display: none;
+    /* Ocultar todos los detalles por defecto */
+    background-color: white;
+>>>>>>> 57e26a1 (Actualización de Acerca de nosotros)
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -1325,13 +1480,18 @@ body {
 >>>>>>> 49b449c (Actualización estructura de la página)
 =======
     /* Media Query para móviles */
-@media (max-width: 768px) {
-    .social-media {
-        flex-direction: column;
-        gap: 10px;
+    @media (max-width: 768px) {
+        .social-media {
+            flex-direction: column;
+            gap: 10px;
+        }
     }
+<<<<<<< HEAD
 }
 >>>>>>> 09ce30a (Actualización de registro y login, header, colores y más)
+=======
+
+>>>>>>> 57e26a1 (Actualización de Acerca de nosotros)
     /* Imágenes ajustadas al ancho completo del contenedor en pantallas pequeñas */
     .caja-derecha-img img,
     .caja-reverse-img img,
@@ -1352,11 +1512,16 @@ body {
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     .servicios,
     .detalle-servicio {
 =======
     .servicios, .detalle-servicio {
 >>>>>>> 49b449c (Actualización estructura de la página)
+=======
+    .servicios,
+    .detalle-servicio {
+>>>>>>> 57e26a1 (Actualización de Acerca de nosotros)
         flex: 1 1 100%;
     }
 
@@ -1369,9 +1534,13 @@ body {
     }
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 49b449c (Actualización estructura de la página)
+=======
+
+>>>>>>> 57e26a1 (Actualización de Acerca de nosotros)
 /* Estilos para dispositivos muy pequeños (pantallas de 480px o menos) */
 @media (max-width: 480px) {
     .servicio-btn {
@@ -1381,10 +1550,14 @@ body {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 h1{
     color: #00c2ff;
     font-weight: bold;
 }
+=======
+h1,
+>>>>>>> 57e26a1 (Actualización de Acerca de nosotros)
 h2 {
     color: #00c2ff;
 
@@ -1403,9 +1576,13 @@ button:hover {
     background-color: #282120;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 49b449c (Actualización estructura de la página)
+=======
+
+>>>>>>> 57e26a1 (Actualización de Acerca de nosotros)
 /* Secciones y contenido */
 section {
     padding: 60px 0;
@@ -1425,25 +1602,35 @@ section {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 @media (min-width: 800px) {
     header.container {
 =======
 @media (min-width: 800px){
     header.container{
 >>>>>>> 49b449c (Actualización estructura de la página)
+=======
+@media (min-width: 800px) {
+    header.container {
+>>>>>>> 57e26a1 (Actualización de Acerca de nosotros)
         flex-direction: row;
         justify-content: space-between;
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     #Acerca .Nosotros {
 =======
     #Acerca .Nosotros{
 >>>>>>> 49b449c (Actualización estructura de la página)
+=======
+    #Acerca .Nosotros {
+>>>>>>> 57e26a1 (Actualización de Acerca de nosotros)
         display: flex;
         justify-content: center;
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     #Acerca .p {
         display: block;
@@ -1455,12 +1642,16 @@ section {
 }
 =======
     #Acerca .p{
+=======
+    #Acerca .p {
+>>>>>>> 57e26a1 (Actualización de Acerca de nosotros)
         display: block;
     }
 
-    #Acerca .carta{
+    #Acerca .carta {
         padding: 50px;
     }
+<<<<<<< HEAD
 }
 <<<<<<< HEAD
 >>>>>>> 49b449c (Actualización estructura de la página)
@@ -1469,3 +1660,6 @@ section {
 
   
 >>>>>>> 8e1c7ec (Actualización del login y rutas)
+=======
+}
+>>>>>>> 57e26a1 (Actualización de Acerca de nosotros)
