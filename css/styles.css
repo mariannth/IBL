@@ -7,12 +7,13 @@
     padding: 0;
     box-sizing: border-box;
     /* Elimina cualquier fondo de todos los elementos globales */
-}
+} 
 
 /*----- Estilos para body ------*/
 .body {
     font-family: 'Codec Pro', sans-serif;
     margin: 0;
+    width: 100%;
     padding: 0;
     color: #ffffff;
     min-height: 100vh; /* Asegura que el body siempre ocupe al menos el 100% del viewport */
@@ -40,7 +41,7 @@ html, body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: black; /* Fondo base */
+    background: #020f1f; /* Fondo base */
     overflow: hidden;
     z-index: -1; /* Ubicar detrás del contenido principal */
   }
@@ -73,6 +74,11 @@ html, body {
     justify-content: center;
     align-items: center;
     height: 100%;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #000a63;
   }
   
   form {
@@ -82,7 +88,7 @@ html, body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     text-align: center;
   }
-  
+
 /* -----Estilos para la Navbar o menú -----*/ 
 .navbar {
     background-color: #000a63;
@@ -228,6 +234,293 @@ footer a:hover {
 }
 
 /* ------CSS para index -----*/
+
+.section-m1 {
+    margin: 40px 0;
+}
+button.normal {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 20px 20px;
+    color: #ffffff;
+    background-color: transparent;
+    border-radius: 70px;
+    cursor: pointer;
+    border: #0077B5 solid;
+    outline: none;
+    transition: 0.3s;
+}
+
+#heroe button {
+    padding: 14px 80px 14px 65px;
+    color: #ffffff;
+    background-color: transparent;
+    border-radius: 25px;
+    cursor: pointer;
+    border: ridge;
+    background-repeat: no-repeat;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+}
+
+#heroe button:hover {
+    background-color: #20e4f67a;
+    color: white;
+}
+#heroe {
+    background-image: url(/src/img/img_Jluis/heroe1.png);
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#heroe h4 {
+    padding-bottom: 15px;
+    color: #ffffff
+}
+
+#heroe h1 {
+    color: #ffffff;
+}
+
+#heroe h2 {
+    color: #ffffff;
+}
+
+#heroe p {
+    color: #ffffff;
+}
+
+#productosDestacados {
+    text-align: center;
+}
+
+#productosDestacados h2 {
+    background-color: #000a65;
+    color: #ffffff;
+    font-size: 55px;
+    font-weight: 450;
+    line-height: 1.7em;
+}
+
+#productosDestacados p {
+    color: #282120;
+    font-size: 27px;
+    font-weight: 420;
+}
+
+#productosDestacados {
+    text-align: center;
+}
+
+#productosDestacados .contenedorProductos {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#productosDestacados .pro {
+    flex: auto;
+    width: 22%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #000a63;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px #e0e0e0;
+    margin: 15px;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#productosDestacados .pro:hover {
+    box-shadow: 20px 20px 30px #aaaaaa;
+}
+
+#productosDestacados .pro img {
+    width: 100%;
+    border-radius: 35px;
+}
+
+#productosDestacados .pro .des {
+    text-align: start;
+    padding: 10px 0;
+}
+
+#productosDestacados .pro .des span {
+    color: #282120;
+    font-size: 12px;
+}
+
+#productosDestacados .pro .des h5 {
+    padding-top: 7px;
+    color: #000a63;
+    font-size: 14px;
+}
+
+.star {
+    font-size: 12px;
+    color: #00c2ff;
+}
+
+#productosDestacados .pro .des h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #008616;
+}
+
+#productosDestacados .pro .cart {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #ecfdff;
+    font-weight: 500;
+    color: #000a63;
+    border: 1px solid #00c2ff;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(/src/img/img_Jluis/banneribl.png);
+    padding: 20px 20px;
+}
+
+#banner h4 {
+    color: white;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+#banner h2 {
+    color: white;
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+#banner h2 span {
+    color: rgb(255, 0, 0);
+    font-size: 30px;
+    padding: 10px 0;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px black
+}
+
+#banner button:hover {
+    background-color: #20e5f6;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contenedor principal que usa Flexbox para el carrusel y el formulario */
+.carousel-container {
+    display: flex;
+    width: 100%;
+    height: auto;   /* La altura del contenedor se ajustará al contenido */
+    margin-bottom: 30px; /* Espacio inferior */
+}
+
+/* Carrusel: ocupa 3/4 del espacio y se le da altura fija */
+#carouselExampleAutoplaying {
+    flex: 3;
+    max-width: 75%; /* 3/4 del ancho */
+    height: 400px;  /* Establece una altura fija para el carrusel */
+    overflow: hidden; /* Oculta el contenido que sobresalga */
+}
+
+/* Cuadro con el formulario: ocupa 1/4 del espacio */
+.image-box {
+    flex: 1;
+    background-color: #f4f4f4;   /* Fondo claro para resaltar el cuadro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Estilo del formulario */
+.subscription-form {
+    text-align: center;
+}
+
+.subscription-form h4 {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+.subscription-form p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.subscription-form input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.subscription-form button {
+    width: 80%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.subscription-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para las imágenes del carrusel */
+.carousel-inner img {
+    object-fit: cover;  /* Hace que la imagen cubra todo el espacio disponible sin distorsionarse */
+    width: 100%;        /* Ocupa todo el ancho */
+    height: 100%;       /* Asegura que la imagen tenga la altura correcta dentro del carrusel */
+}
 
 #bindex{
     background-color: #ffffff;
@@ -505,7 +798,7 @@ h2 {
 .card {
     border: 1px solid #00c2ff;
     border-radius: 8px;
-    background-color: #282120;
+    background-color: #050c2e;
     color: #20e5f6;
     transition: transform 0.3s ease;
 }
@@ -680,6 +973,13 @@ body {
         margin-bottom: 20px;
     }
 
+    /* Media Query para móviles */
+@media (max-width: 768px) {
+    .social-media {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
     /* Imágenes ajustadas al ancho completo del contenedor en pantallas pequeñas */
     .caja-derecha-img img,
     .caja-reverse-img img,
