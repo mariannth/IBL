@@ -1,0 +1,141 @@
+body {
+    font-family:"Montserrat", sans-serif;
+    background-color: #020f1f;
+    color: rgb(248, 248, 248);
+}
+
+h1 {
+    font-weight: bold;
+}
+
+h2 {
+    color: #b1fffc;
+}    
+
+
+.form-label {
+    font-weight: bold;
+    color: #fff9e1;
+}
+
+.form-control {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 10px;}
+
+
+
+  
+    .container {
+        background: rgb(0, 0, 0);
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+
+
+
+
+
+
+
+/*Footer RS*/
+.social-icon {
+    display: flexbox;
+    width: 40px;
+    height: 40px;
+    background-color: #00c2ff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px; /* Para centrar el icono */
+    transition: background-color 0.3s;
+}
+
+
+
+.social-icon i {
+    color: white;
+    font-size: 20px; /* Ajusta el tamaño del ícono */
+}
+
+.social-icon:hover {
+    background-color: #0077B5;
+}
+
+/* Colores específicos para cada red social */
+.facebook:hover {
+    background-color: #020f1f;
+}
+
+.instagram:hover {
+    background-color: #020f1f;
+}
+
+/* Footer */
+.footer {
+    background-color: #020f1f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer .footer-contenido {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Sección de redes sociales */
+.social-media {
+    display: inline-block;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Estilos de los íconos de redes sociales */
+.social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #282120;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: background-color 0.3s;
+}
+
+.social-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Efecto hover para los íconos */
+.social-icon:hover {
+    background-color: #4CAF50; /* Color verde cuando el icono es hover */
+}
+
+/* Colores específicos para cada red social */
+.facebook:hover {
+    background-color: #3b5998;
+}
+
+.instagram:hover {
+    background-color: #E4405F;
+}
+
+
+/* Media Query para móviles */
+@media (max-width: 768px) {
+    .social-media {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
