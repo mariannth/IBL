@@ -97,6 +97,10 @@ form {
     text-align: center;
 }
 
+.p_pag{
+    color: #00c2ff;
+    text-align: justify;
+}
 /* -----Estilos para la Navbar o menú -----*/
 .navbar {
     background-color: #000a63;
@@ -413,16 +417,6 @@ button.normal {
     bottom: 20px;
     right: 10px;
 }
-
-
-
-
-
-
-
-
-
-
 
 #banner {
     display: flex;
