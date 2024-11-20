@@ -17,6 +17,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
     /* Elimina cualquier fondo de todos los elementos globales */
+<<<<<<< HEAD
 }
  
 /*----- Estilos para body ------*/
@@ -124,11 +125,15 @@ form {
     /* Elimina cualquier fondo de todos los elementos globales */
 >>>>>>> 8e1c7ec (Actualización del login y rutas)
 }
+=======
+} 
+>>>>>>> 09ce30a (Actualización de registro y login, header, colores y más)
 
 /*----- Estilos para body ------*/
 .body {
     font-family: 'Codec Pro', sans-serif;
     margin: 0;
+    width: 100%;
     padding: 0;
     color: #ffffff;
     min-height: 100vh; /* Asegura que el body siempre ocupe al menos el 100% del viewport */
@@ -156,7 +161,7 @@ html, body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: black; /* Fondo base */
+    background: #020f1f; /* Fondo base */
     overflow: hidden;
     z-index: -1; /* Ubicar detrás del contenido principal */
   }
@@ -189,6 +194,11 @@ html, body {
     justify-content: center;
     align-items: center;
     height: 100%;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #000a63;
   }
   
   form {
@@ -198,7 +208,7 @@ html, body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     text-align: center;
   }
-  
+
 /* -----Estilos para la Navbar o menú -----*/ 
 .navbar {
     background-color: #000a63;
@@ -396,10 +406,16 @@ footer a:hover {
 /* ------CSS para index -----*/
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .section-m1 {
     margin: 40px 0;
 }
 
+=======
+.section-m1 {
+    margin: 40px 0;
+}
+>>>>>>> 09ce30a (Actualización de registro y login, header, colores y más)
 button.normal {
     font-size: 14px;
     font-weight: 600;
@@ -430,9 +446,14 @@ button.normal {
     background-color: #20e4f67a;
     color: white;
 }
+<<<<<<< HEAD
 
 #heroe {
     background-image: url("./src/img/productos/img_Jluis/heroe1.png");
+=======
+#heroe {
+    background-image: url(/src/img/img_Jluis/heroe1.png);
+>>>>>>> 09ce30a (Actualización de registro y login, header, colores y más)
     height: 90vh;
     width: 100%;
     background-size: cover;
@@ -555,6 +576,19 @@ button.normal {
     right: 10px;
 }
 
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 09ce30a (Actualización de registro y login, header, colores y más)
 #banner {
     display: flex;
     flex-direction: column;
@@ -607,28 +641,43 @@ button.normal {
 .carousel-container {
     display: flex;
     width: 100%;
+<<<<<<< HEAD
     height: auto;
     /* La altura del contenedor se ajustará al contenido */
     margin-bottom: 30px;
     /* Espacio inferior */
+=======
+    height: auto;   /* La altura del contenedor se ajustará al contenido */
+    margin-bottom: 30px; /* Espacio inferior */
+>>>>>>> 09ce30a (Actualización de registro y login, header, colores y más)
 }
 
 /* Carrusel: ocupa 3/4 del espacio y se le da altura fija */
 #carouselExampleAutoplaying {
     flex: 3;
+<<<<<<< HEAD
     max-width: 75%;
     /* 3/4 del ancho */
     height: 400px;
     /* Establece una altura fija para el carrusel */
     overflow: hidden;
     /* Oculta el contenido que sobresalga */
+=======
+    max-width: 75%; /* 3/4 del ancho */
+    height: 400px;  /* Establece una altura fija para el carrusel */
+    overflow: hidden; /* Oculta el contenido que sobresalga */
+>>>>>>> 09ce30a (Actualización de registro y login, header, colores y más)
 }
 
 /* Cuadro con el formulario: ocupa 1/4 del espacio */
 .image-box {
     flex: 1;
+<<<<<<< HEAD
     background-color: #f4f4f4;
     /* Fondo claro para resaltar el cuadro */
+=======
+    background-color: #f4f4f4;   /* Fondo claro para resaltar el cuadro */
+>>>>>>> 09ce30a (Actualización de registro y login, header, colores y más)
     display: flex;
     justify-content: center;
     align-items: center;
@@ -676,6 +725,7 @@ button.normal {
 
 /* Estilos para las imágenes del carrusel */
 .carousel-inner img {
+<<<<<<< HEAD
     object-fit: cover;
     /* Hace que la imagen cubra todo el espacio disponible sin distorsionarse */
     width: 100%;
@@ -686,6 +736,13 @@ button.normal {
 
 #bindex {
 =======
+=======
+    object-fit: cover;  /* Hace que la imagen cubra todo el espacio disponible sin distorsionarse */
+    width: 100%;        /* Ocupa todo el ancho */
+    height: 100%;       /* Asegura que la imagen tenga la altura correcta dentro del carrusel */
+}
+
+>>>>>>> 09ce30a (Actualización de registro y login, header, colores y más)
 #bindex{
 >>>>>>> 49b449c (Actualización estructura de la página)
     background-color: #ffffff;
@@ -1043,10 +1100,14 @@ h2 {
     border: 1px solid #00c2ff;
     border-radius: 8px;
 <<<<<<< HEAD
+<<<<<<< HEAD
     background-color: #050c2e;
 =======
     background-color: #282120;
 >>>>>>> 49b449c (Actualización estructura de la página)
+=======
+    background-color: #050c2e;
+>>>>>>> 09ce30a (Actualización de registro y login, header, colores y más)
     color: #20e5f6;
     transition: transform 0.3s ease;
 }
@@ -1251,6 +1312,7 @@ body {
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     /* Media Query para móviles */
     @media (max-width: 768px) {
         .social-media {
@@ -1261,6 +1323,15 @@ body {
 
 =======
 >>>>>>> 49b449c (Actualización estructura de la página)
+=======
+    /* Media Query para móviles */
+@media (max-width: 768px) {
+    .social-media {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+>>>>>>> 09ce30a (Actualización de registro y login, header, colores y más)
     /* Imágenes ajustadas al ancho completo del contenedor en pantallas pequeñas */
     .caja-derecha-img img,
     .caja-reverse-img img,
