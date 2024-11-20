@@ -221,6 +221,10 @@ form {
     text-align: center;
 }
 
+.p_pag{
+    color: #00c2ff;
+    text-align: justify;
+}
 /* -----Estilos para la Navbar o menú -----*/
 .navbar {
     background-color: #000a63;
@@ -643,6 +647,7 @@ button.normal {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
@@ -655,6 +660,8 @@ button.normal {
 
 
 >>>>>>> 09ce30a (Actualización de registro y login, header, colores y más)
+=======
+>>>>>>> 088dde3 (Actualización sobre nosotros)
 #banner {
     display: flex;
     flex-direction: column;
