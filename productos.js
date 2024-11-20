@@ -1,57 +1,46 @@
-// Datos de productos simulados
+// Lista de productos con sus categorías
 const products = [
-    { id: 1, name: "Acer Aspire 3", brand: "Acer", price: "$8,755 MXN", img: "https://via.placeholder.com/250x200", description: "Descripción del producto 1", specifications: "Especificaciones del producto 1" },
-    { id: 2, name: "Asus Vivobook", brand: "Asus", price: "$8,699 MXN", img: "https://via.placeholder.com/250x200", description: "Descripción del producto 2", specifications: "Especificaciones del producto 2" },
-    { id: 3, name: "Dell Inspiron 3520", brand: "DELL", price: "8,499 MXN", img: "https://via.placeholder.com/250x200", description: "Descripción del producto 3", specifications: "Especificaciones del producto 3" },
-    { id: 4, name: "HP Pavilion X360", brand: "HP", price: "$10,999 MXN", img: "https://via.placeholder.com/250x200", description: "Descripción del producto 4", specifications: "Especificaciones del producto 4" },
-    { id: 5, name: "Lenovo Idepad Slim 3 ", brand: "Lenovo", price: "$7,000 MXN", img: "https://via.placeholder.com/250x200", description: "Descripción del producto 4", specifications: "Especificaciones del producto 4" },
-    // Agregar más productos según sea necesario
+    { id: 1, name: "Laptop Acer Aspire 3", category: "Laptops", price: "$8,700 MXN", img:"product1.jpg" },
+    { id: 2, name: "Laptop ASUS VivoBook 5", category: "Laptops", price: "$8,600 MXN", image: "product2.jpg" },
+    { id: 3, name: "Laptop DELL Inspiron 15", category: "Laptops", price: "$8,499 MXN", image: "product3.jpg" },
+    { id: 4, name: "Laptop HP Pavilion x360", category: "Laptops", price: "$10,999 MXN", image: "product4.jpg" },
+    { id: 5, name: "Lenovo IdeaPad 3", category: "Laptops", price: "$7,000 MXN", image: "product5.jpg" },
+    { id: 6, name: "PC gamer", category: "Computadoras", price: "$25.00", image: "product6.jpg" },
+    { id: 7, name: "Apple Watch 3", category: "Smartwatch", price: "$15.00", image: "product7.jpg" },
+    { id: 8, name: "Mouse Logitech", category: "Mouse", price: "$10.00", image: "product8.jpg" },
+    { id: 9, name: "Teclado Gamer", category: "Teclados", price: "$120.00", image: "product9.jpg" },
+    { id: 10, name: "Smartphone Samsung", category: "Smartphones", price: "$800.00", image: "product10.jpg" },
+    // ... Más productos aquí
 ];
 
 // Función para renderizar los productos
-function renderProducts(filteredProducts) {
-    const productList = document.getElementById('product-list');
-    productList.innerHTML = ''; // Limpiar productos previos
+function renderProducts(filter = "all") {
+    const productGrid = document.getElementById("product-grid");
+    productGrid.innerHTML = "";  // Limpiar los productos actuales
+
+    const filteredProducts = filter === "all" ? products : products.filter(product => product.category === filter);
 
     filteredProducts.forEach(product => {
-        const productCard = document.createElement('div');
-        productCard.classList.add('product-card');
+        const productCard = document.createElement("article");
+        productCard.classList.add("product-card");
 
         productCard.innerHTML = `
-            <img src="${product.img}" alt="${product.name}">
-            <div class="product-info">
-                <h4>${product.name}</h4>
-                <p>${product.description}</p>
-                <div class="price">$${product.price}</div>
-                <button onclick="alert('Especificaciones: ${product.specifications}')">Ver Especificaciones</button>
-            </div>
+            <img src="${product.image}" alt="${product.name}">
+            <h2>${product.name}</h2>
+            <p>${product.price}</p>
+            <button>Agregar al carrito</button>
         `;
-        productList.appendChild(productCard);
+
+        productGrid.appendChild(productCard);
     });
 }
 
-// Filtrar productos según los filtros seleccionados
-function filterProducts() {
-    const priceFilter = document.getElementById('price-filter').value;
-    const brandFilter = document.getElementById('brand-filter').value;
-    const productFilter = document.getElementById('product-filter').value;
-
-    const filtered = products.filter(product => {
-        return (priceFilter === 'todos' || product.price === priceFilter) &&
-               (brandFilter === 'todos' || product.brand === brandFilter) &&
-               (productFilter === 'todos' || product.name.toLowerCase().includes(productFilter.toLowerCase()));
-    });
-
-    renderProducts(filtered);
-}
-
-// Inicializar filtros y productos al cargar la página
-window.onload = function() {
-    renderProducts(products);
-
-    // Agregar eventos a los filtros
-    document.getElementById('price-filter').addEventListener('change', filterProducts);
-    document.getElementById('brand-filter').addEventListener('change', filterProducts);
-    document.getElementById('product-filter').addEventListener('change', filterProducts);
+// Cargar productos al cargar la página
+window.onload = () => {
+    renderProducts();
 };
 
+// Filtrar productos cuando cambie el select
+document.getElementById("category-filter").addEventListener("change", (event) => {
+    renderProducts(event.target.value);
+});

@@ -39,9 +39,9 @@
                                 Acerca de nosotros
                             </a>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="serviciosIBL.html"> <i
+                        <li class="nav-item"><a class="nav-link" href="productos.html"> <i
                                     class="fa-solid fa-magnifying-glass"></i>
-                                Nuestros servicios</a></li>
+                                Nuestros productos </a></li>
                         <li class="nav-item"><a class="nav-link" href="Contactanos.html"> <i
                                     class="fa-regular fa-address-book"></i>
                                 Contáctanos</a></li>
@@ -78,52 +78,30 @@
         <h1>Productos</h1>
  
 
-    <!-- Filtros -->
-    <div class="filters">
-        <h3>Filtrar Productos</h3>
-        
-        <!-- Filtro por Precio -->
-        <div class="filter">
-            <label for="price-filter">Precio:</label>
-            <select id="price-filter">
-                <option value="todos">Todos</option>
-                <option value="bajo">$8,000</option>
-                <option value="medio">$11,000</option>
-                <option value="alto">$15,000</option>
-            </select>
-        </div>
-        
-        <!-- Filtro por Marca -->
-        <div class="filter">
-            <label for="brand-filter">Marca:</label>
-            <select id="brand-filter">
-                <option value="todos">Todos</option>
-                <option value="marca1">Marca 1</option>
-                <option value="marca2">Marca 2</option>
-                <option value="marca3">Marca 3</option>
-            </select>
-        </div>
-
-        <!-- Filtro por Producto -->
-        <div class="filter">
-            <label for="product-filter">Producto:</label>
-            <select id="product-filter">
-                <option value="todos">Todos</option>
-                <option value="producto1">Computadoras</option>
-                <option value="producto2">Laptops</option>
-                <option value="producto3">Cámaras web, mouse, teclados.</option>
-                <option value="producto3">Auriculares, audífonos, cables</option>
-                <option value="producto3">Altavoces o bocinas</option>
-                <option value="producto3">Smart phones</option>
-                <option value="producto3">Smart watch y VR</option>
-            </select>
-        </div>
-    </div>
-
-    <!-- Productos -->
-    <div id="product-list" class="product-list">
-        <!-- Los productos se cargarán aquí con JavaScript -->
-    </div>
+        <main>
+            <section class="filters">
+                <h3>Filtrar por Categoría</h3>
+                <select id="category-filter">
+                    <option value="all">Todas las Categorías</option>
+                    <option value="Audifonos">Audifonos</option>
+                    <option value="Auriculares">Auriculares</option>
+                    <option value="Altavoces">Altavoces</option>
+                    <option value="Bocinas">Bocinas</option>
+                    <option value="Camara Web">Cámara Web</option>
+                    <option value="Computadoras">Computadoras</option>
+                    <option value="Laptops">Laptops</option>
+                    <option value="Mouse">Mouse</option>
+                    <option value="Smartphones">Smart phones</option>
+                    <option value="Smartwatch">Smart watch y VR</option>
+                    <option value="Teclados">Teclados </option>
+                </select>
+            </section>
+    
+            <section class="product-grid" id="product-grid">
+                <!-- Los productos se agregarán aquí mediante JavaScript -->
+            </section>
+        </main>
+    
 <!--Footer-->
     <footer class="footer">
         <div class="footer-contenido">
