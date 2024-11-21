@@ -773,20 +773,52 @@ h2 {
 }
 
 
-/* -----CSS para contáctanos----- */
+/* -----CSS para contáctanos-----*/
 
-.container_contactanos {
-    .text-uppercase {
-        color: #ffffff;
-
-        .border-star {
-            color: #20e5f6;
-        }
-    }
+#contactanos{
+    color: #ffffff;
+}
+#dejanosDatos{
+    color:#20e5f6;
 }
 
-.header_contactanos {
-    background-color: #020f1f;
+#formContact {
+    background: rgba(2, 8, 45, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    text-decoration-color: #20e5f6;
+    border-color: #20e5f6;
+    margin-left: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-label{
+    color:#00c2ff
+}
+
+.form-control{
+    background-color:#ffffff;
+    position:relative;
+    align-items: center;
+    justify-content: center;
+    max-height: fit-content;
+
+}
+
+#terms{
+    margin-left: 10px;
+}
+
+.form-check-label{
+    color:#20e5f6;
+}
+
+#mapaIBL{
+    display:grid;
+    object-position: right;
 }
 
 /* -----CSS para el carrito----- */
