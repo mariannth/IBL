@@ -8,7 +8,7 @@
     box-sizing: border-box;
     /* Elimina cualquier fondo de todos los elementos globales */
 }
-
+ 
 /*----- Estilos para body ------*/
 .body {
     font-family: 'Codec Pro', sans-serif;
@@ -298,7 +298,7 @@ button.normal {
 }
 
 #heroe {
-    background-image: url(/src/img/img_Jluis/heroe1.png);
+    background-image: url("./src/img/productos/img_Jluis/heroe1.png");
     height: 90vh;
     width: 100%;
     background-size: cover;
@@ -1063,9 +1063,13 @@ body {
 }
 
 
-h1,
+h1{
+    color: #00c2ff;
+    font-weight: bold;
+}
 h2 {
     color: #00c2ff;
+
 }
 
 button {
