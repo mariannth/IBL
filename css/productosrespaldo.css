@@ -4,11 +4,15 @@
 /* Fuente predeterminada */
 body {
     font-family: 'Codec Pro', sans-serif;
+<<<<<<< HEAD
 <<<<<<<< HEAD:productosrespaldo.css
     background-color: #ffffff;
 ========
     background-color: #020f1f;
 >>>>>>>> 219523a (Actualicé elcódigo):productos.css
+=======
+    background-color: #ffffff;
+>>>>>>> c0b4c69b44c2cd95195c07ebcfb1be89aa6303ca
     color: #20e5f6;
 }
 * {
@@ -70,6 +74,7 @@ body {
 }
 
 .card {
+<<<<<<< HEAD
 <<<<<<<< HEAD:productosrespaldo.css
     background-color: #ffffff;
     color: #020f1f;
@@ -77,6 +82,10 @@ body {
     background-color: #282120;
     color: #ffffff;
 >>>>>>>> 219523a (Actualicé elcódigo):productos.css
+=======
+    background-color: #ffffff;
+    color: #020f1f;
+>>>>>>> c0b4c69b44c2cd95195c07ebcfb1be89aa6303ca
     border: none;
 }
 
@@ -87,7 +96,10 @@ h1 {
     padding: 20px;
 }
 
+<<<<<<< HEAD
 <<<<<<<< HEAD:productosrespaldo.css
+=======
+>>>>>>> c0b4c69b44c2cd95195c07ebcfb1be89aa6303ca
 /*Productos*/
 /* Estilo para la sección de filtros */
 .filters {
@@ -107,6 +119,7 @@ h1 {
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+<<<<<<< HEAD
 ========
 .filters {
     display: flex;
@@ -141,12 +154,19 @@ h1 {
 }
 
 <<<<<<<< HEAD:productosrespaldo.css
+=======
+    gap: 20px;
+    padding: 20px;
+}
+
+>>>>>>> c0b4c69b44c2cd95195c07ebcfb1be89aa6303ca
 /* Diseño de la tarjeta de producto */
 .product-card {
     background-color: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+<<<<<<< HEAD
 ========
 .product-card {
     width: 250px;
@@ -155,11 +175,16 @@ h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 >>>>>>>> 219523a (Actualicé elcódigo):productos.css
+=======
+>>>>>>> c0b4c69b44c2cd95195c07ebcfb1be89aa6303ca
     text-align: center;
     transition: transform 0.3s ease;
 }
 
+<<<<<<< HEAD
 <<<<<<<< HEAD:productosrespaldo.css
+=======
+>>>>>>> c0b4c69b44c2cd95195c07ebcfb1be89aa6303ca
 .product-card img {
     width: 100%;
     height: auto;
@@ -200,6 +225,7 @@ h1 {
 footer {
     background-color: #000a63;
 }
+<<<<<<< HEAD
 ========
 .product-card:hover {
     transform: scale(1.05);
@@ -247,6 +273,8 @@ footer {
     background-color: #000a63;
 }
 >>>>>>>> 219523a (Actualicé elcódigo):productos.css
+=======
+>>>>>>> c0b4c69b44c2cd95195c07ebcfb1be89aa6303ca
 /*Footer RS*/
 .social-icon {
     display: inline-flexbox;

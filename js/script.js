@@ -69,6 +69,9 @@ document.getElementById('hamburger').addEventListener('click', function() {
 });
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c0b4c69b44c2cd95195c07ebcfb1be89aa6303ca
 // productos 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -98,6 +101,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 // productos
@@ -135,3 +139,5 @@ document.addEventListener('DOMContentLoaded', function() {
 >>>>>>> 32826cf (Agrego la página de servicios ya actualizada y estilizada)
 =======
 >>>>>>> 86ebe9c (usando la plantilla para el header)
+=======
+>>>>>>> c0b4c69b44c2cd95195c07ebcfb1be89aa6303ca
