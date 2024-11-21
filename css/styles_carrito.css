@@ -1,0 +1,126 @@
+/* Importar fuente Codec Pro */
+@import url('https://fonts.googleapis.com/css2?family=Codec+Pro:wght@400;600&display=swap');
+
+body {
+    font-family: 'Codec Pro', sans-serif;
+    background-color: #282120;
+    color: #20e5f6;
+    margin: 0;
+}
+
+/* Estilo para el título */
+h1 {
+    color: #00c2ff;
+    font-family: 'Codec Pro', sans-serif;
+    font-weight: bold;
+}
+
+/* Subtítulos y párrafos */
+p, li, a {
+    color: #20e5f6;
+    font-family: 'Codec Pro', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #282120;
+    font-family: 'Codec Pro', sans-serif;
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+    color: #20e5f6;
+}
+
+.navbar .nav-link:hover,
+.navbar .navbar-brand:hover {
+    color: #00c2ff;
+}
+
+/* Tabla */
+.table {
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    color: #20e5f6;
+}
+
+.table th, .table td {
+    vertical-align: middle;
+    color: #20e5f6;
+}
+
+.thead-dark th {
+    background-color: #000a63;
+    color: #20e5f6;
+}
+
+/* Botones */
+.btn {
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #00c2ff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #000a63;
+}
+
+.btn-danger {
+    background-color: #ff3b3b;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Tarjetas de productos */
+.card {
+    border: 1px solid #00c2ff;
+    border-radius: 8px;
+    background-color: #282120;
+    color: #20e5f6;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card-title {
+    color: #00c2ff;
+    font-family: 'Codec Pro', sans-serif;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #20e5f6;
+    font-family: 'Codec Pro', sans-serif;
+}
+
+/* Footer */
+#template-footer th {
+    background-color: #282120;
+    text-align: left;
+    color: #20e5f6;
+}
+
+#vaciar-carrito {
+    font-size: 14px;
+    background-color: #ff3b3b;
+    border: none;
+    color: #282120;
+}
+
+#vaciar-carrito:hover {
+    background-color: #c82333;
+}
