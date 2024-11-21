@@ -1,5 +1,5 @@
 document.getElementById("formularioProducto").addEventListener("submit", function(event) {
-    event.preventDefault(); // Evita el envío inmediato del formulario
+    event.preventDefault(); // Con esto el formulario no se envia deinmediato
 
     const nombre = document.getElementById("nombre").value.trim();
     const descripcion = document.getElementById("descripcion").value.trim();
@@ -10,68 +10,68 @@ document.getElementById("formularioProducto").addEventListener("submit", functio
     const codigo = document.getElementById("codigo").value.trim();
     const imagen= document.getElementById("imagen").value.trim();
 
-    // Verificar si el campo "categoría" está vacío
+    // Sirsve para verificar si el campo "categoría" está vacío
     if (!categoria) {
         alert("Por favor, selecciona una categoria.");
-        return; // Detiene el envío si falta la selección de la categoría
+        return; //Se detiene si falta la selección de la categoría
     }
 
-    // Verificar si el campo "nombre" está vacío
+    // Aqui sirve para verificar si el campo "nombre" está vacío
     if (!nombre) {
         alert("Por favor, ingresa el nombre del producto.");
-        return; // Detiene el envío si falta el nombre
+        return; // Se detiene el envío si falta el nombre
     }
 
-    // Verificar si el campo "descripcion" está vacío
+    // Para verificar si el campo "descripcion" está vacío
     if (!descripcion) {
         alert("Por favor, ingresa una descripción.");
-        return; // Detiene el envío si falta la descripcion
+        return; // Se detiene el envío si falta la descripcion
     }
 
-    // Verificar si el campo "marca" está vacío
+    // Para verificar si el campo "marca" está vacío
     if (!marca) {
         alert("Por favor, ingresa una marca.");
-        return; // Detiene el envío si falta la marca
+        return; // Se detiene el envío si falta la marca
     }
     
-    // Verificar si el campo "codigo" está vacío
+    // Para verificar si el campo "codigo" está vacío
     if (!codigo) {
         alert("Por favor, ingresa el código del producto.");
-        return; // Detiene el envío si falta el codigo
+        return; // Se detiene el envío si falta el codigo
     }
     
-    // Verificar si el campo "codigo" tiene solo números
+    // Para verificar si el campo "codigo" tiene solo números
     if (isNaN(codigo)) {
     alert("Por favor, ingresa solo números en el campo de código.");
-    return; // Detiene el envío si hay letras u otros caracteres
+    return; // Se detiene el envío si hay letras u otros caracteres
     }
 
 
-    // Verificar si el campo "precio" está vacío
+    // Para vrificar si el campo "precio" está vacío
     if (!precio) {
         alert("Por favor, ingresa un precio.");
         return; // Detiene el envío si falta el precio
     }
     if (isNaN(precio)) {
         alert("Por favor, ingresa solo números en el campo de precio.");
-        return; // Detiene el envío si hay letras u otros caracteres
+        return; // Se detiene el envío si hay letras u otros caracteres
     }
 
     
-    // Verificar si el campo "cantidad" está vacío
+    // Para verificar si el campo "cantidad" está vacío
     if (!cantidad) {
         alert("Por favor, ingresa una cantidad.");
-        return; // Detiene el envío si falta la cantidad
+        return; // Se detiene el envío si falta la cantidad
     }
     if (isNaN(cantidad)) {
         alert("Por favor, ingresa solo números en el campo de cantidad.");
-        return; // Detiene el envío si hay letras u otros caracteres
+        return; // Se detiene el envío si hay letras u otros caracteres
     }
 
-    // Verificar si el campo "imagen" está vacío
+    // Para verificar si el campo "imagen" está vacío
     if (!imagen) {
         alert("Por favor, ingresa una imagen.");
-        return; // Detiene el envío si falta una imagen
+        return; // Se detiene el envío si falta una imagen
     }
     
      // En caso que todos los datos sean llenados correctamente
@@ -79,8 +79,38 @@ document.getElementById("formularioProducto").addEventListener("submit", functio
 
 
 
-    // Recargar la página después de un pequeño retraso
+    // Sirve para recargar la página después de un pequeño retraso
     setTimeout(() => {
         location.reload();
-    }, 500); // Recarga la página después de 500 ms (medio segundo)
+    }, 500); // Aqui se recarga la página después de 500 ms (medio segundo)
     });
+
+
+
+    // Creacion  del objeto FormData
+    const formData = new FormData();
+    formData.append("nombre", nombre);
+    formData.append("descripcion", descripcion);
+    formData.append("marca", marca);
+    formData.append("categoria", categoria);
+    formData.append("precio", precio);
+    formData.append("cantidad", cantidad);
+    formData.append("imagen", imagen); // Añadir el archivo de imagen
+
+    // Sirve para enviar datos al servidor usando fetch y enviarla al servidro  local
+    fetch("http://localhost:3000/registro-producto", {
+        method: "POST",
+        body: formData, // Se envia el FormData
+    })
+        .then((response) => response.json())
+        .then((data) => {
+            console.log("Producto registrado:", data);
+            alert("¡Producto registrado con éxito!");
+            // Todavia no se si ponerlo aqui: para la página después del registro exitoso
+            setTimeout(() => location.reload(), 500);
+        })
+        .catch((error) => {
+            console.error("Error:", error);
+            alert("Hubo un error al registrar el producto.");
+        });
+});

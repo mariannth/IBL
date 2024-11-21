@@ -87,7 +87,7 @@
 
 
 
-    <!-- INICIO FORMULARIO -->
+    <!-- INICIO DEL FORMULARIO -->
     <!-- Selección de categoria -->
      <div class="mb-3">
         <label for="seleccion-categoria" class="form-label">Selecciona a que categoria pertenece el producto</label>
@@ -101,51 +101,54 @@
     </div>
 
         
-    <form id="formularioProducto">
+    <form id="formularioProducto" method="POST" action="http://localhost:3000/registro-producto" enctype="multipart/form-data">
+    <!--method define el metodo http que enviara los datos al servidor post es mas seguro, 
+    action especifica a que direccion del servidor se enviaran los datos, 
+    enctype espefica como se debe codificar los datos del formulario antes de enviarse en este caso multipart es para archivos (imagen)-->    
     <!-- Nombre del producto -->
         <div class="mb-3">
             <label for="nombre" class="form-label">Nombre del producto</label>
             <input type="text" id="nombre" name="nombre_usuario" class="form-control">
         </div>
             
-    <!-- Descripción -->
+    <!-- Input Descripción -->
         <div class="mb-3">
             <label for="descripcion" class="form-label">Descripción</label>
             <input type="text" id="descripcion" name="descripcion_producto" class="form-control">
         </div>
 
-    <!-- Marca -->
+    <!-- Input Marca -->
         <div class="mb-3">
             <label for="marca" class="form-label">Marca</label>
             <input type="text" id="marca" name="marca_producto" class="form-control">
         </div>
 
-    <!-- Código SKU -->
+    <!-- Input Código SKU -->
         <div class="mb-3">
             <label for="codigo" class="form-label">Código SKU</label>
             <input type="text" id="codigo" name="codigo_producto" class="form-control">
         </div>
 
             
-    <!-- Precio -->
+    <!-- Input Precio -->
         <div class="mb-3">
             <label for="precio" class="form-label">Precio</label>
             <input type="text" id="precio" name="precio_producto" class="form-control">
         </div>
 
-    <!-- Stock -->
+    <!-- Input Stock -->
         <div class="mb-3">
             <label for="cantidad" class="form-label">Cantidad Disponible</label>
             <input type="text" id="cantidad" name="cantidad_producto" class="form-control">
         </div>
 
-    <!-- Imagen del producto -->
+    <!--Input Imagen del producto -->
         <div class="mb-3">
             <label for="imagen" class="form-label">Imagen del producto</label>
-            <input type="image" id="imagen" name="imagen_producto" class="form-control">
+            <input type="file" id="imagen" name="imagen_producto" class="form-control" accept="image/*" required>
         </div>
 
-    <!-- Botones -->
+    <!-- Input Botones -->
         <div class="d-flex justify-content-between">
             <button type="submit" class="btn btn-primary">Enviar</button>
             <button type="reset" class="btn btn-secondary">Regresar</button>
