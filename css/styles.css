@@ -520,6 +520,7 @@ button.normal {
 
 #heroe {
     background-image: url("./src/img/productos/img_Jluis/heroe1.png");
+<<<<<<< HEAD
 =======
 =======
 
@@ -527,6 +528,8 @@ button.normal {
 #heroe {
     background-image: url(/src/img/img_Jluis/heroe1.png);
 >>>>>>> 09ce30a (Actualización de registro y login, header, colores y más)
+=======
+>>>>>>> 33e080f (Actualización de archivos)
     height: 90vh;
     width: 100%;
     background-size: cover;
@@ -1561,10 +1564,14 @@ body {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 33e080f (Actualización de archivos)
 h1{
     color: #00c2ff;
     font-weight: bold;
 }
+<<<<<<< HEAD
 =======
 h1,
 >>>>>>> 57e26a1 (Actualización de Acerca de nosotros)
@@ -1575,6 +1582,11 @@ h2 {
 h2 {
     color: #00c2ff;
 >>>>>>> 49b449c (Actualización estructura de la página)
+=======
+h2 {
+    color: #00c2ff;
+
+>>>>>>> 33e080f (Actualización de archivos)
 }
 
 button {
