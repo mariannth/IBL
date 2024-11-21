@@ -1,4 +1,4 @@
-document.getElementById("formulario-cotizacion").addEventListener("submit", function(event) {
+document.getElementById("formularioProducto").addEventListener("submit", function(event) {
     event.preventDefault(); // Evita el envío inmediato del formulario
 
     const nombre = document.getElementById("nombre").value.trim();
