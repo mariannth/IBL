@@ -18,7 +18,7 @@ for (let i = 0; i < 100; i++) {
 
 document.getElementById("enviarMensaje").addEventListener("click", function(){
     
-    const fullname = document.querySelector("#fullname input").value.trim();
+    const fullname = document.querySelector("#fullname input")//.value.trim();
     const email = document.querySelector("#email input").value.trim();
     const phone = document.querySelector("#phone input").value.trim();
     const mensaje = document.querySelector("#message textarea").value.trim();
@@ -43,5 +43,5 @@ document.getElementById("enviarMensaje").addEventListener("click", function(){
        }
     });
  
-  
+  console.log(fullname)
    
