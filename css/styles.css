@@ -768,11 +768,24 @@ h2 {
 
 #contactanos{
     color: #ffffff;
+    text-align: left;
+    margin-left: 200px;
+    margin-top: 10px;
+
 }
 #dejanosDatos{
     color:#20e5f6;
+    text-align: left;
+    margin-left: 200px;
+    padding-top: 10px;
 }
 
+.card {
+    justify-content: left;
+    max-width: 650px;
+    margin: auto;
+    margin-left: 200px;
+}
 #formContact {
     background: rgba(2, 8, 45, 0.8);
     padding: 20px;
@@ -790,21 +803,22 @@ h2 {
     color:#00c2ff
 }
 
+
 .form-control{
     background-color:#ffffff;
     position:relative;
     align-items: center;
     justify-content: center;
     max-height: fit-content;
-
 }
 
 #terms{
-    margin-left: 10px;
+    margin-left: 0%;
 }
 
 .form-check-label{
     color:#20e5f6;
+    padding-right: 200px;
 }
 
 #mapaIBL{

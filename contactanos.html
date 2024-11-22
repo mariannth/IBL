@@ -23,12 +23,12 @@
   <main class="flex-grow-1">
     <div class="background-animation"></div>
     <div class="content">
-      <h2>¡Contáctanos, somos tu mejor opción!</h2>
-      <div class="card-body" justify-content-center>
-        <p class="p_contactanos">Déjanos tus datos, nosotros te contactaremos</p>
+      <h2 id="contactanos">¡Contáctanos, somos tu mejor opción!</h2>
+      <div class="card-body" style="justify-content: center;">
+        <p  class="p_contactanos" id="dejanosDatos">| Déjanos tus datos, nosotros te contactaremos</p>
       </div>
       <br>
-      <div class="card">
+      <div class="card contact">
         <div class="card-body">
           <div id="contact_form" class="col-md-12">
             <div class="row">
@@ -87,12 +87,12 @@
             <div class="row mb-4">
               <div class="col-12 mb-2 form-check">
                 <input type="checkbox" class="form-check-input" name="terms" id="terms">
-                <label class="form-check-label" for="terms">Al marcar esta casilla, acepta nuestros términos y condiciones de privacidad </label>
+                <label class="form-check-label" for="terms">Aceptar términos y condiciones de privacidad </label>
               </div>
             </div>
             <div class="row">
               <div class="col-20 mb-3">
-                <button type="click" class="btn btn-primary p-3 w-50 fw-bold fs-6">Enviar</button>
+                <button type="click" class="btn btn-primary p-3 w-50 fw-bold fs-10" id="enviarMensaje">Enviar</button>
               </div>
             </div>
           </div>
@@ -119,6 +119,7 @@
     loadComponent("footer", "./components/footer.html");
   </script>
   <script src="./js/script.js"></script>
+  <script src="./js/contactanos.js"></script>
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

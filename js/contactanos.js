@@ -16,9 +16,9 @@ for (let i = 0; i < 100; i++) {
   background.appendChild(star);
 }
 
-document.getElementById("botonEnviar").addEventListener("click", function(){
+document.getElementById("enviarMensaje").addEventListener("click", function(){
     
-    const fullnamee = document.querySelector("#fullnamee input").value.trim();
+    const fullname = document.querySelector("#fullname input").value.trim();
     const email = document.querySelector("#email input").value.trim();
     const phone = document.querySelector("#phone input").value.trim();
     const mensaje = document.querySelector("#message textarea").value.trim();
@@ -42,5 +42,6 @@ document.getElementById("botonEnviar").addEventListener("click", function(){
         alert("Gracias por contactarte con IBL, " + fullname + " uno de nuestros asesores te atenderá a la brevedad. ¡También puedes encontrarnos en nuestras redes sociales!");
        }
     });
-
+ 
+  
    
