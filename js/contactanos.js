@@ -56,7 +56,8 @@ document.getElementById("enviarMensaje").addEventListener("click", function () {
 /*EMAIL*/
 // Inicializa EmailJS con tu User ID
 (function () {
-  emailjs.init("service_w2oa8sv"); // Sustituye "YOUR_USER_ID" con tu userID de EmailJS
+  emailjs.init("oKasd2SLlI5zI9Ks_"); // Sustituye "TU_PUBLIC_KEY" con la clave pública correcta
+
 })();
 
 // Función para validar y enviar los datos del formulario
