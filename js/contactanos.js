@@ -104,7 +104,7 @@ document
         mensaje: mensaje,
       };
       // Enviar el correo utilizando EmailJS
-      emailjs.send("service_w2oa8sv", "template_8ty1i5a", datosFormulario).then(
+      emailjs.send("service_w2oa8sv", "template_iiymiwh", datosFormulario).then(
         function (response) {
           alert(
             "¡Gracias por contactarnos! Tu mensaje ha sido enviado correctamente."

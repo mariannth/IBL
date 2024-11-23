@@ -987,9 +987,9 @@ h2 {
     background-color: #050c2e;
     color: #20e5f6;
     transition: transform 0.3s ease;
-    justify-content: left;
+    justify-content: center;
     max-width: 650px;
-    margin: auto;
+    margin: 20px auto;
     margin-left: 20px;
     padding: 20px;
 }
