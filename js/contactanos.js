@@ -16,15 +16,17 @@ for (let i = 0; i < 100; i++) {
   background.appendChild(star);
 }
 
-document.getElementById("enviarMensaje").addEventListener("click", function(){
+//Evento del envio de contactanos
+
+document.getElementById("enviarMensaje").addEventListener.handleEvent("click", function(){
     
-    const fullname = document.querySelector("#fullname input")//.value.trim();
-    const email = document.querySelector("#email input").value.trim();
+    const nombre = document.querySelector("#nombre input").value.trim();
+    const email = document.querySelector("#email-contactanos input").value.trim();
     const phone = document.querySelector("#phone input").value.trim();
-    const mensaje = document.querySelector("#message textarea").value.trim();
+    const mensaje = document.querySelector("#mensajito textarea").value.trim();
     const privacidad = document.querySelector("#terms input").value.trim();
 
-    if (fullname === "") {
+    if (nombre === "") {
         alert ("Por favor ingresa tu nombre, este campo no puede quedar vacío");
        } else if (phone === ""){
         alert ("Por favor ingresa tu teléfono, este campo no puede quedar vacío");
@@ -39,9 +41,9 @@ document.getElementById("enviarMensaje").addEventListener("click", function(){
        } else if (privacidad === ""){
         alert ("Acepta nuestros términos de privacidad antes de enviar :) ");
        } else{
-        alert("Gracias por contactarte con IBL, " + fullname + " uno de nuestros asesores te atenderá a la brevedad. ¡También puedes encontrarnos en nuestras redes sociales!");
+        alert("Gracias por contactarte con IBL, " + nombre + " uno de nuestros asesores te atenderá a la brevedad. ¡También puedes encontrarnos en nuestras redes sociales!");
        }
     });
  
-  console.log(fullname)
+  console.log(nombre)
    

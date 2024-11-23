@@ -767,7 +767,7 @@ h2 {
 /* -----CSS para contáctanos-----*/
 
 #contactanos{
-    color: #ffffff;
+    color:#ffffff; /*#e556efeb*/
     text-align: left;
     margin-left: 200px;
     margin-top: 10px;
@@ -800,7 +800,7 @@ h2 {
 }
 
 .form-label{
-    color:#00c2ff
+    color:#ffffff;
 }
 
 
@@ -813,12 +813,12 @@ h2 {
 }
 
 #terms{
-    margin-left: 0%;
+    margin-left: 3px;
 }
 
 .form-check-label{
     color:#20e5f6;
-    padding-right: 200px;
+    padding-right: 190px;
 }
 
 #mapaIBL{
