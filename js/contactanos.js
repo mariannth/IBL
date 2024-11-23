@@ -18,7 +18,7 @@ for (let i = 0; i < 100; i++) {
 
 //Evento del envio de contactanos
 
-document.getElementById("enviarMensaje").addEventListener.handleEvent("click", function(){
+document.getElementById("enviarMensaje").addEventListener("click", function(){
     
     const nombre = document.querySelector("#nombre input").value.trim();
     const email = document.querySelector("#email-contactanos input").value.trim();
