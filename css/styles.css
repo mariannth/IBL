@@ -10,31 +10,48 @@
 }
  
 /*----- Estilos para body ------*/
-.body {
-    font-family: 'Codec Pro', sans-serif;
+/* Estilo para el cuerpo con un gradiente animado */
+body {
     margin: 0;
-    width: 100%;
+    height: 100vh;
     padding: 0;
-    color: #ffffff;
-    min-height: 100vh;
-    /* Asegura que el body siempre ocupe al menos el 100% del viewport */
-    display: flex;
-    flex-direction: column;
-    /* Alinea contenido en columnas (contenido + footer) */
-    background: linear-gradient(45deg, #020f1f, #000a63, #00c2ff);
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, 
+        #020f1f, 
+        #112444, 
+        #0e4761, 
+        #0a2673, 
+        #1b3c56, 
+        #1d5a88e6, 
+        #7b99b5, 
+        #00c2ff, 
+        #20e5f6, 
+        #50c878, 
+        #ffffff);
     background-size: 400% 400%;
-    animation: fondoMovimiento 10s ease infinite;
-    overflow: hidden;
-    /* Evita que el fondo se extienda fuera del body */
+    animation: gradientMove 15s ease infinite;
 }
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+  
 
 /* Ajustes globales */
 html,
 body {
     margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
+    
     /*overflow: default; /*Evita que el fondo se salga del viewport */
 }
 

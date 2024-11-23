@@ -11,12 +11,12 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- iconos -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"
-    integrity="sha512-K6I4HO1D+E1SVzzBc7C8uV35HlXk5sZfztSzX3LTGtF2/B0IUy5yKZ9zT/8GrdyxEs5XHP1yI9fRQafZfiFZw=="
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!-- CSS Personalizado -->
   <link rel="stylesheet" href="./css/styles.css">
-</head> 
+</head>
 
 <body class="bg-light d-flex flex-column min-vh-100">
   <div id="header"></div>
@@ -67,14 +67,13 @@
             </div>
             <br>
             <div class="row">
-              <div class="col-12 col-sm-12 mb-3">
-                <label for="service" class="form-label">*Elige la opción que más se acerque a tú inquietud</label>
-                <select class="form-select" id="service" name="service">
-                  <option value="Dudas con tu pedido">Dudas con tu pedido</option>
-                  <option value="Pedido Especial/Mayoreo">Pedido Especial/Mayoreo</option>
-                  <option value="Sugerencias">Sugerencias</option>
-                  <option value="Quejas">Quejas</option>
-              </div>
+              <select class="form-select" id="service" name="service">
+                <option value="Dudas con tu pedido">Dudas con tu pedido</option>
+                <option value="Pedido Especial/Mayoreo">Pedido Especial/Mayoreo</option>
+                <option value="Sugerencias">Sugerencias</option>
+                <option value="Quejas">Quejas</option>
+              </select>
+
             </div>
 
             <div class="row">
@@ -92,7 +91,8 @@
             </div>
             <div class="row">
               <div class="col-20 mb-3">
-                <button type="click" class="btn btn-primary p-3 w-50 fw-bold fs-6">Enviar</button>
+                <button type="submit" class="btn btn-primary p-3 w-50 fw-bold fs-6" id="submitButton">Enviar</button>
+
               </div>
             </div>
           </div>
