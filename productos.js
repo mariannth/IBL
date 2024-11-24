@@ -3,7 +3,7 @@ const products = [
     { id: 1, name: "Laptop Acer Aspire 3", category: "Laptops", price: "$8,700 MXN", img:"Laptops/ACER2.jpg" },
     { id: 2, name: "Laptop ASUS VivoBook 5", category: "Laptops", price: "$8,600 MXN", img: "Laptops/ASUS3.jpg" },
     { id: 3, name: "Laptop DELL Inspiron 15", category: "Laptops", price: "$8,499 MXN", img: "Laptops/DELL2.jpg" },
-    { id: 4, name: "Laptop HP Pavilion x360", category: "Laptops", price: "$10,999 MXN", img: "Laptops/hp3.jpg" },
+    { id: 4, name: "Laptop HP Pavilion x360", category: "Laptops", price: "$10,999 MXN", img: "Laptops/HP3.jpg" },
     { id: 5, name: "Lenovo IdeaPad 3", category: "Laptops", price: "$7,000 MXN", img: "Laptops/LENOVO2.jpg" },
     { id: 6, name: "Infinix Note 40 pro Dual Sim", category: "Smartphones", price: "$4,500 MXN", img: "product6.jpg" },
     { id: 7, name: "OPPO Reno 11 5G Dual SIM", category: "Smartphones", price: "$7,000 MXN", img: "product7.jpg" },
@@ -71,6 +71,8 @@ function renderProducts(filter = "all") {
             <h2>${product.name}</h2>
             <p>${product.price}</p>
             <button>Agregar al carrito</button>
+            <button onclick = "editProduct(${product.id})">Editar</button>
+             <button onclick = "deleteProduct(${product.id})">Borrar</button>
         `;
 
         productGrid.appendChild(productCard);
@@ -86,3 +88,37 @@ window.onload = () => {
 document.getElementById("category-filter").addEventListener("change", (event) => {
     renderProducts(event.target.value);
 });
+
+
+//Modificar productos
+function updateProduct (id, newName, newPrice, newCategory, newImg){
+    const product =products.find (p => p.id === id); //Busca el producto por id
+    if (product){
+        product.name = newName || product.name; //Si cambia el nombre se actualiza 
+        product.price = newPrice || product.price; // Si cambia el precio debe actualizar
+        product.category = newCategory || product.category; // Actualiza la categoría 
+        product.img = newImg || product.img; // Por si cambia la imagen
+
+    }
+
+    renderProducts(); //renderiza de nuevo los productos
+}
+//Eliminar un producto
+
+function deleteProduct(id){
+    const productIndex = products.filter (p => p.id !== undefined).findIndex(p => p.id === id); //busca el índice del producto
+    if (productIndex !== -1){
+        products.splice(productIndex, 1); //elimina el producto del arreglo 
+    } else{
+        console.error("Producto no encontrado con id", id); //verificar que el id esté en el arreglo
+    }
+
+    renderProducts(); // renderiza otra vez los productos
+}
+
+//Eliminar todos los productos
+
+function clearAllProducts(){
+    products.length = 0; // vacía el arreglo
+    renderProducts(); //renderiza otra vez 
+}
