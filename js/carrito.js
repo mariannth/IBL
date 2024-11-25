@@ -46,7 +46,7 @@ const renderCart = () => {
 // Función para calcular el total del carrito
 const calculaTotal = () => {
     const total = cart.reduce((accum, item) => accum + item.price * item.quantity, 0);  // Suma el total de todos los productos
-    totalDisplay.textContent = `Total: $${total.toFixed(2)}`;  // Muestra el total en el HTML
+    totalDisplay.textContent = `Total: ${total.toFixed(2)}`;  // Muestra el total en el HTML
 };
 
 // Función para vaciar el carrito
