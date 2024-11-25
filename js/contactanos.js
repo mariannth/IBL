@@ -1,10 +1,10 @@
 // Selecciona el contenedor del fondo
-const background = document.querySelector('.background-animation');
+const background = document.querySelector(".background-animation");
 
 // Genera múltiples estrellas
 for (let i = 0; i < 100; i++) {
-  const star = document.createElement('div');
-  star.classList.add('star');
+  const star = document.createElement("div");
+  star.classList.add("star");
 
   // Asigna una posición aleatoria
   star.style.top = `${Math.random() * 100}vh`;
@@ -16,17 +16,15 @@ for (let i = 0; i < 100; i++) {
   background.appendChild(star);
 }
 
-//Evento del envio de contactanos
-
-document.getElementById("enviarMensaje").addEventListener("click", function(){
+document.getElementById("botonEnviar").addEventListener("click", function(){
     
-    const nombre = document.querySelector("#nombre input").value.trim();
-    const email = document.querySelector("#email-contactanos input").value.trim();
+    const fullnamee = document.querySelector("#fullnamee input").value.trim();
+    const email = document.querySelector("#email input").value.trim();
     const phone = document.querySelector("#phone input").value.trim();
-    const mensaje = document.querySelector("#mensajito textarea").value.trim();
+    const mensaje = document.querySelector("#message textarea").value.trim();
     const privacidad = document.querySelector("#terms input").value.trim();
 
-    if (nombre === "") {
+    if (fullname === "") {
         alert ("Por favor ingresa tu nombre, este campo no puede quedar vacío");
        } else if (phone === ""){
         alert ("Por favor ingresa tu teléfono, este campo no puede quedar vacío");
@@ -41,9 +39,8 @@ document.getElementById("enviarMensaje").addEventListener("click", function(){
        } else if (privacidad === ""){
         alert ("Acepta nuestros términos de privacidad antes de enviar :) ");
        } else{
-        alert("Gracias por contactarte con IBL, " + nombre + " uno de nuestros asesores te atenderá a la brevedad. ¡También puedes encontrarnos en nuestras redes sociales!");
+        alert("Gracias por contactarte con IBL, " + fullname + " uno de nuestros asesores te atenderá a la brevedad. ¡También puedes encontrarnos en nuestras redes sociales!");
        }
     });
- 
-  console.log(nombre)
+
    
