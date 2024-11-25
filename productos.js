@@ -27,7 +27,7 @@ const products = [
     { id: 26, name: "Lenovo sff m710S i5-7500 ThinkCentre ", category: "Computadoras", price: "$5,799 MXN", img: "product26.jpg" },
     { id: 27, name: "PC Lenovo sff m79 AMD A8 4GB y 500GB HDD Con Monitor de 19p ThinkCentre Clase A", category: "Computadoras", price: "$6,899 MXN", img: "product27.jpg" },
     { id: 28, name: "Lenovo WORKSTATION P520 XEON 1TB SSD +3TB HDD 16GB RAM thinkstation P520", category: "Computadoras", price: "$11,399 MXN", img: "product28.jpg" },
-    { id: 29, name: "Lenovo Tiny Lenovo M720Q i3-9 8 GB en RAM y 240 GB SSD con LCD de 19 pulgadas ThinkCentre", category: "Computadoras", price: "$$7,499 MXN", img: "product29.jpg" },
+    { id: 29, name: "Lenovo Tiny Lenovo M720Q i3-9 8 GB en RAM y 240 GB SSD con LCD de 19 pulgadas ThinkCentre", category: "Computadoras", price: "$7,499 MXN", img: "product29.jpg" },
     { id: 30, name: "All In One HP Intel Celeron-N100", category: "Computadoras", price: "$6,899 MXN", img: "product30.jpg" },
     { id: 31, name: "HP 800 G2 SFF-Core i5-6ta gen-8GB RAM, 500 GB HDD", category: "Computadoras", price: "$5,999 MXN", img: "product31.jpg" },
     { id: 32, name: "HP i5 USFF 4 GB RAM 250 GB HD Windows 10", category: "Computadoras", price: "$4,299 MXN", img: "product32.jpg" },
@@ -70,8 +70,8 @@ function renderProducts(filter = "all") {
             <img src="${product.img}" alt="${product.name}">
             <h2>${product.name}</h2>
             <p>${product.price}</p>
-            <button>Agregar al carrito</button>
-            <button onclick = "editProduct(${product.id})">Editar</button>
+            <button onclick = "redirectToCart()"> Agregar al carrito</button>
+            <button onclick = "editProductAndRedirect(${product.id})">Editar</button>
              <button onclick = "deleteProduct(${product.id})">Borrar</button>
         `;
 
@@ -103,6 +103,9 @@ function updateProduct (id, newName, newPrice, newCategory, newImg){
 
     renderProducts(); //renderiza de nuevo los productos
 }
+function editProductAndRedirect(productId) {
+    window.location.href = `registroProducto.html?id=${productId}`;
+  }
 //Eliminar un producto
 
 function deleteProduct(id){
@@ -122,3 +125,8 @@ function clearAllProducts(){
     products.length = 0; // vacía el arreglo
     renderProducts(); //renderiza otra vez 
 }
+
+// Agregar al carrito
+function redirectToCart() {
+    window.location.href = 'carrito_compras.html';
+  }
