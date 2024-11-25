@@ -6,33 +6,74 @@ body {
 
 h1 {
     font-weight: bold;
+    
 }
 
 h2 {
     color: #b1fffc;
 }    
-
-
 .form-label {
     font-weight: bold;
-    color: #fff9e1;
+    color: #fff9e1; /* Color claro para las etiquetas */
 }
 
+/* Contenedor del formulario */
+.formulario-Producto {
+    background-color: #1f2a37; /* Fondo oscuro que combina con el cuerpo */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para darle profundidad */
+}
+
+/* Inputs y Select */
 .form-control {
-    border: 1px solid #ced4da;
+    border: 1px solid #4e5b6e; /* Borde gris oscuro, adecuado para el tema oscuro */
     border-radius: 5px;
-    padding: 10px;}
+    padding: 10px;
+    background-color: #2d3e50; /* Fondo oscuro para los campos */
+    color: #fff; /* Texto blanco para los inputs */
+    font-size: 1rem; /* Asegurarse de que el texto sea legible */
+    width: 100%; /* Asegura que los inputs ocupen todo el ancho disponible */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño */
+}
+.form-select {
+    border: 1px solid #4e5b6e; /* Borde gris oscuro, adecuado para el tema oscuro */
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #2d3e50; /* Fondo oscuro para los campos */
+    color: #fff; /* Texto blanco para los inputs */
+    font-size: 1rem; /* Asegurarse de que el texto sea legible */
+    width: 100%; /* Asegura que los inputs ocupen todo el ancho disponible */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño */
+}
 
-    
-
-
-  
+/* Ajustar el tamaño de los inputs tipo file (imagen) */
+.form-control[type="file"] {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #4e5b6e;
+    border-radius: 5px;
+    background-color: #2d3e50;
+    width: 100%;
+    box-sizing: border-box;
+}
     .container {
-        background: rgb(0, 0, 0);
+        background: black;
         padding: 30px;
         border-radius: 12px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
+
+
+
+
+
+
+
+
+
+
+
 
 
 

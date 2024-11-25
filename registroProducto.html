@@ -85,7 +85,8 @@
                 
 
 
-
+  <!-- Contenedor para alertas -->
+  <div id="alert-container"></div>
 
     <!-- INICIO DEL FORMULARIO -->
     <!-- Selección de categoria -->
@@ -105,41 +106,45 @@
     <!--method define el metodo http que enviara los datos al servidor post es mas seguro, 
     action especifica a que direccion del servidor se enviaran los datos, 
     enctype espefica como se debe codificar los datos del formulario antes de enviarse en este caso multipart es para archivos (imagen)-->    
+    
+    
+  
+
     <!-- Nombre del producto -->
         <div class="mb-3">
             <label for="nombre" class="form-label">Nombre del producto</label>
-            <input type="text" id="nombre" name="nombre_usuario" class="form-control">
+            <input type="text" id="nombre" name="nombre_usuario" class="form-control" required>
         </div>
             
     <!-- Input Descripción -->
         <div class="mb-3">
             <label for="descripcion" class="form-label">Descripción</label>
-            <input type="text" id="descripcion" name="descripcion_producto" class="form-control">
+            <input type="text" id="descripcion" name="descripcion_producto" class="form-control" required>
         </div>
 
     <!-- Input Marca -->
         <div class="mb-3">
             <label for="marca" class="form-label">Marca</label>
-            <input type="text" id="marca" name="marca_producto" class="form-control">
+            <input type="text" id="marca" name="marca_producto" class="form-control" required>
         </div>
 
     <!-- Input Código SKU -->
         <div class="mb-3">
             <label for="codigo" class="form-label">Código SKU</label>
-            <input type="text" id="codigo" name="codigo_producto" class="form-control">
+            <input type="text" id="codigo" name="codigo_producto" class="form-control" required>
         </div>
 
             
     <!-- Input Precio -->
         <div class="mb-3">
             <label for="precio" class="form-label">Precio</label>
-            <input type="text" id="precio" name="precio_producto" class="form-control">
+            <input type="text" id="precio" name="precio_producto" class="form-control" required>
         </div>
 
     <!-- Input Stock -->
         <div class="mb-3">
             <label for="cantidad" class="form-label">Cantidad Disponible</label>
-            <input type="text" id="cantidad" name="cantidad_producto" class="form-control">
+            <input type="text" id="cantidad" name="cantidad_producto" class="form-control" required>
         </div>
 
     <!--Input Imagen del producto -->
@@ -158,6 +163,10 @@
         </div>
     </div>
     <br>
+
+
+      
+
 
 
 <!-- footer.html -->
