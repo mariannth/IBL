@@ -327,7 +327,7 @@ button.normal {
 }
 /* Configuracion mensaje de bienvenida */
 #heroe {
-    background-image: url("/src/img/productos/img_Jluis/petlogo.jpg");
+    background-image: url("./src/img/productos/img_Jluis/petlogo.jpg");
     width: 100%;
     height: 500px;
     background-size: contain;
