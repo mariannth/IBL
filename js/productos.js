@@ -70,8 +70,8 @@ function renderProducts(filter = "all") {
             <img src="${product.img}" alt="${product.name}">
             <h2>${product.name}</h2>
             <p>${product.price}</p>
-            <button>Agregar al carrito</button>
-            <button onclick = "editProduct(${product.id})">Editar</button>
+            <button onclick = "redirectToCart()"> Agregar al carrito</button>
+            <button onclick = "editProductAndRedirect(${product.id})">Editar</button>
              <button onclick = "deleteProduct(${product.id})">Borrar</button>
         `;
 
@@ -103,6 +103,9 @@ function updateProduct (id, newName, newPrice, newCategory, newImg){
 
     renderProducts(); //renderiza de nuevo los productos
 }
+function editProductAndRedirect(productId) {
+    window.location.href = `registroProducto.html?id=${productId}`;
+  }
 //Eliminar un producto
 
 function deleteProduct(id){
@@ -122,3 +125,8 @@ function clearAllProducts(){
     products.length = 0; // vacía el arreglo
     renderProducts(); //renderiza otra vez 
 }
+
+// Agregar al carrito
+function redirectToCart() {
+    window.location.href = 'carrito.html';
+  }
