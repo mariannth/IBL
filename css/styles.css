@@ -293,6 +293,7 @@ hr {
     margin: 0.2px 0;
     border-top: 5px solid #00c2ff;
 }
+
 /* Boton configuracion global
 - Boton banner */
 button.normal {
@@ -307,6 +308,7 @@ button.normal {
     outline: none;
     transition: 0.3s;
 }
+
 /* Boton dentro de heroe - redirecciona "acerca de" */
 #heroe button {
     padding: 10px 60px 10px 65px;
@@ -320,11 +322,13 @@ button.normal {
     font-size: 20px;
     text-align: center;
 }
+
 /* Sub class hover/Efectos en el botón*/
 #heroe button:hover {
     background-color: #20e4f67a;
     color: white;
 }
+
 /* Configuracion mensaje de bienvenida */
 #heroe {
     background-image: url("/src/img/productos/img_Jluis/petlogo.jpg");
@@ -339,6 +343,7 @@ button.normal {
     align-items: flex-start;
     justify-content: center;
 }
+
 /*
 #heroe h4 {
     padding-bottom: 15px;
@@ -365,22 +370,26 @@ button.normal {
     gap: 25px;
     margin: 70px 0;
 }
+
 .index-card img {
     width: 100%;
     height: auto;
 }
+
 .index-card h3 {
     font-size: 20px;
     margin: 20px 0;
     color: white;
     font-size: 2.2em;
 }
+
 .index-card p {
     font-size: 20px;
     margin: 20px 0;
     color: white;
     font-size: 1.5em;
 }
+
 /* Banner de publicidad*/
 #banner {
     display: flex;
@@ -398,16 +407,19 @@ button.normal {
     padding: 20px 20px;
     margin: 10px 0;
 }
+
 #banner h4 {
     color: white;
     font-size: 21px;
     font-weight: 600;
 }
+
 #banner h2 {
     color: white;
     font-size: 30px;
     padding: 10px 0;
 }
+
 #banner h2 span {
     color: rgb(255, 0, 0);
     font-size: 30px;
@@ -415,6 +427,7 @@ button.normal {
     text-transform: uppercase;
     text-shadow: 2px 2px 5px black
 }
+
 #banner button:hover {
     background-color: #20e5f6;
     color: white;
@@ -744,7 +757,6 @@ h2 {
 
 .card_contact {
     min-height: 350px;
-    ;
     border: 1px solid #00c2ff;
     border-radius: 8px;
     background-color: #050c2e;
@@ -752,7 +764,7 @@ h2 {
     transition: transform 0.3s ease;
     justify-content: center;
     max-width: 650px;
-    margin: 20px auto;
+    margin: auto;
     margin-left: 20px;
     padding: 20px;
 }
