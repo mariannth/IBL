@@ -16,6 +16,20 @@ for (let i = 0; i < 100; i++) {
   background.appendChild(star);
 }
 
+
+// Boton "¡Conocenos!" - Redirige a "acerca_nosotros.html"
+const btnConocenos = document.getElementById('conocenosBtn');
+btnConocenos.addEventListener('click', () => {
+    window.location.href = './acerca_nosotros.html'; 
+});
+
+// Boton "Quiero saber mas" - Redirige a "productos.html"
+const btnQuieroSaberMas = document.getElementById('btnQuieroSaberMas');
+btnQuieroSaberMas.addEventListener('click', () => {
+    window.location.href = './registro.html'; 
+});
+
+
 // Seleccionar todas las cards
 document.querySelectorAll('.card').forEach(card => {
     card.addEventListener('click', () => {
