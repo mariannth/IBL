@@ -77,11 +77,11 @@
 
 
     
-    <div class="container"> <!-- Contenedor principal centrado -->
+    <div class="container formulario-producto"> <!-- Contenedor principal centrado -->
         <div class="row justify-content-center">
             <div class="col-md-6"> <br>
                 <h1 class="text-center mb-4">REGISTRO DE NUEVOS PRODUCTOS</h1> <br>
-                <H2 class="text-center fs-5"> Rellena el formulario para registrar el producto</H2> <br>
+                <h2 class="text-center fs-5"> Rellena el formulario para registrar el producto</h2> <br>
                 
 
 
@@ -89,6 +89,11 @@
   <div id="alert-container"></div>
 
     <!-- INICIO DEL FORMULARIO -->
+    <form id="formularioProducto" method="POST" action="http://localhost:3000/registro-producto" enctype="multipart/form-data">
+        <!--method define el metodo http que enviara los datos al servidor post es mas seguro, 
+        action especifica a que direccion del servidor se enviaran los datos, 
+        enctype espefica como se debe codificar los datos del formulario antes de enviarse en este caso multipart es para archivos (imagen)-->    
+            
     <!-- Selección de categoria -->
      <div class="mb-3">
         <label for="seleccion-categoria" class="form-label">Selecciona a que categoria pertenece el producto</label>
@@ -102,12 +107,7 @@
     </div>
 
         
-    <form id="formularioProducto" method="POST" action="http://localhost:3000/registro-producto" enctype="multipart/form-data">
-    <!--method define el metodo http que enviara los datos al servidor post es mas seguro, 
-    action especifica a que direccion del servidor se enviaran los datos, 
-    enctype espefica como se debe codificar los datos del formulario antes de enviarse en este caso multipart es para archivos (imagen)-->    
-    
-    
+  
   
 
     <!-- Nombre del producto -->
@@ -131,20 +131,20 @@
     <!-- Input Código SKU -->
         <div class="mb-3">
             <label for="codigo" class="form-label">Código SKU</label>
-            <input type="text" id="codigo" name="codigo_producto" class="form-control" required>
+            <input type="number" id="codigo" name="codigo_producto" class="form-control" required>
         </div>
 
             
     <!-- Input Precio -->
         <div class="mb-3">
             <label for="precio" class="form-label">Precio</label>
-            <input type="text" id="precio" name="precio_producto" class="form-control" required>
+            <input type="number" id="precio" name="precio_producto" class="form-control" required>
         </div>
 
     <!-- Input Stock -->
         <div class="mb-3">
             <label for="cantidad" class="form-label">Cantidad Disponible</label>
-            <input type="text" id="cantidad" name="cantidad_producto" class="form-control" required>
+            <input type="number" id="cantidad" name="cantidad_producto" class="form-control" required>
         </div>
 
     <!--Input Imagen del producto -->
