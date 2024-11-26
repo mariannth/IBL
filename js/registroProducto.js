@@ -29,7 +29,7 @@ document.getElementById("formularioProducto").addEventListener("submit", functio
         alerta.innerHTML = mensaje + 
             '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>';
         alertContainer.appendChild(alerta);
-        // Opcional: Cerrar alerta después de 5 segundos
+        // Opcional: Cerrar alerta después de 4 segundos
         setTimeout(() => {
             alerta.remove();
         }, 4000);
@@ -120,4 +120,50 @@ document.getElementById("formularioProducto").addEventListener("submit", functio
      // Mostrar el objeto JSON en la consola (opcional)
      console.log("Objeto JSON:", productoJSON);
 
-});
+
+     // Guardar el producto en localStorage
+     let productos = JSON.parse(localStorage.getItem("productos")) || [];
+     productos.push(productoData); // Agregar el nuevo producto al array
+     localStorage.setItem("productos", JSON.stringify(productos));
+ 
+     // Limpiar los campos del formulario
+     document.getElementById("formularioProducto").reset();
+ 
+     // Mostrar alerta de éxito
+     showAlert("Producto registrado exitosamente.", "success");
+ 
+     // Actualizar la lista de productos en el HTML
+     actualizarListaDeProductos();
+ });
+ 
+ // Función para actualizar la lista de productos
+ function actualizarListaDeProductos() {
+     const productos = JSON.parse(localStorage.getItem("productos")) || [];
+     const listaItems = document.getElementById("list-items");
+     listaItems.innerHTML = ""; // Limpiar la lista antes de mostrarla
+ 
+     productos.forEach((producto) => {
+         const itemDiv = document.createElement("div");
+         itemDiv.classList.add("col-md-4");
+         itemDiv.innerHTML = `
+             <div class="card mb-4">
+                 <img src="img/${producto.imagen}" class="card-img-top" alt="${producto.nombre}">
+                 <div class="card-body">
+                     <h5 class="card-title">${producto.nombre}</h5>
+                     <p class="card-text">${producto.descripcion}</p>
+                     <p><strong>Precio:</strong> $${producto.precio}</p>
+                     <p><strong>Cantidad:</strong> ${producto.cantidad}</p>
+                     <p><strong>Código SKU:</strong> ${producto.codigo}</p>
+                     <p><strong>Categoría:</strong> ${producto.categoria}</p>
+                 </div>
+             </div>
+         `;
+         listaItems.appendChild(itemDiv);
+     });
+ }
+ 
+ // Al cargar la página, mostrar los productos guardados
+ document.addEventListener("DOMContentLoaded", actualizarListaDeProductos);
+
+
+
