@@ -297,7 +297,7 @@ hr {
 /* Boton configuracion global
 - Boton banner */
 button.normal {
-    font-size: 10px;
+    font-size: 30px;
     font-weight: 600;
     padding: 20px 20px;
     color: #ffffff;
@@ -310,7 +310,7 @@ button.normal {
 }
 
 /* Boton dentro de heroe - redirecciona "acerca de" */
-#heroe button {
+#conocenosBtn {
     padding: 10px 60px 10px 65px;
     color: #ffffff;
     background-color: transparent;
@@ -324,26 +324,35 @@ button.normal {
 }
 
 /* Sub class hover/Efectos en el botón*/
-#heroe button:hover {
+#conocenosBtn button:hover {
     background-color: #20e4f67a;
     color: white;
 }
+<<<<<<< HEAD
 
 /* Configuracion mensaje de bienvenida */
 #heroe {
     background-image: url("/src/img/productos/img_Jluis/petlogo.jpg");
     width: 100%;
     height: 500px;
+=======
+/* Configuración mensaje de bienvenida */
+#heroe {
+    width: 100%;         
+    height: auto;        
+    object-fit: contain;
+>>>>>>> develop_LuisG
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 10px 10px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center; 
     justify-content: center;
 }
 
+<<<<<<< HEAD
 /*
 #heroe h4 {
     padding-bottom: 15px;
@@ -363,6 +372,9 @@ button.normal {
     color: #ffffff;
 }
 */
+=======
+
+>>>>>>> develop_LuisG
 /* Seccion index card*/
 .index-card {
     display: grid;
@@ -377,61 +389,76 @@ button.normal {
 }
 
 .index-card h3 {
-    font-size: 20px;
+    font-size: 40px;
     margin: 20px 0;
     color: white;
-    font-size: 2.2em;
+    font-size: 4em;
 }
 
 .index-card p {
-    font-size: 20px;
+    font-size: 40px;
     margin: 20px 0;
     color: white;
-    font-size: 1.5em;
+    font-size: 2.5em;
 }
+<<<<<<< HEAD
 
 /* Banner de publicidad*/
+=======
+/* Banner de publicidad */
+>>>>>>> develop_LuisG
 #banner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    position: relative;
     text-align: center;
-    background-image: url(/src/img/img_Jluis/banneribl.png);
-    background-size: cover;
-    /* La imagen cubrirá todo el contenedor */
+    color: white;
+}
+
+#banner img {
+    width: 100%;
+    height: 520px;
+    display: block;
+    object-fit: cover;
     background-position: center;
-    /* Centra la imagen */
     background-repeat: no-repeat;
-    /* Evita que la imagen se repita */
     padding: 20px 20px;
     margin: 10px 0;
 }
 
+<<<<<<< HEAD
+=======
+#banner .banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+
+>>>>>>> develop_LuisG
 #banner h4 {
-    color: white;
-    font-size: 21px;
+    font-size: 29px;
     font-weight: 600;
 }
 
 #banner h2 {
-    color: white;
-    font-size: 30px;
+    font-size: 39px;
     padding: 10px 0;
 }
 
 #banner h2 span {
     color: rgb(255, 0, 0);
-    font-size: 30px;
+    font-size: 39px;
     padding: 10px 0;
     text-transform: uppercase;
-    text-shadow: 2px 2px 5px black
+    text-shadow: 2px 2px 5px black;
 }
 
 #banner button:hover {
     background-color: #20e5f6;
     color: white;
 }
+
 
 
 /* Termina index */
