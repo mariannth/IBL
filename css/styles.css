@@ -328,20 +328,12 @@ button.normal {
     background-color: #20e4f67a;
     color: white;
 }
-<<<<<<< HEAD
 
 /* Configuracion mensaje de bienvenida */
 #heroe {
     background-image: url("/src/img/productos/img_Jluis/petlogo.jpg");
     width: 100%;
     height: 500px;
-=======
-/* Configuración mensaje de bienvenida */
-#heroe {
-    width: 100%;         
-    height: auto;        
-    object-fit: contain;
->>>>>>> develop_LuisG
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -352,7 +344,6 @@ button.normal {
     justify-content: center;
 }
 
-<<<<<<< HEAD
 /*
 #heroe h4 {
     padding-bottom: 15px;
@@ -372,9 +363,6 @@ button.normal {
     color: #ffffff;
 }
 */
-=======
-
->>>>>>> develop_LuisG
 /* Seccion index card*/
 .index-card {
     display: grid;
@@ -392,21 +380,17 @@ button.normal {
     font-size: 40px;
     margin: 20px 0;
     color: white;
-    font-size: 4em;
+    /* font-size: 4em; */
 }
 
 .index-card p {
-    font-size: 40px;
+    font-size: 20px;
     margin: 20px 0;
     color: white;
-    font-size: 2.5em;
+    /* font-size: 2.5em; */
 }
-<<<<<<< HEAD
 
 /* Banner de publicidad*/
-=======
-/* Banner de publicidad */
->>>>>>> develop_LuisG
 #banner {
     position: relative;
     text-align: center;
@@ -424,18 +408,6 @@ button.normal {
     margin: 10px 0;
 }
 
-<<<<<<< HEAD
-=======
-#banner .banner-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    text-align: center;
-}
-
->>>>>>> develop_LuisG
 #banner h4 {
     font-size: 29px;
     font-weight: 600;
@@ -465,6 +437,7 @@ button.normal {
 /* -----CSS para formularios -----*/
 h1 {
     font-weight: bold;
+    color: #b1fffc;
 }
 
 h2 {
