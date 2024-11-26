@@ -120,41 +120,4 @@ document.getElementById("formularioProducto").addEventListener("submit", functio
      // Mostrar el objeto JSON en la consola (opcional)
      console.log("Objeto JSON:", productoJSON);
 
-
-
-
-
-
-
-    // Creacion  del objeto FormData, ES UN OBJETO JAVASCRIPT CON LOS DATOS DEL FORM
-    const formData = new FormData();
-    formData.append("nombre", nombre);
-    formData.append("descripcion", descripcion);
-    formData.append("marca", marca);
-    formData.append("categoria", categoria);
-    formData.append("precio", precio);
-    formData.append("cantidad", cantidad);
-    formData.append("imagen", imagen); // Añadir el archivo de imagen
-
-    // Sirve para enviar datos al servidor usando fetch y enviarla al servidro  local
-    fetch("http://localhost:3000/registro-producto", {
-        method: "POST",
-        body: formData, // Se envia el FormData
-    })
-
-        .then((response) => response.json())
-        .then((data) => {
-            console.log("Producto registrado:", data);
-            showAlert("¡Producto registrado con éxito!", "success"); // resgitra si el formulario fue procesado y enviado correctamente
-            // Todavia no se si ponerlo aqui: para la página después del registro exitoso
-            setTimeout(() => {
-                // Puedes redirigir a una página o limpiar el formulario
-                document.getElementById("formularioProducto").reset(); 
-            }, 500);
-
-        })
-        .catch((error) => {
-            console.error("Error:", error);
-            showAlert("Hubo un error al registrar el producto.", "danger");
-        });
 });
