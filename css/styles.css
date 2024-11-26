@@ -325,21 +325,24 @@ button.normal {
     background-color: #20e4f67a;
     color: white;
 }
-/* Configuración mensaje de bienvenida */
+
+/* Contenedor de la imagen */
 #heroe {
-    width: 100%;         
-    height: auto;        
-    object-fit: contain;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    justify-content: center;
+    width: 100%;               
+    max-width: 600px;           
+    height: auto;               
+    display: flex;              
+    justify-content: center;    
+    align-items: center;        
+    margin: 0 auto;             
+    background-color: #fff;     
 }
 
+#heroe img {
+    width: 100%;                
+    height: auto;               
+    object-fit: contain;       
+}
 
 /* Seccion index card*/
 .index-card {
