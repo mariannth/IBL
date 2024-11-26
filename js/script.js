@@ -17,17 +17,14 @@ for (let i = 0; i < 100; i++) {
 }
 
 
-// Boton "¡Conocenos!" - Redirige a "acerca_nosotros.html"
-const btnConocenos = document.getElementById('conocenosBtn');
-btnConocenos.addEventListener('click', () => {
-    window.location.href = './acerca_nosotros.html'; 
-});
+function conocenos() {
+    window.location.href = `acerca_nosotros.html`;
+  }
 
-// Boton "Quiero saber mas" - Redirige a "productos.html"
-const btnQuieroSaberMas = document.getElementById('btnQuieroSaberMas');
-btnQuieroSaberMas.addEventListener('click', () => {
-    window.location.href = './registro.html'; 
-});
+  function quieroSaberMas() {
+    window.location.href = `registro.html`;
+  }
+
 
 
 // Seleccionar todas las cards
