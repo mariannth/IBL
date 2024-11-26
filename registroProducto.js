@@ -32,7 +32,7 @@ document.getElementById("formularioProducto").addEventListener("submit", functio
         // Opcional: Cerrar alerta después de 5 segundos
         setTimeout(() => {
             alerta.remove();
-        }, 2000);
+        }, 4000);
     }
 
     // Sirsve para verificar si el campo "categoría" está vacío
