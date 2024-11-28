@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icono de pestaña -->
+    <link rel="icon" type="image/jpg" href="/src/img/favicon.jpg">
     <title>Inicio - IBL</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -14,23 +16,37 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"
         integrity="sha512-K6I4HO1D+E1SVzzBc7C8uV35HlXk5sZfztSzX3LTGtF2/B0IUy5yKZ9zT/8GrdyxEs5XHP1yI9fRQafZfiFZw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- CSS Personalizado -->
+    <!-- CSS Personalizado lineas index 289 a 424 aprox.   -->
     <link rel="stylesheet" href="./css/styles.css">
 </head>
+<!-- header/navbar cargado desde una funcion, animacion estrellas,. -->
 
 <body class="bg-light d-flex flex-column min-vh-100">
     <div id="header"></div>
     <main class="flex-grow-1">
         <div class="background-animation"></div>
         <div class="content">
-            <!-- Título de bienvenida -->
-            <section id="heroe"><!--Imagen con texto-->
-                <h4>Los mejores productos solo en:</h4>
-                <h1>Infinite Byte League</h1><br>
-                <h2>¡Compralo hoy, disfrutalo siempre!</h2>
-                <p>Descuentos hasta del 30%</p>
-                <button>¡Conocenos!</button>
+            <hr>
+            <br><br>
+            <!-- Decidi usar CSS inline para la manipulacion exacta de esta etiqueta -->
+            <h1 style="color: white; margin-bottom: 20px; padding-bottom: 15px; font-size: 2.4rem;">"Bienvenidos a
+                Infinite Byte League, donde la tecnología de calidad está al alcance de tod@s."</h1>
+            <hr>
+            <img id="heroe" src="./src/img/Logo/petlogo.jpg" alt="infinitebyteleaguelogobanner">
+            <div><button id="conocenosBtn">¡Conócenos!</button></div>
+            <br>
+            <br>
+            <br>
+            <hr><br>
+            <!-- Decidi usar CSS inline para la manipulacion exacta de esta etiqueta -->
+            <h1 style="color: white; margin-bottom: 20px; padding-bottom: 20px; font-size: 4rem;">Lo mas relevante:
+            </h1>
+            <hr>
+            <!-- Los productos se agregarán aquí mediante JavaScript -->
+            <section class="product-grid" id="product-grid">
+                <div id="index-product-container"></div>
             </section>
+<<<<<<< HEAD
 
             <section id="productosDestacados" class="seccionDestacados"> <!--Productos-->
                 <h2>Lo mas solicitado</h2>
@@ -313,41 +329,70 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
+=======
+            <!-- Index card grid -->
+            <div class="index-card">
+                <div>
+                    <img src="./src/img/Logo/logobanner.png" alt="infinitebyteleaguelogobanner" />
+                    <br>
+                    <br>
+                    <hr>
+                    <!-- Decidi usar CSS inline para la manipulacion exacta de esta etiqueta -->
+                    <h3>¡🌐✨ Compromiso con la tecnología accesible y de calidad ✨🌐!
+                    </h3>
+                    <p>"Ofrecemos equipos nuevos y reacondicionados de alta calidad a precios accesibles,
+                        contribuyendo a reducir la brecha digital y generando un impacto social positivo. Aspiramos
+                        a convertirnos en una plataforma líder en la región para la compra y venta de tecnología
+                        garantizada, siendo un referente de sostenibilidad y accesibilidad. Nos comprometemos con
+                        nuestros clientes a brindarles la mejor experiencia mediante excelencia, integridad, trabajo
+                        en equipo, innovación y orientación al cliente, buscando siempre ofrecer soluciones y
+                        servicios de calidad."
+                    </p>
+                    <a href="acerca_nosotros.html"></a>
+                    <hr>
+>>>>>>> master
                 </div>
+            </div>
 
-                <!-- Cuadro con formulario de suscripción -->
-                <div class="image-box">
-                    <div class="subscription-form">
-                        <h4>¡Subscribete a nuestras novedades!</h4>
-                        <p>Recibe las últimas ofertas y noticias en tu email.</p>
-                        <form action="#" method="POST">
-                            <input type="email" class="form-control" placeholder="Infinite@ByteLeague.com" required>
-                            <button type="submit" class="btn btn-primary mt-2">Enviar</button>
-                        </form>
-                    </div>
+            <div id="banner" class="section-m1">
+                <div class="banner-content">
+                    <br>
+                    <h4>Renueva tu tecnología, sin afectar tu bolsillo</h4><br>
+                    <h2>¡Nuestras ofertas <span>hasta un 30% de ahorro</span> comparado con otros sitios!</h2><br>
+                    <button id="btnQuieroSaberMas" class="normal">¡Quiero saber más!</button>
                 </div>
-            </section>
+                <img src="./src/img/Logo/banneribl.png" alt="bannerdescuentos">
+            </div>
+            <!-- Contenedor del plugin de comentarios -->
+            <div class="fb-comments" data-href="https://mariannth.github.io/IBL/index.html" data-width="100%"
+                data-numposts="5">
+            </div>
 
+            <!-- SDK de Facebook -->
+            <div id="fb-root"></div>
+            <script async defer crossorigin="anonymous"
+                src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v15.0&appId=950183320332574&autoLogAppEvents=1">
+                </script>
+            <br><br>
         </div>
 
-        <br><br>
     </main>
-
-    <!--Footer-->
+    <!-- Footer cargado desde una funcion.-->
     <div id="footer"></div>
     <script>
-
         function loadComponent(id, file) {
             fetch(file)
                 .then(response => response.text())
                 .then(data => document.getElementById(id).innerHTML = data)
                 .catch(error => console.error('Error loading component:', error));
         }
-
         loadComponent("header", "./components/header.html");
         loadComponent("footer", "./components/footer.html");
     </script>
     <script src="./js/script.js"></script>
+    <script defer src="./js/index.js"></script>
+
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

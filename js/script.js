@@ -16,6 +16,17 @@ for (let i = 0; i < 100; i++) {
   background.appendChild(star);
 }
 
+
+function conocenos() {
+    window.location.href = `acerca_nosotros.html`;
+  }
+
+  function quieroSaberMas() {
+    window.location.href = `registro.html`;
+  }
+
+
+
 // Seleccionar todas las cards
 document.querySelectorAll('.card').forEach(card => {
     card.addEventListener('click', () => {
