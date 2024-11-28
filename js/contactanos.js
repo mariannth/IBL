@@ -121,3 +121,9 @@ document
       );
     }
   });
+
+  // Boton "Enviar" - Redirige a "index.html"
+  const btnEnviar = document.getElementById('btnEnviar');
+  btnConocenos.addEventListener('click', () => {
+      window.location.href = '/index.html'; 
+  });
