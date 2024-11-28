@@ -189,4 +189,19 @@ document.getElementById("formularioProducto").addEventListener("submit", functio
     formData.append("cantidad", cantidad);
     formData.append("imagen", imagen); // Añadir el archivo de imagen
 
+
+
+    
+    // Sirve para enviar datos al servidor usando fetch y enviarla al servidro  local
+    fetch("http://localhost:3000/registro-producto", {
+        method: "POST",
+        body: formData, // Se envia el FormData
+    })
+
+        .then((response) => response.json())
+        .then((data) => {
+            console.log("Producto registrado:", data);
+            showAlert("¡Producto registrado con éxito!", "success"); // resgitra si el formulario fue procesado y enviado correctamente
+
+
 */ 
