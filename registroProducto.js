@@ -203,5 +203,18 @@ document.getElementById("formularioProducto").addEventListener("submit", functio
             console.log("Producto registrado:", data);
             showAlert("¡Producto registrado con éxito!", "success"); // resgitra si el formulario fue procesado y enviado correctamente
 
+            // Todavia no se si ponerlo aqui: para la página después del registro exitoso
+            setTimeout(() => {
+                // Puedes redirigir a una página o limpiar el formulario
+                document.getElementById("formularioProducto").reset(); 
+            }, 500);
+
+        })
+        .catch((error) => {
+            console.error("Error:", error);
+            showAlert("Hubo un error al registrar el producto.", "danger");
+        });
+});
+
 
 */ 
