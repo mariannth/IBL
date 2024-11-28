@@ -17,20 +17,6 @@ body {
     padding: 0;
     width: 100%;
     height: 100%;
-<<<<<<< HEAD
-    background: linear-gradient(180deg, 
-        #020f1f, 
-        #112444, 
-        #0e4761, 
-        #0a2673, 
-        #1b3c56, 
-        #1d5a88e6, 
-        #7b99b5, 
-        #00c2ff, 
-        #20e5f6, 
-        #50c878, 
-        #ffffff);
-=======
     background: linear-gradient(180deg,
             #020f1f,
             #112444,
@@ -43,7 +29,6 @@ body {
             #20e5f6,
             #50c878,
             #ffffff);
->>>>>>> master
     background-size: 400% 400%;
     animation: gradientMove 15s ease infinite;
 }
@@ -52,37 +37,21 @@ body {
     0% {
         background-position: 0% 50%;
     }
-<<<<<<< HEAD
-    50% {
-        background-position: 100% 50%;
-    }
-=======
 
     50% {
         background-position: 100% 50%;
     }
 
->>>>>>> master
     100% {
         background-position: 0% 50%;
     }
 }
 
-<<<<<<< HEAD
-  
-=======
-
->>>>>>> master
 
 /* Ajustes globales */
 html,
 body {
     margin: 0;
-<<<<<<< HEAD
-    
-=======
-
->>>>>>> master
     /*overflow: default; /*Evita que el fondo se salga del viewport */
 }
 
@@ -610,27 +579,12 @@ h2 {
 
 /* -----CSS para contáctanos-----*/
 
-<<<<<<< HEAD
-#contactanos{
-    color:#ffffff; /*#e556efeb*/
-    text-align: left;
-    margin-left: 200px;
-    margin-top: 10px;
-
-}
-#dejanosDatos{
-    color:#20e5f6;
-    text-align: left;
-    margin-left: 200px;
-    padding-top: 10px;
-=======
 #contactanos {
     color: #ffffff;
 }
 
 #dejanosDatos {
     color: #20e5f6;
->>>>>>> master
 }
 
 .card_contact {
@@ -659,16 +613,6 @@ h2 {
     justify-content: center;
 }
 
-<<<<<<< HEAD
-.form-label{
-    color:#ffffff;
-}
-
-
-.form-control{
-    background-color:#ffffff;
-    position:relative;
-=======
 .form-label {
     color: #00c2ff
 }
@@ -676,28 +620,17 @@ h2 {
 .form-control {
     background-color: #ffffff;
     position: relative;
->>>>>>> master
     align-items: center;
     justify-content: center;
     max-height: fit-content;
 }
 
-<<<<<<< HEAD
-#terms{
-    margin-left: 3px;
-}
-
-.form-check-label{
-    color:#20e5f6;
-    padding-right: 190px;
-=======
 #terms {
     margin-left: 10px;
 }
 
 .form-check-label {
     color: #20e5f6;
->>>>>>> master
 }
 
 #mapaIBL {
@@ -712,10 +645,7 @@ h2 {
     border: 1px solid #00c2ff;
     border-radius: 8px;
     background-color: #050c2e;
-<<<<<<< HEAD
-=======
     /* background-color:#ffffff; */
->>>>>>> master
     color: #20e5f6;
     padding: 20px;
     margin-bottom: 20px;
@@ -734,11 +664,6 @@ h2 {
     font-size: 16px;
     width: 200px;
     margin-top: 10px;
-<<<<<<< HEAD
-    
-=======
-
->>>>>>> master
 }
 
 /* Estilo para la cuadrícula de productos */
@@ -772,18 +697,12 @@ h2 {
 
 .product-card img {
     width: 100%;
-<<<<<<< HEAD
-    height: 200px; /* Ajusta la altura según lo necesites */
-    object-fit: contain; /* Asegura que toda la imagen sea visible */
-    background-color: #fff; /* Opcional: color de fondo para los márgenes */
-=======
     height: 200px;
     /* Ajusta la altura según lo necesites */
     object-fit: contain;
     /* Asegura que toda la imagen sea visible */
     background-color: #fff;
     /* Opcional: color de fondo para los márgenes */
->>>>>>> master
     border-radius: 8px;
 }
 

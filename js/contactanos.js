@@ -75,26 +75,6 @@ document
     const mensaje = document.querySelector("#mensajito textarea").value.trim();
     const privacidad = document.querySelector("#terms input").checked;
 
-<<<<<<< HEAD
-    if (fullnamee === "") {
-        alert ("Por favor ingresa tu nombre, este campo no puede quedar vacío");
-       } else if (phone === ""){
-        alert ("Por favor ingresa tu teléfono, este campo no puede quedar vacío");
-       } else if (12 >phone.length > 10) {
-        alert ("Ingresa un número de teléfono válido");
-       } else if (email === "") {
-        alert ("¡Alto, este campo (Email) no puede estar vacío!");
-       } else if (!email.includes ("@")){
-        alert ("Correo no aceptado, intentalo de nuevo, revisa que tu correo este bien escrito");
-       } else if (mensaje === ""){
-        alert ("Para continuar escribe tu mensaje de contacto, ¿En que podemos ayudarte?");
-       } else if (privacidad === ""){
-        alert ("Acepta nuestros términos de privacidad antes de enviar :) ");
-       } else{
-        alert("Gracias por contactarte con IBL, " + fullnamee + " uno de nuestros asesores te atenderá a la brevedad. ¡También puedes encontrarnos en nuestras redes sociales!");
-       }
-    });
-=======
     // Validaciones del formulario
     if (nombre === "") {
       alert("Por favor ingresa tu nombre, este campo no puede quedar vacío");
@@ -116,7 +96,6 @@ document
       alert("Acepta nuestros términos de privacidad antes de enviar :)");
     } else {
       // Si todas las validaciones pasan, enviamos el correo
->>>>>>> master
 
       // Crea el objeto de datos que se enviarán en el correo
       const datosFormulario = {
