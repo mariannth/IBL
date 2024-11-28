@@ -293,22 +293,27 @@ hr {
     margin: 0.2px 0;
     border-top: 5px solid #00c2ff;
 }
-/* Boton configuracion global
-- Boton banner */
-button.normal {
-    font-size: 30px;
-    font-weight: 600;
-    padding: 20px 20px;
-    color: #ffffff;
-    background-color: transparent;
-    border-radius: 70px;
-    cursor: pointer;
-    border: #0077B5 solid;
-    outline: none;
-    transition: 0.3s;
+
+/* Contenedor de la imagen */
+#petlogo {
+    width: 100%;               
+    max-width: 600px;           
+    height: auto;               
+    display: flex;              
+    justify-content: center;    
+    align-items: center;        
+    margin: 0 auto;             
+    background-color: #ffffff;     
 }
-/* Boton dentro de heroe - redirecciona "acerca de" */
-#conocenosBtn {
+
+#petlogo img {
+    width: 100%;                
+    height: auto;               
+    object-fit: contain;       
+}
+
+/* Boton Conocenos */
+button.normal {
     padding: 10px 60px 10px 65px;
     color: #ffffff;
     background-color: transparent;
@@ -319,29 +324,98 @@ button.normal {
     font-weight: 700;
     font-size: 20px;
     text-align: center;
+    transition: background-color 0.5s ease-in-out;
 }
-/* Sub class hover/Efectos en el botón*/
-#conocenosBtn button:hover {
-    background-color: #20e4f67a;
+
+button.normal:hover {
+    background-color: #20e4f6da;
+    color: #1b3c56;
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px #00c2ff;
+    border-color: #50c878;
+}
+
+.index-h1 {
     color: white;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    font-size: 4rem;
+    background-color: #0077B5; 
+    padding: 20px;  
+    border-radius: 10px; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+    text-align: center;  
 }
 
-/* Contenedor de la imagen */
-#heroe {
-    width: 100%;               
-    max-width: 600px;           
-    height: auto;               
-    display: flex;              
-    justify-content: center;    
-    align-items: center;        
-    margin: 0 auto;             
-    background-color: #fff;     
+/* Diseño de la tarjeta de producto */
+.index-product-grid {
+    border: 2px solid #00c2ff;
+    border-radius: 20px;
+    background-color: #050c2e;
+    color: #20e5f6;
+    transition: transform 0.3s ease;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
 }
 
-#heroe img {
-    width: 100%;                
-    height: auto;               
-    object-fit: contain;       
+.index-product-card {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    background-color: #050c2e;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    border-style: groove;
+    border-color: #0077B5;
+}
+
+.index-product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    background-color: #ffffff;
+    border-radius: 30px;
+    grid-row: 1; 
+    margin-top: top;
+}
+
+.index-product-card h2 {
+    font-size: 20px;
+    margin: 15px 0;
+    color: #fff9e1;
+}
+
+.index-product-card p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #50c878;
+    grid-row: 3; 
+    margin-top: auto;
+}
+
+.index-product-card button {
+    background-color: #4CAF50;
+    border-color: #b1fffc;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+    grid-row: 4; 
+    margin-top: auto;
+}
+
+.index-product-card button:hover {
+    background-color: #20e5f6;
+}
+
+.index-product-card:hover {
+    transform: scale(1.05);
 }
 
 /* Seccion index card*/
@@ -351,84 +425,40 @@ button.normal {
     gap: 25px;
     margin: 70px 0;
 }
+
 .index-card img {
     width: 100%;
     height: auto;
 }
+
 .index-card h3 {
     font-size: 40px;
     margin: 20px 0;
     color: white;
-    font-size: 4em;
+    text-align: center; 
 }
+
 .index-card p {
-    font-size: 40px;
+    font-size: 30px;
     margin: 20px 0;
     color: white;
-    font-size: 2.5em;
-}
-/* Banner de publicidad */
-#banner {
-    position: relative;
-    text-align: center;
-    color: white;
+    text-align: justify; 
 }
 
-#banner img {
-    width: 100%;
-    height: 520px;
-    display: block;
-    object-fit: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 20px 20px;
-    margin: 10px 0;
-}
-
-#banner .banner-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    text-align: center;
-}
-
-#banner h4 {
-    font-size: 29px;
-    font-weight: 600;
-}
-
-#banner h2 {
-    font-size: 39px;
-    padding: 10px 0;
-}
-
-#banner h2 span {
-    color: rgb(255, 0, 0);
-    font-size: 39px;
-    padding: 10px 0;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 5px black;
-}
-
-#banner button:hover {
-    background-color: #20e5f6;
-    color: white;
-}
 
 /* Caja de Facebook*/
 .fb-comments {
     background-color: rgb(226, 248, 250) !important; 
     border-radius: 10px; 
-    padding: 20px; /* Espacio interno */
+    padding: 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
-    max-width: 600px;
     margin: 0 auto; 
-  }
-  
+    width: 100%;
+}
 
 /* Termina index */
+
+
 /* -----CSS para formularios -----*/
 h1 {
     font-weight: bold;
@@ -675,7 +705,7 @@ h2 {
 }
 
 .product-card button {
-    background-color: #000a63;
+    background-color: #0a0063;
     border-color: #20e5f6;
     /* background-color: #f68e56; */
     color: white;
