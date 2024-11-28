@@ -114,7 +114,7 @@ document.getElementById("formularioProducto").addEventListener("submit", functio
         cantidad: parseInt(cantidad), // Asegúrate de que la cantidad sea un número entero
         codigo: codigo,
         imagen: imagen.name // O solo el nombre de la imagen
-    }
+    
     };
 
 
