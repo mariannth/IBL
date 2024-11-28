@@ -56,7 +56,7 @@ document.getElementById("enviarMensaje").addEventListener("click", function () {
 /*EMAIL*/
 // Inicializa EmailJS con tu User ID
 (function () {
-  emailjs.init("oKasd2SLlI5zI9Ks_"); // Sustituye "TU_PUBLIC_KEY" con la clave pública correcta
+  emailjs.init("gmiJc0yrehImR_piP"); // Sustituye "TU_PUBLIC_KEY" con la clave pública correcta (estaba esta) oKasd2SLlI5zI9Ks_
 
 })();
 
@@ -105,7 +105,7 @@ document
         mensaje: mensaje,
       };
       // Enviar el correo utilizando EmailJS
-      emailjs.send("service_w2oa8sv", "template_iiymiwh", datosFormulario).then(
+      emailjs.send("service_nucnjfv", "template_mm46z4u", datosFormulario).then(
         function (response) {
           alert(
             "¡Gracias por contactarnos! Tu mensaje ha sido enviado correctamente."
