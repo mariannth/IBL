@@ -111,6 +111,11 @@ document.getElementById("formularioProducto").addEventListener("submit", functio
         return; // Se detiene el envío si falta una imagen
     }
 
+     //En la cantidad no se pueden agregar numeros negativos
+     if (cantidad <= 0) {
+        showAlert("Ingresa una catidad mayor a 0.", "warning");
+        return;
+     }
 
 
     // Crear el objeto productoData con los datos del formulario
