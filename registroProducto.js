@@ -103,6 +103,9 @@ document.getElementById("formularioProducto").addEventListener("submit", functio
 
     // Crear el objeto productoData con los datos del formulario
     const productoData = {
+        
+   // constructor(nombre, descripcion, marca, categoria, precio, cantidad, codigo, imagen) { // Para programacion orientada a objetos
+
         nombre: nombre,
         descripcion: descripcion,
         marca: marca,
@@ -111,6 +114,7 @@ document.getElementById("formularioProducto").addEventListener("submit", functio
         cantidad: parseInt(cantidad), // Asegúrate de que la cantidad sea un número entero
         codigo: codigo,
         imagen: imagen.name // O solo el nombre de la imagen
+    }
     };
 
 
