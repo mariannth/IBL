@@ -1,42 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Icono de pestaña -->
+    <!-- Icono de pestaña -->
     <link rel="icon" type="image/jpg" href="/src/img/favicon.jpg">
     <title>Inicio - IBL</title>
-<!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<!-- Google Icons -->
+    <!-- Google Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<!-- iconos -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-<!-- CSS Personalizado lineas index 289 a 424 aprox.   -->
+    <!-- iconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- CSS Personalizado lineas index 289 a 424 aprox.   -->
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <!-- header/navbar cargado desde una funcion, animacion estrellas,. -->
+
 <body class="bg-light d-flex flex-column min-vh-100">
     <div id="header"></div>
     <main class="flex-grow-1">
         <div class="background-animation"></div>
         <div class="content">
             <hr><br><br>
-<!-- Decidi usar CSS inline para la manipulacion exacta de esta etiqueta -->
+            <!-- Decidi usar CSS inline para la manipulacion exacta de esta etiqueta -->
             <h1 style="color: white; margin-bottom: 20px; padding-bottom: 15px; font-size: 2.4rem;">"Bienvenidos a
                 Infinite Byte League, donde la tecnología de calidad está al alcance de tod@s."</h1>
             <hr>
             <img id="petlogo" src="./src/img/Logo/petlogo.png" alt="infinitebyteleaguelogobanner">
             <div><button id="petBtn" class="normal">¡Conócenos!</button>
             </div>
-            <br><br><br><hr><br>
+            <br><br><br>
+            <hr><br>
             <h1 class="index-h1">Articulos de temporada:</h1>
             <hr>
-<!-- Los productos se agregarán aquí mediante JavaScript -->
+            <!-- Los productos se agregarán aquí mediante JavaScript -->
             <section class="index-product-grid" id="index-product-grid">
                 <div id="index-product-container"></div>
             </section>
-<!-- Index card grid -->
+            <!-- Index card grid -->
             <div class="index-card">
                 <div>
                     <hr><br>
@@ -60,27 +63,29 @@
             </div>
             <div id="banner" class="section-m1">
                 <div class="banner-content">
-                <button id="btnQuieroSaberMas" class="normal">Únete a la comunidad</button>
+                    <button id="btnQuieroSaberMas" class="normal">Únete a la comunidad</button>
                 </div>
             </div>
-            <br><br><br><hr><br>
-            <h1 style="color: white; margin-bottom: 20px; padding-bottom: 15px; font-size: 2.4rem;">Dejanos tu comentarios</h1>
+            <br><br><br>
             <hr><br>
-<!-- SDK de Facebook -->
+            <h1 style="color: white; margin-bottom: 20px; padding-bottom: 15px; font-size: 2.4rem;">Dejanos tu
+                comentarios</h1>
+            <hr><br>
+            <!-- SDK de Facebook -->
             <div id="fb-root"></div>
             <script async defer crossorigin="anonymous"
                 src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v15.0&appId=950183320332574&autoLogAppEvents=1">
                 </script>
-<!-- Contenedor del plugin de comentarios -->
+            <!-- Contenedor del plugin de comentarios -->
             <div class="fb-comments" data-href="https://mariannth.github.io/IBL/index.html" data-width="100%"
                 data-numposts="5">
             </div>
-<!-- Plugin de la página de Facebook -->
+            <!-- Plugin de la página de Facebook -->
             <div class="fb-page" data-tabs="events"
                 data-href="https://www.facebook.com/people/Infinity-Byte-League/61568204116183/" data-width="480">
             </div>
     </main>
-<!-- Footer cargado desde una funcion.-->
+    <!-- Footer cargado desde una funcion.-->
     <div id="footer"></div>
     <script>
         function loadComponent(id, file) {
@@ -94,7 +99,8 @@
     </script>
     <script defer src="./js/index.js"></script>
     <script src="./js/script.js"></script>
-<!-- Bootstrap JS -->
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
