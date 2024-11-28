@@ -178,3 +178,15 @@ document.getElementById("formularioProducto").addEventListener("submit", functio
         location.reload();
     }, 500); // Recarga la página después de 500 ms (medio segundo)
     });*/
+
+/* // Creacion  del objeto FormData, ES UN OBJETO JAVASCRIPT CON LOS DATOS DEL FORM
+    const formData = new FormData();
+    formData.append("nombre", nombre);
+    formData.append("descripcion", descripcion);
+    formData.append("marca", marca);
+    formData.append("categoria", categoria);
+    formData.append("precio", precio);
+    formData.append("cantidad", cantidad);
+    formData.append("imagen", imagen); // Añadir el archivo de imagen
+
+*/ 
