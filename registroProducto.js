@@ -76,7 +76,15 @@ document.getElementById("formularioProducto").addEventListener("submit", functio
     if (!precio) {
         showAlert("Por favor, ingresa un precio.", "warning");
         return; // Detiene el envío si falta el precio
+    
     }
+    // En el precio no se pudend agregar numeros negativos
+    if (precio <= 0) {
+        showAlert("El precio debe ser mayor a 0.", "warning");
+        return;
+    }
+
+
     if (isNaN(precio)) {
         showAlert("Por favor, ingresa solo números en el campo de precio.", "warning");
         return; // Se detiene el envío si hay letras u otros caracteres
@@ -92,7 +100,11 @@ document.getElementById("formularioProducto").addEventListener("submit", functio
         showAlert("Por favor, ingresa solo números en el campo de cantidad.", "warning");
         return; // Se detiene el envío si hay letras u otros caracteres
     }
-
+    
+    if (cantidad <= 0) {
+        showAlert("La cantidad debe ser mayor a 0.", "warning");
+        return;
+    }
     // Para verificar si el campo "imagen" está vacío
     if (!imagen) {
         showAlert("Por favor, ingresa una imagen.", "warning");
