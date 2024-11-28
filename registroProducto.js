@@ -171,3 +171,10 @@ document.getElementById("formularioProducto").addEventListener("submit", functio
 
 
 
+
+
+    /*// Recargar la página después de un pequeño retraso  ------ REVISAR
+    setTimeout(() => {
+        location.reload();
+    }, 500); // Recarga la página después de 500 ms (medio segundo)
+    });*/
