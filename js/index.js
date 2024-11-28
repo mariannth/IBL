@@ -1,13 +1,13 @@
 // Boton "¡Conocenos!" - Redirige a "acerca_nosotros.html"
 const btnConocenos = document.getElementById('petBtn');
 btnConocenos.addEventListener('click', () => {
-    window.location.href = '/acerca_nosotros.html'; 
+    window.location.href = './acerca_nosotros.html'; 
 });
 
 // Boton "Quiero saber mas" - Redirige a "productos.html"
 const btnQuieroSaberMas = document.getElementById('btnQuieroSaberMas');
 btnQuieroSaberMas.addEventListener('click', () => {
-    window.location.href = '/registro.html'; 
+    window.location.href = './registro.html'; 
 });
 
 // Lista de productos con sus categorías
