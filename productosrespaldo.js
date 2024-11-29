@@ -86,3 +86,43 @@ window.onload = () => {
 document.getElementById("category-filter").addEventListener("change", (event) => {
     renderProducts(event.target.value);
 });
+//Modificar productos
+function updateProduct (id, newName, newPrice, newCategory, newImg){
+    const product =products.find (p => p.id === id); //Busca el producto por id
+    if (product){
+        product.name = newName || product.name; //Si cambia el nombre se actualiza 
+        product.price = newPrice || product.price; // Si cambia el precio debe actualizar
+        product.category = newCategory || product.category; // Actualiza la categoría 
+        product.img = newImg || product.img; // Por si cambia la imagen
+
+    }
+
+    renderProducts(); //renderiza de nuevo los productos
+}
+function editProductAndRedirect(productId) {
+    window.location.href = `registroProducto.html?id=${productId}`;
+  }
+//Eliminar un producto
+
+function deleteProduct(id){
+    const productIndex = products.filter (p => p.id !== undefined).findIndex(p => p.id === id); //busca el índice del producto
+    if (productIndex !== -1){
+        products.splice(productIndex, 1); //elimina el producto del arreglo 
+    } else{
+        console.error("Producto no encontrado con id", id); //verificar que el id esté en el arreglo
+    }
+
+    renderProducts(); // renderiza otra vez los productos
+}
+
+//Eliminar todos los productos
+
+function clearAllProducts(){
+    products.length = 0; // vacía el arreglo
+    renderProducts(); //renderiza otra vez 
+}
+
+// Agregar al carrito
+function redirectToCart() {
+    window.location.href = 'carrito_compras.html';
+  }
