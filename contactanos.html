@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contáctanos - IBL</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- iconos -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <!-- CSS Personalizado -->
+  <link rel="stylesheet" href="./css/styles.css">
+  <!--Llamar libreria de Emailjs-->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript"></script>
+</head> 
+
+<body class="bg-light d-flex flex-column min-vh-100">
+  <div id="header"></div>
+  <main class="flex-grow-1">
+    <div class="background-animation"></div>
+    <div class="content">
+      <h2 id="contactanos">¡Contáctanos, somos tu mejor opción!</h2>
+      <div class="card-body" style="justify-content: center;">
+        <p class="p_contactanos" id="dejanosDatos">| Déjanos tus datos, nosotros te contactaremos</p>
+      </div>
+      <br>
+      <div class="card_contact">
+        <div class="card-body">
+          <div id="contact_form" class="col-md-12">
+            <div class="row">
+              <div class="col-12 col-sm-6 mb-3">
+                <label for="fullname" class="form-label">Nombre</label>
+                <div id="nombre">
+                  <input type="text" class="form-control" placeholder="ej: Arezbi Zuñiga">
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 mb-3">
+                <label for="enterprise" class="form-label">Empresa</label>
+                <input type="text" class="form-control" id="enterprise" placeholder="ej: Empresa X" name="enterprise"
+                  aria-label="Empresa">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-sm-6 mb-3">
+                <label for="position" class="form-label">Cargo</label>
+                <input type="text" class="form-control" id="position" placeholder="ej: Gerente" name="position"
+                  aria-label="Posicion">
+              </div>
+              <div class="col-12 col-sm-6 mb-3">
+                <label for="country" class="form-label">País</label>
+                <input type="text" class="form-control" id="country" placeholder="ej: México" name="country"
+                  aria-label="Pais">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-sm-6 mb-3">
+                <label for="phone" class="form-label">Teléfono</label>
+                <div class="dato entrada" id="phone">
+                  <input type="text" class="form-control" id="phone" placeholder="*********" name="phone"
+                    aria-label="Telefono">
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 mb-3">
+                <label for="email-contactanos" class="form-label">Email</label>
+                <div class="dato entrada" id="email-contactanos">
+                  <input type="email" class="form-control" placeholder="ej: Arez8@gmail.com">
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <select class="form-select" id="service" name="service">
+                <option value="Dudas con tu pedido">Dudas con tu pedido</option>
+                <option value="Pedido Especial/Mayoreo">Pedido Especial/Mayoreo</option>
+                <option value="Sugerencias">Sugerencias</option>
+                <option value="Quejas">Quejas</option>
+              </select>
+
+            </div>
+
+            <div class="row">
+              <div class="col-12 mb-3">
+                <label for="message" class="form-label">Mensaje</label>
+                <div class="dato entrada" id="mensajito">
+                  <textarea class="form-control" rows="3" placeholder="Tu mensaje"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="row mb-4">
+              <div class="col-12 mb-2 form-check">
+                <div class="dato entrada" id="terms">
+                  <input type="checkbox" class="form-check-input" id="terms">
+                </div>
+                <label class="form-check-label">Aceptar términos y condiciones de privacidad </label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-20 mb-3">
+                <button type="click" class="btn btn-primary p-3 w-50 fw-bold fs-10" id="enviarMensaje">Enviar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br><br>
+  </main>
+
+  <!--Footer-->
+  <div id="footer"></div>
+  <script>
+
+    function loadComponent(id, file) {
+      fetch(file)
+        .then(response => response.text())
+        .then(data => document.getElementById(id).innerHTML = data)
+        .catch(error => console.error('Error loading component:', error));
+    }
+
+    loadComponent("header", "./components/header.html");
+    loadComponent("footer", "./components/footer.html");
+  </script>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="./js/contactanos.js" defer></script>
+
+</body>
+
+</html>
