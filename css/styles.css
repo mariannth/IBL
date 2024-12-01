@@ -313,7 +313,7 @@ button.normal {
     color: #ffffff;
     background-color: transparent;
     border-radius: 25px;
-    cursor: pointer;
+    cursor: pointer; /*Revisar esta parte del codigo porque se ve feooooooooooo*/
     border: ridge;
     background-repeat: no-repeat;
     font-weight: 700;
