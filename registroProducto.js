@@ -142,6 +142,15 @@ document.getElementById("formularioProducto").addEventListener("submit", functio
      console.log("Objeto JSON:", productoJSON);
 
 
+
+
+
+
+
+
+
+
+/*GUARDAR PRODUCTOS EN LOCAL STORAGE, CREO NO LO NECESITO
      // Guardar el producto en localStorage
      let productos = JSON.parse(localStorage.getItem("productos")) || [];
      productos.push(productoData); // Agregar el nuevo producto al array
@@ -185,6 +194,10 @@ document.getElementById("formularioProducto").addEventListener("submit", functio
  
  // Al cargar la página, mostrar los productos guardados
  document.addEventListener("DOMContentLoaded", actualizarListaDeProductos);
+
+*/
+
+
 
 
 
@@ -234,4 +247,4 @@ document.getElementById("formularioProducto").addEventListener("submit", functio
 });
 
 
-*/ 
+*/
