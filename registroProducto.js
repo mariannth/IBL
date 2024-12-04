@@ -130,7 +130,7 @@ document.getElementById("formularioProducto").addEventListener("submit", functio
         precio: parseFloat(precio), // Asegúrate de que el precio sea un número
         cantidad: parseInt(cantidad), // Asegúrate de que la cantidad sea un número entero
         codigo: codigo,
-        imagen: imagen.name // O solo el nombre de la imagen
+        imagen: imagen // Con esto no solo se guarda el nombre, sino que se obteiene el archivo completo para enviar a servidor
     
     };
 
