@@ -119,9 +119,9 @@ document.getElementById("formularioProducto").addEventListener("submit", functio
 
 
     // Crear el objeto productoData con los datos del formulario
+       // constructor(nombre, descripcion, marca, categoria, precio, cantidad, codigo, imagen) { // Para programacion orientada a objetos
     const productoData = {
         
-   // constructor(nombre, descripcion, marca, categoria, precio, cantidad, codigo, imagen) { // Para programacion orientada a objetos
 
         nombre: nombre,
         descripcion: descripcion,
@@ -142,6 +142,45 @@ document.getElementById("formularioProducto").addEventListener("submit", functio
      console.log("Objeto JSON:", productoJSON);
 
 
+//Para enviar datos simples se usa json, pero como se envia imagen usamos form data
+// Creacion  del objeto FormData, ES UN OBJETO JAVASCRIPT CON LOS DATOS DEL FORM
+//Envia datos de form e IMAGEN, VIDEOS U OTROS ARCHIVOS A TRAVES DE HTTP USANDO POST
+    const formData = new FormData();
+    formData.append("nombre", nombre);
+    formData.append("descripcion", descripcion);
+    formData.append("marca", marca);
+    formData.append("categoria", categoria);
+    formData.append("precio", precio);
+    formData.append("cantidad", cantidad);
+    formData.append("codigo", codigo);
+    formData.append("imagen", imagen); // Añadir el archivo de imagen
+
+
+
+    
+    // Sirve para enviar datos al servidor usando fetch y enviarla al servidro  local
+    fetch("http://localhost:3306/registro-producto", {
+        method: "POST",
+        body: formData, // Se envia el FormData
+    })
+
+        .then((response) => response.json())
+        .then((data) => {
+            console.log("Producto registrado:", data);
+            showAlert("¡Producto registrado con éxito!", "success"); // resgitra si el formulario fue procesado y enviado correctamente
+
+            // Todavia no se si ponerlo aqui: para la página después del registro exitoso
+            setTimeout(() => {
+                // Puedes redirigir a una página o limpiar el formulario
+                document.getElementById("formularioProducto").reset(); 
+            }, 500);
+
+        })
+        .catch((error) => {
+            console.error("Error:", error);
+            showAlert("Hubo un error al registrar el producto.", "danger");
+        });
+});
 
 
 
@@ -150,7 +189,10 @@ document.getElementById("formularioProducto").addEventListener("submit", functio
 
 
 
-/*GUARDAR PRODUCTOS EN LOCAL STORAGE, CREO NO LO NECESITO
+
+
+
+/*//GUARDAR PRODUCTOS EN LOCAL STORAGE, CREO NO LO NECESITO
      // Guardar el producto en localStorage
      let productos = JSON.parse(localStorage.getItem("productos")) || [];
      productos.push(productoData); // Agregar el nuevo producto al array
@@ -198,53 +240,8 @@ document.getElementById("formularioProducto").addEventListener("submit", functio
 */
 
 
-
-
-
-
-
     /*// Recargar la página después de un pequeño retraso  ------ REVISAR
     setTimeout(() => {
         location.reload();
     }, 500); // Recarga la página después de 500 ms (medio segundo)
     });*/
-
-/* // Creacion  del objeto FormData, ES UN OBJETO JAVASCRIPT CON LOS DATOS DEL FORM
-    const formData = new FormData();
-    formData.append("nombre", nombre);
-    formData.append("descripcion", descripcion);
-    formData.append("marca", marca);
-    formData.append("categoria", categoria);
-    formData.append("precio", precio);
-    formData.append("cantidad", cantidad);
-    formData.append("imagen", imagen); // Añadir el archivo de imagen
-
-
-
-    
-    // Sirve para enviar datos al servidor usando fetch y enviarla al servidro  local
-    fetch("http://localhost:3000/registro-producto", {
-        method: "POST",
-        body: formData, // Se envia el FormData
-    })
-
-        .then((response) => response.json())
-        .then((data) => {
-            console.log("Producto registrado:", data);
-            showAlert("¡Producto registrado con éxito!", "success"); // resgitra si el formulario fue procesado y enviado correctamente
-
-            // Todavia no se si ponerlo aqui: para la página después del registro exitoso
-            setTimeout(() => {
-                // Puedes redirigir a una página o limpiar el formulario
-                document.getElementById("formularioProducto").reset(); 
-            }, 500);
-
-        })
-        .catch((error) => {
-            console.error("Error:", error);
-            showAlert("Hubo un error al registrar el producto.", "danger");
-        });
-});
-
-
-*/
