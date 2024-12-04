@@ -100,22 +100,26 @@ document.getElementById("formularioProducto").addEventListener("submit", functio
         showAlert("Por favor, ingresa solo números en el campo de cantidad.", "warning");
         return; // Se detiene el envío si hay letras u otros caracteres
     }
-    
+    //En la cantidad no se pueden agregar numeros negativos
     if (cantidad <= 0) {
-        showAlert("La cantidad debe ser mayor a 0.", "warning");
+        showAlert("Ingresa una catidad mayor a 0.", "warning");
         return;
-    }
+         }
+ 
     // Para verificar si el campo "imagen" está vacío
     if (!imagen) {
         showAlert("Por favor, ingresa una imagen.", "warning");
         return; // Se detiene el envío si falta una imagen
     }
 
-     //En la cantidad no se pueden agregar numeros negativos
-     if (cantidad <= 0) {
-        showAlert("Ingresa una catidad mayor a 0.", "warning");
-        return;
-     }
+    /*/ FORMATOS ADMITIDOS, NO PERMITE ENVIAR OTRAS COSAS
+    if (imagen) {
+        const tipoImagen = ["image/jpeg", "image/png", "image/gif"];
+        if (!tipoImagen.includes(imagen.type)) {
+            showAlert("Sube la imagen en JPG, PNG O GIF (JPG, PNG o GIF).", "warning");
+            return;
+        }
+*/
 
 
     // Crear el objeto productoData con los datos del formulario
