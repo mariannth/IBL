@@ -112,7 +112,7 @@ document.getElementById("formularioProducto").addEventListener("submit", functio
         return; // Se detiene el envío si falta una imagen
     }
 
-     FORMATOS ADMITIDOS, NO PERMITE ENVIAR OTRAS COSAS
+    // FORMATOS ADMITIDOS, NO PERMITE ENVIAR OTRAS COSAS
     if (imagen) {
         const tipoImagen = ["image/jpeg", "image/png", "image/gif"];
         if (!tipoImagen.includes(imagen.type)) {
