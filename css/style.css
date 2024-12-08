@@ -1,0 +1,83 @@
+/* Reset de estilos
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+#fondo{
+color:#ffffff;
+    } 
+}
+.header{
+    background-color: #020f1f;
+}
+.container{
+    .text-uppercase{color:#ffffff;
+        .border-star{color: #20e5f6;
+        }
+}
+}*/
+/* Importar fuente Codec Pro */
+@import url('https://fonts.googleapis.com/css2?family=Codec+Pro:wght@400;600&display=swap');
+
+/* Fuente predeterminada */
+body {
+    font-family: 'Codec Pro, sans-serif';
+    background-color: #020f1f;
+    color: #ffffff;
+}
+/*HEADER*/ 
+
+/* Ajustes Navbar */
+.navbar {
+    background-color: #000a63;
+    background-color: #020f1f !important;
+    
+}
+.navbar-brand img {
+    width: 40px;
+    height: 40px;
+}
+.nav-link {
+    color: #ffffff !important;
+    color: #20e5f6 !important;
+}
+
+.nav-link:hover {
+    color: #00c2ff !important;
+}
+
+.navbar-brand {
+    font-family: 'Codec Pro', sans-serif;
+    color: #20e5f6 !important;
+}
+
+.navbar-toggler {
+    border-color: #20e5f6;
+}
+
+.dropdown-menu {
+    background-color: #282120;
+}
+
+.dropdown-item {
+    color: #ffffff;
+}
+
+.dropdown-item:hover {
+    background-color: #00c2ff;
+    color: #020f1f;
+}
+
+/* Botones personalizados */
+.btn-primary {
+    background-color: #00c2ff;
+    border-color: #00c2ff;
+}
+
+.btn-primary:hover {
+    background-color: #20e5f6;
+}
+/*TERMINA HEADER*/

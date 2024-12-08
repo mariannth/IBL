@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./css/styles.css">
     <!-- <link rel="stylesheet" href="./css/productos.css"> -->
 </head>
+<<<<<<< HEAD
 
 <body class="bg-light d-flex flex-column min-vh-100">
     <div id="header"></div>
@@ -25,6 +26,88 @@
         <div class="background-animation"></div>
         <div class="content">
             <h1>Productos</h1>
+=======
+<body>
+    <header>
+        <!-- Menú Fijo -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./src/img/LOGO_OFICIAL.jpg" alt="Logo Empresa" class="d-inline-block align-text-center">
+                    IBL
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Menú -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html"> <i class="fa-solid fa-house"></i>
+                                Inicio</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="acerca_nosotros.html">
+                                <i class="fa-solid fa-users"></i>
+                                Acerca de nosotros
+                            </a>
+                        </li>
+<<<<<<< HEAD
+<<<<<<< HEAD
+                        <li class="nav-item"><a class="nav-link" href="productos.html"> <i
+                                    class="fa-solid fa-magnifying-glass"></i>
+                                Nuestros productos </a></li>
+=======
+                        <li class="nav-item"><a class="nav-link" href="serviciosIBL.html"> <i
+                                    class="fa-solid fa-magnifying-glass"></i>
+                                Nuestros servicios</a></li>
+>>>>>>> 0fe138e (Actualicé elcódigo)
+=======
+                        <li class="nav-item"><a class="nav-link" href="productos.html"> <i
+                                    class="fa-solid fa-magnifying-glass"></i>
+                                Nuestros productos </a></li>
+>>>>>>> 5b703c4 (Actualizando el código, ya solo falta agregar todos los productos y las imagenes)
+                        <li class="nav-item"><a class="nav-link" href="Contactanos.html"> <i
+                                    class="fa-regular fa-address-book"></i>
+                                Contáctanos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cotizacion.html"> <i class="fa-solid fa-dollar-sign"></i>
+                                Cotiza Ahora!</a></li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="carrito_compras.html">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Carrito
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarUser" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-user"></i>
+                                Bienvenido "Usuario"
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarUser">
+                                <li><a class="dropdown-item" href="#configuracion">Configurar Usuario</a></li>
+                                <li><a class="dropdown-item" href="#logout">Logout</a></li>
+                                <li><a class="dropdown-item" href="registro.html">Regístrate!</a></li>
+                                <li><a class="dropdown-item" href="login.html">Login</a></li>
+                            </ul>
+                        </li>
+    
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+        <h1>Productos</h1>
+ 
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5b703c4 (Actualizando el código, ya solo falta agregar todos los productos y las imagenes)
+        <main>
+>>>>>>> gerardog_IBL
             <section class="filters">
                 <h3>Filtrar por Categoría</h3>
                 <select id="category-filter">
@@ -63,6 +146,76 @@
             <section class="product-grid" id="product-grid">
                 <!-- Los productos se agregarán aquí mediante JavaScript -->
             </section>
+<<<<<<< HEAD
+=======
+        </main>
+    
+<<<<<<< HEAD
+=======
+    <!-- Filtros -->
+    <div class="filters">
+        <h3>Filtrar Productos</h3>
+        
+        <!-- Filtro por Precio -->
+        <div class="filter">
+            <label for="price-filter">Precio:</label>
+            <select id="price-filter">
+                <option value="todos">Todos</option>
+                <option value="bajo">$8,000</option>
+                <option value="medio">$11,000</option>
+                <option value="alto">$15,000</option>
+            </select>
+        </div>
+        
+        <!-- Filtro por Marca -->
+        <div class="filter">
+            <label for="brand-filter">Marca:</label>
+            <select id="brand-filter">
+                <option value="todos">Todos</option>
+                <option value="marca1">Marca 1</option>
+                <option value="marca2">Marca 2</option>
+                <option value="marca3">Marca 3</option>
+            </select>
+        </div>
+
+        <!-- Filtro por Producto -->
+        <div class="filter">
+            <label for="product-filter">Producto:</label>
+            <select id="product-filter">
+                <option value="todos">Todos</option>
+                <option value="producto1">Computadoras</option>
+                <option value="producto2">Laptops</option>
+                <option value="producto3">Cámaras web, mouse, teclados.</option>
+                <option value="producto3">Auriculares, audífonos, cables</option>
+                <option value="producto3">Altavoces o bocinas</option>
+                <option value="producto3">Smart phones</option>
+                <option value="producto3">Smart watch y VR</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Productos -->
+    <div id="product-list" class="product-list">
+        <!-- Los productos se cargarán aquí con JavaScript -->
+    </div>
+>>>>>>> 0fe138e (Actualicé elcódigo)
+=======
+>>>>>>> 5b703c4 (Actualizando el código, ya solo falta agregar todos los productos y las imagenes)
+<!--Footer-->
+    <footer class="footer">
+        <div class="footer-contenido">
+            <p>&copy; 2024 Infinity Byte League | Todos los derechos reservados.</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/profile.php?id=61568204116183" target="_blank" class="social-icon facebook" title="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            
+                <a href="https://www.instagram.com/ibl_development?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="social-icon instagram" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                
+            </div>
+>>>>>>> gerardog_IBL
         </div>
 
         <br><br>
