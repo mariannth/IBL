@@ -3,7 +3,7 @@ const products = [
     { id: 1, name: "Laptop Acer Aspire 3", category: "Laptops", price: "$8,700 MXN", img:"Laptops/ACER2.jpg" },
     { id: 2, name: "Laptop ASUS VivoBook 5", category: "Laptops", price: "$8,600 MXN", img: "Laptops/ASUS3.jpg" },
     { id: 3, name: "Laptop DELL Inspiron 15", category: "Laptops", price: "$8,499 MXN", img: "Laptops/DELL2.jpg" },
-    { id: 4, name: "Laptop HP Pavilion x360", category: "Laptops", price: "$10,999 MXN", img: "Laptops/hp3.jpg" },
+    { id: 4, name: "Laptop HP Pavilion x360", category: "Laptops", price: "$10,999 MXN", img: "Laptops/HP3.jpg" },
     { id: 5, name: "Lenovo IdeaPad 3", category: "Laptops", price: "$7,000 MXN", img: "Laptops/LENOVO2.jpg" },
     { id: 6, name: "Infinix Note 40 pro Dual Sim", category: "Smartphones", price: "$4,500 MXN", img: "product6.jpg" },
     { id: 7, name: "OPPO Reno 11 5G Dual SIM", category: "Smartphones", price: "$7,000 MXN", img: "product7.jpg" },
@@ -27,7 +27,7 @@ const products = [
     { id: 26, name: "Lenovo sff m710S i5-7500 ThinkCentre ", category: "Computadoras", price: "$5,799 MXN", img: "product26.jpg" },
     { id: 27, name: "PC Lenovo sff m79 AMD A8 4GB y 500GB HDD Con Monitor de 19p ThinkCentre Clase A", category: "Computadoras", price: "$6,899 MXN", img: "product27.jpg" },
     { id: 28, name: "Lenovo WORKSTATION P520 XEON 1TB SSD +3TB HDD 16GB RAM thinkstation P520", category: "Computadoras", price: "$11,399 MXN", img: "product28.jpg" },
-    { id: 29, name: "Lenovo Tiny Lenovo M720Q i3-9 8 GB en RAM y 240 GB SSD con LCD de 19 pulgadas ThinkCentre", category: "Computadoras", price: "$$7,499 MXN", img: "product29.jpg" },
+    { id: 29, name: "Lenovo Tiny Lenovo M720Q i3-9 8 GB en RAM y 240 GB SSD con LCD de 19 pulgadas ThinkCentre", category: "Computadoras", price: "$7,499 MXN", img: "product29.jpg" },
     { id: 30, name: "All In One HP Intel Celeron-N100", category: "Computadoras", price: "$6,899 MXN", img: "product30.jpg" },
     { id: 31, name: "HP 800 G2 SFF-Core i5-6ta gen-8GB RAM, 500 GB HDD", category: "Computadoras", price: "$5,999 MXN", img: "product31.jpg" },
     { id: 32, name: "HP i5 USFF 4 GB RAM 250 GB HD Windows 10", category: "Computadoras", price: "$4,299 MXN", img: "product32.jpg" },
@@ -67,10 +67,12 @@ function renderProducts(filter = "all") {
         productCard.classList.add("product-card");
 
         productCard.innerHTML = `
-            <img src="${product.image}" alt="${product.name}">
+            <img src="${product.img}" alt="${product.name}">
             <h2>${product.name}</h2>
             <p>${product.price}</p>
-            <button>Agregar al carrito</button>
+            <button onclick = "redirectToCart()"> Agregar al carrito</button>
+            <button onclick = "editProductAndRedirect(${product.id})">Editar</button>
+             <button onclick = "deleteProduct(${product.id})">Borrar</button>
         `;
 
         productGrid.appendChild(productCard);
@@ -86,6 +88,8 @@ window.onload = () => {
 document.getElementById("category-filter").addEventListener("change", (event) => {
     renderProducts(event.target.value);
 });
+
+
 //Modificar productos
 function updateProduct (id, newName, newPrice, newCategory, newImg){
     const product =products.find (p => p.id === id); //Busca el producto por id
