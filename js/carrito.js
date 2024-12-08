@@ -1,9 +1,5 @@
  // Productos disponibles
-<<<<<<< HEAD
  const products = [
-=======
-const products = [
->>>>>>> gerardog_IBL
     { id: 1, name: "Laptop Acer Aspire 3", category: "Laptops", price: 8700, image: "product1.jpg" },
     { id: 2, name: "Laptop ASUS VivoBook 5", category: "Laptops", price: 8600, image: "product2.jpg" },
     { id: 3, name: "Laptop DELL Inspiron 15", category: "Laptops", price: 8499, image: "product3.jpg" },
@@ -50,11 +46,7 @@ const renderCart = () => {
 // Función para calcular el total del carrito
 const calculaTotal = () => {
     const total = cart.reduce((accum, item) => accum + item.price * item.quantity, 0);  // Suma el total de todos los productos
-<<<<<<< HEAD
     totalDisplay.textContent = `Total: $${total.toFixed(2)}`;  // Muestra el total en el HTML
-=======
-    totalDisplay.textContent = `Total: ${total.toFixed(2)}`;  // Muestra el total en el HTML
->>>>>>> gerardog_IBL
 };
 
 // Función para vaciar el carrito
@@ -92,8 +84,4 @@ renderCart();
 
 // Eventos
 cartTable.addEventListener("click", cartActions);  // Escucha los clics en los botones de incrementar/disminuir
-<<<<<<< HEAD
 emptyCartBtn.addEventListener("click", emptyCart);  // Escucha el clic para vaciar el carrito
-=======
-emptyCartBtn.addEventListener("click", emptyCart);  // Escucha el clic para vaciar el carrito
->>>>>>> gerardog_IBL
