@@ -71,12 +71,18 @@ document.getElementById("formularioProducto").addEventListener("submit", functio
     return; // Se detiene el envío si hay letras u otros caracteres
     }
 
-
-    // Para vrificar si el campo "precio" está vacío
-    if (!precio) {
+     // Para vrificar si el campo "precio" está vacío
+     if (!precio) {
         showAlert("Por favor, ingresa un precio.", "warning");
         return; // Detiene el envío si falta el precio
+    
     }
+    // En el precio no se pudend agregar numeros negativos
+    if (precio <= 0) {
+        showAlert("El precio debe ser mayor a 0.", "warning");
+        return;
+    }
+
     if (isNaN(precio)) {
         showAlert("Por favor, ingresa solo números en el campo de precio.", "warning");
         return; // Se detiene el envío si hay letras u otros caracteres
@@ -92,16 +98,32 @@ document.getElementById("formularioProducto").addEventListener("submit", functio
         showAlert("Por favor, ingresa solo números en el campo de cantidad.", "warning");
         return; // Se detiene el envío si hay letras u otros caracteres
     }
+    //En la cantidad no se pueden agregar numeros negativos
+    if (cantidad <= 0) {
+        showAlert("Ingresa una catidad mayor a 0.", "warning");
+        return;
+         }
+ 
 
     // Para verificar si el campo "imagen" está vacío
     if (!imagen) {
         showAlert("Por favor, ingresa una imagen.", "warning");
         return; // Se detiene el envío si falta una imagen
     }
+   // FORMATOS ADMITIDOS, NO PERMITE ENVIAR OTRAS COSAS
+   if (imagen) {
+    const tipoImagen = ["image/jpeg", "image/png", "image/gif"];
+    if (!tipoImagen.includes(imagen.type)) {
+        showAlert("Sube la imagen en JPG, PNG O GIF (JPG, PNG o GIF).", "warning");
+        return;
+    }
 
-
+}
 
     // Crear el objeto productoData con los datos del formulario
+    // constructor(nombre, descripcion, marca, categoria, precio, cantidad, codigo, imagen) { // Para programacion orientada a objetos
+   
+    
     const productoData = {
         nombre: nombre,
         descripcion: descripcion,
@@ -110,7 +132,7 @@ document.getElementById("formularioProducto").addEventListener("submit", functio
         precio: parseFloat(precio), // Asegúrate de que el precio sea un número
         cantidad: parseInt(cantidad), // Asegúrate de que la cantidad sea un número entero
         codigo: codigo,
-        imagen: imagen.name // O solo el nombre de la imagen
+        imagen: imagen  // Con esto no solo se guarda el nombre, sino que se obteiene el archivo completo para enviar a servidor
     };
 
 
@@ -119,6 +141,18 @@ document.getElementById("formularioProducto").addEventListener("submit", functio
 
      // Mostrar el objeto JSON en la consola (opcional)
      console.log("Objeto JSON:", productoJSON);
+    //Para enviar datos simples se usa json, pero como se envia imagen usamos form data
+    // Creacion  del objeto FormData, ES UN OBJETO JAVASCRIPT CON LOS DATOS DEL FORM
+    //Envia datos de form e IMAGEN, VIDEOS U OTROS ARCHIVOS A TRAVES DE HTTP USANDO POST
+    const formData = new FormData();
+    formData.append("nombre", nombre);
+    formData.append("descripcion", descripcion);
+    formData.append("marca", marca);
+    formData.append("categoria", categoria);
+    formData.append("precio", precio);
+    formData.append("cantidad", cantidad);
+    formData.append("codigo", codigo);
+    formData.append("imagen", imagen); // Añadir el archivo de imagen
 
 
      // Guardar el producto en localStorage
@@ -165,5 +199,32 @@ document.getElementById("formularioProducto").addEventListener("submit", functio
  // Al cargar la página, mostrar los productos guardados
  document.addEventListener("DOMContentLoaded", actualizarListaDeProductos);
 
+ /*
+    // Sirve para enviar datos al servidor usando fetch y enviarla al servidro  local
+    fetch("http://localhost:3306/registro-producto", {
+        method: "POST",
+        body: formData, // Se envia el FormData
+    })
 
+        .then((response) => response.json())
+        .then((data) => {
+            console.log("Producto registrado:", data);
+            showAlert("¡Producto registrado con éxito!", "success"); // resgitra si el formulario fue procesado y enviado correctamente
+
+            // Todavia no se si ponerlo aqui: para la página después del registro exitoso
+            setTimeout(() => {
+                // Puedes redirigir a una página o limpiar el formulario
+                document.getElementById("formularioProducto").reset(); 
+            }, 500);
+
+        })
+        .catch((error) => {
+            console.error("Error:", error);
+            showAlert("Hubo un error al registrar el producto.", "danger");
+        });
+     //   if (!confirm("¿Estás seguro de registrar este producto?")) {
+       //     return;
+        //}
+});
+*/
 
