@@ -149,3 +149,22 @@ document.addEventListener("DOMContentLoaded", () => {
     formLogin.addEventListener("submit", handleLogin);
   }
 });
+
+
+
+// Se obtiene pais
+const paisSelect = document.getElementById("pais");
+
+// add event listener
+paisSelect.addEventListener("change", function() {
+  // Aqui viene el menu de municipios
+  const municipioDiv = document.getElementById("municipiosDiv");
+  
+  // Verifica el valor seleccionado en el menú desplegable de países
+  // Si el valor es "mexico", se muestra el div de municipios, de lo contrario se oculta
+  if (this.value === "mexico") {
+    municipioDiv.style.display = "block"; // Muestra el div
+  } else {
+    municipioDiv.style.display = "none"; // Oculta el div
+  }
+});
