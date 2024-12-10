@@ -1,0 +1,10 @@
+/* Para mantener el navbar con su color original (fondo oscuro) */
+.navbar {
+    background-color: #020f1f;  /* Fondo oscuro para el navbar */
+}
+
+
+body {
+    font-family:"Montserrat", sans-serif;
+    background-color: #b1b1b1; /*cambia el color del fondo de toda la pagina */
+}
