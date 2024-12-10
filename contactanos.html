@@ -26,16 +26,27 @@
       <h2 id="contactanos">¡Contáctanos, somos tu mejor opción!</h2>
       <div class="card-body" style="justify-content: center;">
         <p class="p_contactanos" id="dejanosDatos">| Déjanos tus datos, nosotros te contactaremos</p>
+        <br>
       </div>
+      <section style="position:absolute; left: 730px; margin-top: 80px;" >
+        <p class="form-label" style="padding-right: 300px;">¡Encuéntranos en nuestra sucursal!</p>
+        <br>
+        <div class="row-3" id="mapaIBL">
+          <br>
+          <iframe id= mapitaContact src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d572.4644463658462!2d-99.22227201474242!3d18.77019653930634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cdd827e4884313%3A0x71afcaa1a0d1aae3!2sC.%20Truenos%2051%2C%20San%20Miguel%20de%20La%20Uni%C3%B3n%2C%2062790%20Chiconcuac%2C%20Mor.!5e0!3m2!1sen!2smx!4v1732153628707!5m2!1sen!2smx" 
+           referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        </div>
+      </section>
       <br>
       <div class="card_contact">
         <div class="card-body">
           <div id="contact_form" class="col-md-12">
             <div class="row">
               <div class="col-12 col-sm-6 mb-3">
-                <label for="fullname" class="form-label">Nombre</label>
+                <label for="fullname" class="form-label">Nombre </label> <label style="color: crimson;"> *</label>
                 <div id="nombre">
-                  <input type="text" class="form-control" placeholder="ej: Arezbi Zuñiga">
+                  <input type="text" class="form-control" placeholder="ej: Nombre(s) Apellidos">
                 </div>
               </div>
               <div class="col-12 col-sm-6 mb-3">
@@ -47,7 +58,7 @@
             <div class="row">
               <div class="col-12 col-sm-6 mb-3">
                 <label for="position" class="form-label">Cargo</label>
-                <input type="text" class="form-control" id="position" placeholder="ej: Gerente" name="position"
+                <input type="text" class="form-control" id="position" placeholder="ej: Empleado" name="position"
                   aria-label="Posicion">
               </div>
               <div class="col-12 col-sm-6 mb-3">
@@ -58,22 +69,22 @@
             </div>
             <div class="row">
               <div class="col-12 col-sm-6 mb-3">
-                <label for="phone" class="form-label">Teléfono</label>
+                <label for="phone" class="form-label">Teléfono </label> <label style="color: crimson;"> *</label>
                 <div class="dato entrada" id="phone">
-                  <input type="text" class="form-control" id="phone" placeholder="*********" name="phone"
+                  <input type="text" class="form-control" id="phone" placeholder="ej: 5511223344" name="phone"
                     aria-label="Telefono">
                 </div>
               </div>
               <div class="col-12 col-sm-6 mb-3">
-                <label for="email-contactanos" class="form-label">Email</label>
+                <label for="email-contactanos" class="form-label">Email </label> <label style="color: crimson;">*</label>
                 <div class="dato entrada" id="email-contactanos">
-                  <input type="email" class="form-control" placeholder="ej: Arez8@gmail.com">
+                  <input type="email" class="form-control" placeholder="ej: miCorreo@gmail.com">
                 </div>
               </div>
             </div>
-            <br>
-            <div class="row">
-              <select class="form-select" id="service" name="service">
+              <label class="form-label">*Elige la opción que más se acerque a tu objetivo</label>
+              <div class="row" id="service"></div>
+              <select class="form-select" name="service">
                 <option value="Dudas con tu pedido">Dudas con tu pedido</option>
                 <option value="Pedido Especial/Mayoreo">Pedido Especial/Mayoreo</option>
                 <option value="Sugerencias">Sugerencias</option>
@@ -84,7 +95,7 @@
 
             <div class="row">
               <div class="col-12 mb-3">
-                <label for="message" class="form-label">Mensaje</label>
+                <label for="message" class="form-label">Mensaje </label> <label style="color: crimson;"> *</label>
                 <div class="dato entrada" id="mensajito">
                   <textarea class="form-control" rows="3" placeholder="Tu mensaje"></textarea>
                 </div>
@@ -96,6 +107,10 @@
                   <input type="checkbox" class="form-check-input" id="terms">
                 </div>
                 <label class="form-check-label">Aceptar términos y condiciones de privacidad </label>
+                <br>
+                <div id="Campos-obligatorios">
+                <label style="color: crimson;">*</label><label class="form-label">Campos obligatorios</label>
+                </div>
               </div>
             </div>
             <div class="row">

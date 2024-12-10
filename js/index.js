@@ -106,4 +106,3 @@ document.getElementById("category-filter").addEventListener("change", (event) =>
 
 
 
-

@@ -1,0 +1,636 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+/* Reset de estilos */ 
+=======
+/* Reset de estilos */
+>>>>>>> 32826cf (Agrego la página de servicios ya actualizada y estilizada)
+=======
+/* Reset de estilos */ 
+>>>>>>> 96a6acc (Actualicé mi página de servicios solo de los productos)
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+@import url('https://fonts.googleapis.com/css2?family=Codec+Pro:wght@400;600&display=swap');
+body {
+    font-family: 'Codec Pro'
+}
+>>>>>>> 32826cf (Agrego la página de servicios ya actualizada y estilizada)
+=======
+>>>>>>> eebff75 (Actualización del footer responsivo)
+=======
+/* Importar fuente Codec Pro */
+@import url('https://fonts.googleapis.com/css2?family=Codec+Pro:wght@400;600&display=swap');
+>>>>>>> 86ebe9c (usando la plantilla para el header)
+
+/* Fuente predeterminada */
+body {
+    font-family: 'Codec Pro, sans-serif';
+    background-color: #020f1f;
+    color: #ffffff;
+}
+/*HEADER/ 
+
+/* Ajustes Navbar */
+.navbar {
+<<<<<<< HEAD
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+<<<<<<< HEAD
+<<<<<<< HEAD
+    padding: 05px 10px;
+=======
+    padding: 10px 20px;
+>>>>>>> 32826cf (Agrego la página de servicios ya actualizada y estilizada)
+=======
+    padding: 05px 10px;
+>>>>>>> eebff75 (Actualización del footer responsivo)
+    background-color:#020f1f;
+}
+
+/* Estilo del logo */
+.navbar .logo a {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo img {
+    width: 70px;  /* Ajusta el tamaño del logo */
+    height: auto;
+}
+
+/* Estilo del menú */
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar ul li a:hover {
+    color:#20e5f6;
+}
+
+/* Menú hamburguesa (oculto en pantallas grandes) */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+=======
+    background-color: #000a63;
+    background-color: #020f1f !important;
+>>>>>>> 86ebe9c (usando la plantilla para el header)
+    
+}
+.navbar-brand img {
+    width: 40px;
+    height: 40px;
+}
+.nav-link {
+    color: #ffffff !important;
+    color: #20e5f6 !important;
+}
+
+.nav-link:hover {
+    color: #00c2ff !important;
+}
+
+.navbar-brand {
+    font-family: 'Codec Pro', sans-serif;
+    color: #20e5f6 !important;
+}
+
+.navbar-toggler {
+    border-color: #20e5f6;
+}
+
+.dropdown-menu {
+    background-color: #282120;
+}
+
+.dropdown-item {
+    color: #ffffff;
+}
+
+.dropdown-item:hover {
+    background-color: #00c2ff;
+    color: #020f1f;
+}
+
+/* Botones personalizados */
+.btn-primary {
+    background-color: #00c2ff;
+    border-color: #00c2ff;
+}
+
+.btn-primary:hover {
+    background-color: #20e5f6;
+}
+/*TERMINA HEADER/
+
+/*Productos*/ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:"Montserrat", sans-serif;
+    background-color: #020f1f;
+}
+
+/* Contenedor de productos */
+.productos {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+<<<<<<< HEAD
+<<<<<<< HEAD
+    text-align:center;
+=======
+    text-align: center;
+>>>>>>> 32826cf (Agrego la página de servicios ya actualizada y estilizada)
+=======
+    text-align:center;
+>>>>>>> 96a6acc (Actualicé mi página de servicios solo de los productos)
+}
+
+.productos h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+<<<<<<< HEAD
+<<<<<<< HEAD
+    color: #00c2ff;
+}
+
+/* Contenedor principal */
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Lista de servicios */
+.servicios {
+    flex: 1 1 200px;
+}
+
+.lista-servicios {
+    list-style-type: none;
+    padding: 0;
+}
+
+.lista-servicios li {
+    margin-bottom: 10px;
+}
+
+.servicio-btn {
+    padding: 12px;
+    background-color: #00c2ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.servicio-btn:hover {
+    background-color: #20e5f6;
+}
+
+/* Detalle de cada servicio */
+.detalle-servicio {
+    flex: 2 1 600px;
+}
+
+.servicio-info {
+    display: none; /* Ocultar todos los detalles por defecto */
+    background-color:white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.servicio-imagen {
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el precio (superior derecho) */
+.precio {
+    font-size: 1.5em;
+    color: #333;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+/* Justificar el texto y alinearlo a la izquierda */
+.descripcion {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* Estilo para el botón */
+.agregar-carrito {
+    padding: 12px;
+    background-color: #00c2ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.agregar-carrito:hover {
+    background-color: #20e5f6;
+}
+
+/* Mostrar servicio activo */
+.servicio-info.active {
+    display: block;
+}
+
+/* Estilos para dispositivos pequeños (móviles) */
+@media (max-width: 768px) {
+    .contenedor {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .servicios, .detalle-servicio {
+        flex: 1 1 100%;
+    }
+
+    .servicio-btn {
+        font-size: 16px;
+    }
+
+    .servicio-info {
+        margin-top: 10px;
+    }
+}
+
+/* Estilos para dispositivos muy pequeños (pantallas de 480px o menos) */
+@media (max-width: 480px) {
+    .servicio-btn {
+        font-size: 14px;
+    }
+}
+
+
+/*Footer RS*/
+.social-icon {
+    display: flexbox;
+    width: 40px;
+    height: 40px;
+    background-color: #00c2ff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px; /* Para centrar el icono */
+    transition: background-color 0.3s;
+}
+
+.social-icon i {
+    color: white;
+    font-size: 20px; /* Ajusta el tamaño del ícono */
+}
+
+.social-icon:hover {
+    background-color: #0077B5;
+}
+
+/* Colores específicos para cada red social */
+.facebook:hover {
+    background-color: #020f1f;
+}
+
+.instagram:hover {
+    background-color: #020f1f;
+}
+
+/* Footer */
+.footer {
+    background-color: #020f1f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer .footer-contenido {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Sección de redes sociales */
+.social-media {
+    display: inline-block;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Estilos de los íconos de redes sociales */
+.social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #282120;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: background-color 0.3s;
+}
+
+.social-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Efecto hover para los íconos */
+.social-icon:hover {
+    background-color: #4CAF50; /* Color verde cuando el icono es hover */
+}
+
+/* Colores específicos para cada red social */
+.facebook:hover {
+    background-color: #3b5998;
+}
+
+.instagram:hover {
+    background-color: #E4405F;
+}
+
+
+/* Media Query para móviles */
+@media (max-width: 768px) {
+    .social-media {
+        flex-direction: column;
+        gap: 10px;
+<<<<<<< HEAD
+=======
+    color: #ffff;
+=======
+    color: #00c2ff;
+>>>>>>> 96a6acc (Actualicé mi página de servicios solo de los productos)
+}
+
+/* Contenedor principal */
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Lista de servicios */
+.servicios {
+    flex: 1 1 200px;
+}
+
+.lista-servicios {
+    list-style-type: none;
+    padding: 0;
+}
+
+.lista-servicios li {
+    margin-bottom: 10px;
+}
+
+.servicio-btn {
+    padding: 12px;
+    background-color: #00c2ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.servicio-btn:hover {
+    background-color: #20e5f6;
+}
+
+/* Detalle de cada servicio */
+.detalle-servicio {
+    flex: 2 1 600px;
+}
+
+.servicio-info {
+    display: none; /* Ocultar todos los detalles por defecto */
+    background-color:white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.servicio-imagen {
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el precio (superior derecho) */
+.precio {
+    font-size: 1.5em;
+    color: #333;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+/* Justificar el texto y alinearlo a la izquierda */
+.descripcion {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* Estilo para el botón */
+.agregar-carrito {
+    padding: 12px;
+    background-color: #00c2ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.agregar-carrito:hover {
+    background-color: #20e5f6;
+}
+
+/* Mostrar servicio activo */
+.servicio-info.active {
+    display: block;
+}
+
+/* Estilos para dispositivos pequeños (móviles) */
+@media (max-width: 768px) {
+    .contenedor {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+<<<<<<< HEAD
+    .producto {
+        max-width: 90%;
+>>>>>>> 32826cf (Agrego la página de servicios ya actualizada y estilizada)
+=======
+    .servicios, .detalle-servicio {
+        flex: 1 1 100%;
+    }
+
+    .servicio-btn {
+        font-size: 16px;
+    }
+
+    .servicio-info {
+        margin-top: 10px;
+    }
+}
+
+/* Estilos para dispositivos muy pequeños (pantallas de 480px o menos) */
+@media (max-width: 480px) {
+    .servicio-btn {
+        font-size: 14px;
+>>>>>>> 96a6acc (Actualicé mi página de servicios solo de los productos)
+    }
+}
+
+
+/*Footer RS*/
+.social-icon {
+    display: flexbox;
+    width: 40px;
+    height: 40px;
+    background-color: #00c2ff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px; /* Para centrar el icono */
+    transition: background-color 0.3s;
+}
+
+.social-icon i {
+    color: white;
+    font-size: 20px; /* Ajusta el tamaño del ícono */
+}
+
+.social-icon:hover {
+    background-color: #0077B5;
+}
+
+/* Colores específicos para cada red social */
+.facebook:hover {
+    background-color: #020f1f;
+}
+
+.instagram:hover {
+    background-color: #020f1f;
+}
+
+/* Footer */
+.footer {
+    background-color: #020f1f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer .footer-contenido {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Sección de redes sociales */
+.social-media {
+    display: inline-block;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Estilos de los íconos de redes sociales */
+.social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #282120;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: background-color 0.3s;
+}
+
+.social-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Efecto hover para los íconos */
+.social-icon:hover {
+    background-color: #4CAF50; /* Color verde cuando el icono es hover */
+}
+
+/* Colores específicos para cada red social */
+.facebook:hover {
+    background-color: #3b5998;
+}
+
+.instagram:hover {
+    background-color: #E4405F;
+}
+
+
+/* Media Query para móviles */
+@media (max-width: 768px) {
+    .social-media {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+=======
+    }
+}
+>>>>>>> 86ebe9c (usando la plantilla para el header)

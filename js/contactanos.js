@@ -74,6 +74,7 @@ document
     const phone = document.querySelector("#phone input").value.trim();
     const mensaje = document.querySelector("#mensajito textarea").value.trim();
     const privacidad = document.querySelector("#terms input").checked;
+    
 
     // Validaciones del formulario
     if (nombre === "") {
@@ -110,6 +111,7 @@ document
           alert(
             "¡Gracias por contactarnos! Tu mensaje ha sido enviado correctamente."
           );
+          window.location.href = "index.html"; 
           console.log("Correo enviado: ", response);
         },
         function (error) {
@@ -121,5 +123,3 @@ document
       );
     }
   });
-
-  

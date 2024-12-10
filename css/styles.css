@@ -445,17 +445,6 @@ button.normal:hover {
     text-align: justify; 
 }
 
-
-/* Caja de Facebook*/
-.fb-comments {
-    background-color: rgb(226, 248, 250) !important; 
-    border-radius: 10px; 
-    padding: 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
-    margin: 0 auto; 
-    width: 100%;
-}
-
 /* Termina index */
 
 
@@ -584,6 +573,19 @@ h2 {
     color: #20e5f6;
 }
 
+.card_contact {
+    min-height: 350px;
+    border: 1px solid #00c2ff;
+    border-radius: 8px;
+    background-color: #050c2e;
+    color: #20e5f6;
+    transition: transform 0.3s ease;
+    justify-content: left;
+    max-width: 650px;
+    margin: auto;
+    margin-left: 200px;
+    padding: 20px;
+}
 #formContact {
     background: rgba(2, 8, 45, 0.8);
     padding: 20px;
@@ -607,20 +609,38 @@ h2 {
     align-items: center;
     justify-content: center;
     max-height: fit-content;
-
+    
 }
 
 #terms {
-    margin-left: 10px;
+    padding-left: 13px;
 }
 
 .form-check-label {
+    margin-right: 190px;
     color: #20e5f6;
 }
 
-#mapaIBL {
+#mapaIBL iframe {
+
     display: grid;
     object-position: right;
+    position: relative;
+    width: 500px;
+    height: 300px;
+    border: 0;
+}
+
+#service{
+   padding-left: 15px;
+   max-height: 100px;
+   min-height: 8px;
+   padding-bottom: 3px;
+}
+
+#Campos-obligatorios{
+    position: relative;
+    padding-right: 370px;
 }
 
 /* -----CSS para el panel de productos----- */
@@ -781,6 +801,7 @@ h2 {
 
 .card_contact {
     min-height: 350px;
+    ;
     border: 1px solid #00c2ff;
     border-radius: 8px;
     background-color: #050c2e;
