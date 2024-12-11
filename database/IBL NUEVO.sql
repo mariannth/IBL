@@ -131,21 +131,38 @@ COMMENT = '									';
  values ('Jose Luis', 'Garduño', 'Arrieta', 'gardunoarrietaj@gmail.com', '123123xDxD', '7771101383', 'Mexico', 'Xochitepec', 'Truenos #53', 'Morelos', 'GAAL9512044L0', 1);
 
 INSERT INTO categoria (nombre, descripcion)
-VALUES ('computadoras','computadoras bonitas para trabajar');
+VALUES ('computadoras','computadoras bonitas para trabajar'),
+('cable HDMI', 'Cables HDMI para video y audio'),
+('perifericos', 'Mouses ergonómicos y precisos'),
+('bocinas', 'Bocinas de sonido envolvente'),
+('audifonos', 'Audífonos con cancelación de ruido');
+SELECT * FROM categoria;
+INSERT INTO producto (sku, descripcion, precio, url, stock, marca, color, nombre_producto, categoria_id_categoria, usuario_id_usuario,usuario_tipo_de_usuario_id_tipo_de_usuario) 
+values('37592', 'Laptop Acer Aspire 3', '8700','ibl.com/compu','500','ACER', 'gris0' , 'Aspire 3', 1,1,1),
+('37595', 'Cable HDMI de 2 metros', '200', 'ibl.com/cable-hdmi', '150', 'ACER', 'negro', 'Cable HDMI', 2, 1, 1), 
+('37596', 'Mouse Inalámbrico Logitech', '500', 'ibl.com/mouse-logitech', '300', 'Logitech', 'negro', 'Logitech M330', 3, 1, 1), 
+('37597', 'Bocinas Sony SRS-XB12', '1500', 'ibl.com/bocinas-sony', '200', 'Sony', 'rojo', 'Sony SRS-XB12', 4, 1, 1),  
+('37598', 'Audífonos Bose QuietComfort', '2500', 'ibl.com/audifonos-bose', '100', 'Bose', 'negro', 'Bose QC35', 5, 1, 1);
 
- INSERT INTO producto (sku, descripcion, precio, url, stock, marca, color, nombre_producto, categoria_id_categoria, usuario_id_usuario,usuario_tipo_de_usuario_id_tipo_de_usuario) 
- values('37592', 'Laptop Acer Aspire 3', '8700','ibl.com','500','ACER', 'gris0' , 'Aspire 3', 1,1,1);
 
 
 
 
 INSERT INTO pedido (fecha, estado, total, usuario_id_usuario, usuario_tipo_de_usuario_id_tipo_de_usuario) VALUES
-('2024-11-19','pagado', '8700.00', 1, 1);
+('2024-11-19','pagado', '8700.00', 1, 1),
+('2024-11-20', 'pagado', '1500.00', 1, 1),
+('2024-11-21', 'pendiente', '3200.50', 1, 1),
+('2024-11-22', 'cancelado', '4500.75', 1, 1),
+('2024-11-23', 'pagado', '2800.25', 1, 1);
 
 
 -- SELECT * FROM pedido WHERE id_pedido = 1;
 INSERT INTO pago (fecha, descuento, metodo, iva, folio_factura, pedido_id_pedido) 
-VALUES ('2024-11-19','20','transferencia', '16','2315',1);
+VALUES ('2024-11-19','20','transferencia', '16','2315',1),
+('2024-11-20', '15', 'tarjeta de crédito', '16', '2316', 2), 
+('2024-11-21', '10', 'efectivo', '16', '2317', 3),  
+('2024-11-22', '25', 'transferencia', '16', '2318', 4), 
+('2024-11-23', '0', 'tarjeta de débito', '16', '2319', 5);
 
 
 
