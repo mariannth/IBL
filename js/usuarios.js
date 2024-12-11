@@ -9,6 +9,9 @@ function validatePhone(phone) {
   return phoneRegex.test(phone);
 }
 
+
+
+
 // Mostrar alertas de Bootstrap
 //   function showAlert(message, type, form) {
 //     const alertPlaceholder = document.createElement("div");
@@ -151,7 +154,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-
+//LISTA DESPLEGABLE DE PAISES
 // Se obtiene pais
 const paisSelect = document.getElementById("pais");
 
@@ -168,3 +171,44 @@ paisSelect.addEventListener("change", function() {
     municipioDiv.style.display = "none"; // Oculta el div
   }
 });
+
+
+
+//VALIDACIONES CON EXPRESIONES REGUALRES
+//nombre con solo letras espacios y empiece con mayuscula
+function validateName(name) {
+  const nameRegex = /^[A-ZÁÉÍÓÚÑ][a-záéíóúñ\s]+$/;
+  return nameRegex.test(name);
+}
+//Validacion para que la constraseña sea de min 8 caracteres, contenga un mayuuscula, minuscula, numero y caracter especial
+function validatePassword(password) {
+  const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+  return passwordRegex.test(password);
+}
+//correo electronico con dominio especifco de google o yahoo
+function validateEmailDomain(email) {
+  const emailDomainRegex = /^[^\s@]+@(gmail|yahoo)\.com$/;
+  return emailDomainRegex.test(email);
+}
+
+
+//ESTO ES PARA IMPLEMENTAR VALIDACIONES
+if (!validateName(nombre)) {
+  showAlert("El nombre debe empezar con mayúscula y contener solo letras y espacios.", "danger", formRegister);
+  return;
+}
+
+if (!validateName(apellido)) {
+  showAlert("El apellido debe empezar con mayúscula y contener solo letras y espacios.", "danger", formRegister);
+  return;
+}
+
+if (!validatePassword(password)) {
+  showAlert("La contraseña debe tener al menos 8 caracteres, incluir una mayúscula, una minúscula, un número y un carácter especial.", "danger", formRegister);
+  return;
+}
+
+if (!validateEmailDomain(email)) {
+  showAlert("El correo electrónico debe ser de Gmail o Yahoo.", "danger", formRegister);
+  return;
+}
