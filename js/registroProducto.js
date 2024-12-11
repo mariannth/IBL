@@ -228,3 +228,29 @@ document.getElementById("formularioProducto").addEventListener("submit", functio
 });
 */
 
+
+/*
+//LOCALSTORAGE PARA PAGINA DE ADMIN
+// aqui se dtermina si se es usuario general o admin
+localStorage.setItem("userRole", "admin"); // Para administrador
+// O
+localStorage.setItem("userRole", "general"); // Para usuario general
+
+//con esto se valida el rol antes de cargarga la pagina y veririca que el usuario tengo el rol de admin, sino lo tiene se le redirige
+document.addEventListener("DOMContentLoaded", function () {
+    const userRole = localStorage.getItem("userRole");
+
+    if (userRole !== "admin") {
+        // Redirigir a otra página o mostrar un mensaje
+        alert("Acceso denegado. Solo los administradores pueden acceder a esta página.");
+        window.location.href = "index.html"; // Cambia esto a la página pública
+    }
+});
+
+//se quita el rol al cerrarr la sesion
+function logout() {
+    localStorage.removeItem("userRole");
+    window.location.href = "login.html"; // Redirigir a la página de inicio de sesión
+}
+
+*/
