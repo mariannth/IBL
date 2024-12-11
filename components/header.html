@@ -13,35 +13,21 @@
             <!-- Menú -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html"> <i class="fa-solid fa-house"></i>
-                            Inicio</a></li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="acerca_nosotros.html">
-                            <i class="fa-solid fa-users"></i>
-                            Acerca de nosotros
-                        </a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="productos.html"> <i
-                                class="fa-solid fa-magnifying-glass"></i>
-                            Productos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contactanos.html"> <i
-                                class="fa-regular fa-address-book"></i>
-                            Contáctanos</a></li>
-                    <!-- <li class="nav-item"><a class="nav-link" href="cotizacion.html"> <i class="fa-solid fa-dollar-sign"></i>
-                            Cotiza Ahora!</a></li> -->
+                    <li class="nav-item"><a class="nav-link" href="index.html"> <i class="fa-solid fa-house"></i> Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="acerca_nosotros.html"><i class="fa-solid fa-users"></i> Acerca de nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="productos.html"><i class="fa-solid fa-magnifying-glass"></i> Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactanos.html"><i class="fa-regular fa-address-book"></i> Contáctanos</a></li>
                 </ul>
+                <!-- Barra de búsqueda -->
+                <form class="d-flex ms-auto" id="search-form">
+                    <input class="form-control me-2" type="search" placeholder="Buscar productos..." aria-label="Search" id="search-input">
+                    <button class="btn btn-outline-light" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="carrito.html">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            Carrito
-                        </a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="carrito.html"><i class="fa-solid fa-cart-shopping"></i> Carrito</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarUser" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarUser" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fa-solid fa-user"></i>
-
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarUser">
                             <li><a class="dropdown-item" href="login.html">Login</a></li>
@@ -62,6 +48,8 @@
         </div>
     </nav>
 </header>
+
+
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>

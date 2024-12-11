@@ -1,125 +1,113 @@
-// Selecciona el contenedor del fondo
-const background = document.querySelector(".background-animation");
+// Mostrar el modal con un mensaje dinámico
+function showModal(message, duration = 5000) { // Duración por defecto: 5 segundos
+  const modalMessage = document.getElementById("modalMessage");
+  modalMessage.textContent = message;
+  const alertModal = new bootstrap.Modal(document.getElementById("alertModal"));
+  alertModal.show();
 
-// Genera múltiples estrellas
-for (let i = 0; i < 100; i++) {
-  const star = document.createElement("div");
-  star.classList.add("star");
-
-  // Asigna una posición aleatoria
-  star.style.top = `${Math.random() * 100}vh`;
-  star.style.left = `${Math.random() * 100}vw`;
-
-  // Duración de la animación aleatoria
-  star.style.animationDuration = `${12 + Math.random() * 18}s`;
-
-  background.appendChild(star);
+  // Cerrar el modal automáticamente después del tiempo especificado
+  setTimeout(() => {
+    alertModal.hide();
+  }, duration);
 }
 
-//Evento del envio de contactanos
+// Validaciones con expresiones regulares
+function validateName(name) {
+  const nameRegex = /^[a-zA-ZÀ-ÿ\s]{3,50}$/; // Letras, espacios, longitud 3-50
+  return nameRegex.test(name);
+}
 
-document.getElementById("enviarMensaje").addEventListener("click", function () {
+function validateEmail(email) {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Formato de correo
+  return emailRegex.test(email);
+}
+
+function validatePhone(phone) {
+  const phoneRegex = /^\d{10,12}$/; // Solo números, 10-12 dígitos
+  return phoneRegex.test(phone);
+}
+
+// Cambiar el estado visual de los campos (error o válido)
+function toggleError(input, isValid) {
+  if (isValid) {
+    input.classList.remove("is-invalid");
+    input.classList.add("is-valid");
+  } else {
+    input.classList.remove("is-valid");
+    input.classList.add("is-invalid");
+  }
+}
+
+// Configuración inicial de EmailJS
+emailjs.init("gmiJc0yrehImR_piP"); // Sustituye "TU_PUBLIC_KEY" con la clave pública correcta (estaba esta) oKasd2SLlI5zI9Ks_
+
+// Evento del botón de enviar
+document.getElementById("enviarMensaje").addEventListener("click", function (event) {
+  event.preventDefault(); // Prevenir el envío tradicional
+
   const nombre = document.querySelector("#nombre input").value.trim();
   const email = document.querySelector("#email-contactanos input").value.trim();
   const phone = document.querySelector("#phone input").value.trim();
   const mensaje = document.querySelector("#mensajito textarea").value.trim();
-  const privacidad = document.querySelector("#terms input").checked; // Verifica si el checkbox está marcado
+  const privacidad = document.querySelector("#terms input").checked;
 
   // Validaciones
-  if (nombre === "") {
-    alert("Por favor ingresa tu nombre, este campo no puede quedar vacío");
-  } else if (phone === "") {
-    alert("Por favor ingresa tu teléfono, este campo no puede quedar vacío");
-  } else if (phone.length < 10 || phone.length > 12) {
-    alert("Ingresa un número de teléfono válido");
-  } else if (email === "") {
-    alert("¡Alto, este campo (Email) no puede estar vacío!");
-  } else if (!email.includes("@")) {
-    alert(
-      "Correo no aceptado, intentalo de nuevo, revisa que tu correo esté bien escrito"
-    );
+  const isNameValid = validateName(nombre);
+  const isEmailValid = validateEmail(email);
+  const isPhoneValid = validatePhone(phone);
+
+  toggleError(document.querySelector("#nombre input"), isNameValid);
+  toggleError(document.querySelector("#email-contactanos input"), isEmailValid);
+  toggleError(document.querySelector("#phone input"), isPhoneValid);
+
+  if (!isNameValid) {
+    showModal("Por favor, ingresa un nombre válido.");
+  } else if (!isPhoneValid) {
+    showModal("Por favor, ingresa un teléfono válido (10-12 dígitos).");
+  } else if (!isEmailValid) {
+    showModal("Por favor, ingresa un correo válido.");
   } else if (mensaje === "") {
-    alert(
-      "Para continuar escribe tu mensaje de contacto, ¿En qué podemos ayudarte?"
-    );
+    showModal("El campo de mensaje no puede estar vacío.");
   } else if (!privacidad) {
-    alert("Acepta nuestros términos de privacidad antes de enviar :)");
+    showModal("Debes aceptar los términos y condiciones.");
   } else {
-    alert(
-      "Gracias por contactarte con IBL, " +
-        nombre +
-        ". Uno de nuestros asesores te atenderá a la brevedad. ¡También puedes encontrarnos en nuestras redes sociales!"
+    // Enviar datos si todo es válido
+    const datosFormulario = {
+      nombre: nombre,
+      email: email,
+      telefono: phone,
+      mensaje: mensaje,
+    };
+
+    // Envío del correo con EmailJS
+    emailjs.send("service_nucnjfv", "template_mm46z4u", datosFormulario).then(
+      function () {
+        // Si el envío es exitoso
+        showModal("¡Gracias por contactarnos! Tu mensaje ha sido enviado.", 5000); // Mostrar por 5 segundos
+    
+        // Limpiar los campos del formulario
+        document.querySelector("#nombre input").value = "";
+        document.querySelector("#email-contactanos input").value = "";
+        document.querySelector("#phone input").value = "";
+        document.querySelector("#mensajito textarea").value = "";
+        document.querySelector("#terms input").checked = false;
+    
+        // Resetear validaciones visuales
+        document.querySelectorAll(".is-valid").forEach((input) => {
+          input.classList.remove("is-valid");
+        });
+    
+        // Redirigir al index.html después de que el modal desaparezca
+        setTimeout(() => {
+          window.location.href = "index.html"; // Cambia a la página principal
+        }, 5000); // Tiempo en milisegundos, coincide con la duración del modal
+      },
+      function (error) {
+        // Si hay un error en el envío
+        showModal("Hubo un problema al enviar tu mensaje. Inténtalo más tarde.", 5000); // Mostrar por 5 segundos
+        console.error("Error al enviar el correo:", error);
+      }
     );
+    
   }
 });
-
-/*EMAIL*/
-// Inicializa EmailJS con tu User ID
-(function () {
-  emailjs.init("gmiJc0yrehImR_piP"); // Sustituye "TU_PUBLIC_KEY" con la clave pública correcta (estaba esta) oKasd2SLlI5zI9Ks_
-
-})();
-
-// Función para validar y enviar los datos del formulario
-document
-  .getElementById("enviarMensaje")
-  .addEventListener("click", function (event) {
-    event.preventDefault(); // Evitar que el formulario se envíe de forma tradicional
-
-    // Obtener los valores de los inputs
-    const nombre = document.querySelector("#nombre input").value.trim();
-    const email = document
-      .querySelector("#email-contactanos input")
-      .value.trim();
-    const phone = document.querySelector("#phone input").value.trim();
-    const mensaje = document.querySelector("#mensajito textarea").value.trim();
-    const privacidad = document.querySelector("#terms input").checked;
-    
-
-    // Validaciones del formulario
-    if (nombre === "") {
-      alert("Por favor ingresa tu nombre, este campo no puede quedar vacío");
-    } else if (phone === "") {
-      alert("Por favor ingresa tu teléfono, este campo no puede quedar vacío");
-    } else if (phone.length < 10 || phone.length > 12) {
-      alert("Ingresa un número de teléfono válido");
-    } else if (email === "") {
-      alert("¡Alto, este campo (Email) no puede estar vacío!");
-    } else if (!email.includes("@")) {
-      alert(
-        "Correo no aceptado, intentalo de nuevo, revisa que tu correo esté bien escrito"
-      );
-    } else if (mensaje === "") {
-      alert(
-        "Para continuar escribe tu mensaje de contacto, ¿En qué podemos ayudarte?"
-      );
-    } else if (!privacidad) {
-      alert("Acepta nuestros términos de privacidad antes de enviar :)");
-    } else {
-      // Si todas las validaciones pasan, enviamos el correo
-
-      // Crea el objeto de datos que se enviarán en el correo
-      const datosFormulario = {
-        nombre: nombre,
-        email: email,
-        telefono: phone,
-        mensaje: mensaje,
-      };
-      // Enviar el correo utilizando EmailJS
-      emailjs.send("service_nucnjfv", "template_mm46z4u", datosFormulario).then(
-        function (response) {
-          alert(
-            "¡Gracias por contactarnos! Tu mensaje ha sido enviado correctamente."
-          );
-          window.location.href = "index.html"; 
-          console.log("Correo enviado: ", response);
-        },
-        function (error) {
-          alert(
-            "¡Algo salió mal! No pudimos enviar tu mensaje. Intenta de nuevo."
-          );
-          console.log("Error al enviar el correo: ", error);
-        }
-      );
-    }
-  });

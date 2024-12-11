@@ -80,3 +80,15 @@ document.addEventListener("contextmenu", (event) => {
 });
 
 document.oncontextmenu = function(){return false;}
+
+// Captura el formulario y añade un evento 'submit'
+document.getElementById("search-form").addEventListener("submit", function (e) {
+  e.preventDefault(); // Evita el envío normal del formulario
+  const searchInput = document.getElementById("search-input").value.trim();
+  if (searchInput) {
+      // Redirige a productos.html con la palabra clave en la URL
+      window.location.href = `productos.html?search=${encodeURIComponent(searchInput)}`;
+  }
+});
+
+

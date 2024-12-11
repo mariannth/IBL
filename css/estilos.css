@@ -233,6 +233,32 @@ header{
     color: var(--color-boton-hover);
 }
 
+/* Contenedor para el ícono de búsqueda y barra */
+.search-container {
+    position: relative;
+}
+
+/* Barra de búsqueda */
+.search-bar {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: none; /* Oculta la barra por defecto */
+    flex-direction: row;
+    gap: 0.5rem;
+    background: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Barra visible (controlada por JavaScript) */
+.search-bar.show {
+    display: flex;
+}
+
 
 /* -----Estilos para el footer -----*/
 .footer {
