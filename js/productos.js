@@ -9,8 +9,8 @@ const products = [
     { id: 7, name: "OPPO Reno 11 5G Dual SIM", category: "Smartphones", price: "$7,000 MXN", img: "./src/img/productos/img_Eli/OPPO.jpeg" },
     { id: 8, name: "Motorola Edge 50 Fusión", category: "Smartphones", price: "$7,500 MXN", img: "./src/img/productos/img_Eli/MOTOROLA.jpeg" },
     { id: 9, name: "Xiaomi Redmi Note 13 pro+ 5G Dual SIM", category: "Smartphones", price: "$6,900 MXN", img: "./src/img/productos/img_Eli/REDMI.jpeg" },
-    { id: 10, name: "Xiaomi Poco F6 Pro 5G ", category: "Smartphones", price: "$2,899 MXN", img: "./src/img/productos/img_Eli/POCCO.jpeg" },
-    { id: 11, name: "Garmin Forerunner 165", category: "Smartwatch", price: "$9,500 MXN", img: "./src/img/productos/img_Gera/garmin165_2.jpg" },,
+    { id: 10, name: "Xiaomi Poco F6 Pro 5G ", category: "Smartphones", price: "$9,500 MXN", img: "./src/img/productos/img_Eli/POCCO.jpeg" },
+    { id: 11, name: "Garmin Forerunner 165", category: "Smartwatch", price: "$2,899 MXN", img: "./src/img/productos/img_Gera/garmin165_2.jpg" },,
     { id: 12, name: "Huawei Band 9", category: "Smartwatch", price: "$609 MXN", img: "./src/img/productos/img_Gera/huaweiband9_1.jpg" },
     { id: 13, name: "Xiaomi 9", category: "Smartwatch", price: "$760 MXN", img: "./src/img/productos/img_Gera/xiaomi9_1.jpg" },
     { id: 14, name: "Pico 4 VR", category: "Smartwatch", price: "$7,999 MXN", img: "./src/img/productos/img_Gera/pico4_2.jpg" },
@@ -52,7 +52,7 @@ const products = [
     { id: 51, name: "Lenovo Tab P11 Pro", category: "Tablets", price: "$9,500 MXN", img: "./src/img/productos/img_Mariana/LenovoTab2.jpg" },
     { id: 52, name: "Amazon Fire HD 10", category: "Tablets", price: "$4,500 MXN", img: "./src/img/productos/img_Mariana/AmazonF1.jpg" },    
     // ... Más productos aquí
-];
+];Pa$$w0rd
 
 // Función para renderizar los productos
 function renderProducts(filter = "all") {
@@ -129,3 +129,4 @@ function clearAllProducts(){
 function redirectToCart() {
     window.location.href = 'carrito.html';
   }
+  
