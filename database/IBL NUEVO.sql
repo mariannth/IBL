@@ -125,6 +125,10 @@ CREATE TABLE IF NOT EXISTS `IBL`.`pago` (
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
 COMMENT = '									';
+ INSERT INTO tipo_de_usuario(nombre_del_tipo, descripcion_tipo)
+ VALUES('administrador', 'puede hacer modificaciones en la página');
+ INSERT INTO usuario (nombre, apellido_paterno, apellido_materno, email, password, telefono, pais, municipio, direccion, estado, rfc, tipo_de_usuario_id_tipo_de_usuario) 
+ values ('Jose Luis', 'Garduño', 'Arrieta', 'gardunoarrietaj@gmail.com', '123123xDxD', '7771101383', 'Mexico', 'Xochitepec', 'Truenos #53', 'Morelos', 'GAAL9512044L0', 1);
 
 INSERT INTO categoria (nombre, descripcion)
 VALUES ('computadoras','computadoras bonitas para trabajar');
@@ -132,10 +136,6 @@ VALUES ('computadoras','computadoras bonitas para trabajar');
  INSERT INTO producto (sku, descripcion, precio, url, stock, marca, color, nombre_producto, categoria_id_categoria, usuario_id_usuario,usuario_tipo_de_usuario_id_tipo_de_usuario) 
  values('37592', 'Laptop Acer Aspire 3', '8700','ibl.com','500','ACER', 'gris0' , 'Aspire 3', 1,1,1);
 
- INSERT INTO tipo_de_usuario(nombre_del_tipo, descripcion_tipo)
- VALUES('administrador', 'puede hacer modificaciones en la página');
- INSERT INTO usuario (nombre, apellido_paterno, apellido_materno, email, password, telefono, pais, municipio, direccion, estado, rfc, tipo_de_usuario_id_tipo_de_usuario) 
- values ('Jose Luis', 'Garduño', 'Arrieta', 'gardunoarrietaj@gmail.com', '123123xDxD', '7771101383', 'Mexico', 'Xochitepec', 'Truenos #53', 'Morelos', 'GAAL9512044L0', 1);
 
 
 
