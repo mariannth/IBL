@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Icono de pestaña -->
-    <link rel="icon" type="image/jpg" href="/src/img/favicon.jpg">
+    <link rel="icon" type="image/jpg" href="/src/img/Logo/favicon.jpg">
     <title>Inicio - IBL</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -16,366 +16,79 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"
         integrity="sha512-K6I4HO1D+E1SVzzBc7C8uV35HlXk5sZfztSzX3LTGtF2/B0IUy5yKZ9zT/8GrdyxEs5XHP1yI9fRQafZfiFZw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- CSS Personalizado lineas index 289 a 424 aprox.   -->
+    <!-- CSS Personalizado lineas index 289 a 448 aprox.   -->
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <!-- header/navbar cargado desde una funcion, animacion estrellas,. -->
-
 <body class="bg-light d-flex flex-column min-vh-100">
     <div id="header"></div>
     <main class="flex-grow-1">
         <div class="background-animation"></div>
         <div class="content">
-            <hr>
-            <br><br>
+            <hr><br><br>
             <!-- Decidi usar CSS inline para la manipulacion exacta de esta etiqueta -->
             <h1 style="color: white; margin-bottom: 20px; padding-bottom: 15px; font-size: 2.4rem;">"Bienvenidos a
                 Infinite Byte League, donde la tecnología de calidad está al alcance de tod@s."</h1>
             <hr>
-            <img id="heroe" src="./src/img/Logo/petlogo.jpg" alt="infinitebyteleaguelogobanner">
-            <div><button id="conocenosBtn">¡Conócenos!</button></div>
-            <br>
-            <br>
-            <br>
+            <img id="petlogo" src="./src/img/Logo/petlogo.png" alt="infinitebyteleaguelogobanner">
+            <div><button id="petBtn" class="normal">¡Conócenos!</button>
+            </div>
+            <br><br><br>
             <hr><br>
-            <!-- Decidi usar CSS inline para la manipulacion exacta de esta etiqueta -->
-            <h1 style="color: white; margin-bottom: 20px; padding-bottom: 20px; font-size: 4rem;">Lo mas relevante:
-            </h1>
+            <h1 class="index-h1">Articulos de temporada</h1>
             <hr>
-            <!-- Los productos se agregarán aquí mediante JavaScript -->
-            <section class="product-grid" id="product-grid">
-                <div id="index-product-container"></div>
-            </section>
-<<<<<<< HEAD
-
-            <section id="productosDestacados" class="seccionDestacados"> <!--Productos-->
-                <h2>Lo mas solicitado</h2>
-                <p>¡Echa un vistazo a lo mas cool y duradero!</p>
-                <div class="contenedorProductos">
-                    <div class="pro">
-                        <img src="/src/img/img_Jluis/productos/DELL/DELL_OPTIPLEX.png" alt="destacadosimg">
-                        <div class="des">
-                            <span>Computadora</span>
-                            <h5>Dell Optiplex con Intel core i5</h5>
-                            <div class="star_index">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <h4>$6969</h4>
-                        </div>
-                        <span class="material-symbols-outlined cart">
-                            add_shopping_cart
-                        </span>
+            <!-- Widget de Instagram -->
+            <div class="ig-widget">
+                <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe
+                    src="//lightwidget.com/widgets/af1e47d6c7ca5ed4afed532826131936.html" scrolling="no"
+                    allowtransparency="true" class="lightwidget-widget"
+                    style="width:100%;border:0;overflow:hidden;"></iframe>
+                <!-- Los productos se agregarán aquí mediante JavaScript -->
+                <section class="index-product-grid" id="index-product-grid">
+                    <div id="index-product-container"></div>
+                </section>
+                <!-- Index card grid -->
+                <div class="index-card">
+                    <div>
+                        <hr><br>
+                        <img src="./src/img/Logo/logobanner.png" alt="infinitebyteleaguelogobanner" />
+                        <br><br><hr>
+                        <h3>¡🌐✨ Compromiso con la tecnología accesible y de calidad ✨🌐!
+                        </h3>
+                        <p>"Ofrecemos equipos nuevos y reacondicionados de alta calidad a precios accesibles,
+                            contribuyendo a reducir la brecha digital y generando un impacto social positivo. Aspiramos
+                            a convertirnos en una plataforma líder en la región para la compra y venta de tecnología
+                            garantizada, siendo un referente de sostenibilidad y accesibilidad. Nos comprometemos con
+                            nuestros clientes a brindarles la mejor experiencia mediante excelencia, integridad, trabajo
+                            en equipo, innovación y orientación al cliente, buscando siempre ofrecer soluciones y
+                            servicios de calidad."
+                        </p>
+                        <a href="acerca_nosotros.html"></a>
+                        <hr>
                     </div>
-
-                    <div class="pro">
-                        <img src="/src/img/img_Jluis/productos/DELL/Dell1_Optiplex_Intelcorei5.png" alt="destacadosimg">
-                        <div class="des">
-                            <span>Computadora</span>
-                            <h5>Dell Optiplex con Intel core i5</h5>
-                            <div class="star_index">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <h4>$6969</h4>
-                        </div>
-                        <span class="material-symbols-outlined cart">
-                            add_shopping_cart
-                        </span>
+                </div>
+                <div id="banner" class="section-m1">
+                    <div class="banner-content">
+                        <button id="btnQuieroSaberMas" class="normal">Únete a la comunidad</button>
                     </div>
-
-                    <div class="pro">
-                        <img src="/src/img/img_Jluis/productos/DELL/Dell3_OPTIPLEX_3070Inteli5-9500.png"
-                            alt="destacadosimg">
-                        <div class="des">
-                            <span>Computadora</span>
-                            <h5>Dell Optiplex con Intel core i5</h5>
-                            <div class="star_index">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <h4>$6969</h4>
-                        </div>
-                        <span class="material-symbols-outlined cart">
-                            add_shopping_cart
-                        </span>
-                    </div>
-
-                    <div class="pro">
-                        <img src="/src/img/img_Jluis/productos/DELL/DELL4_OPTIPLEX_SFF_3080_INTELCORE-I5-10500T.png"
-                            alt="destacadosimg">
-                        <div class="des">
-                            <span>Computadora</span>
-                            <h5>Dell Optiplex con Intel core i5</h5>
-                            <div class="star_index">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <h4>$6969</h4>
-                        </div>
-                        <span class="material-symbols-outlined cart">
-                            add_shopping_cart
-                        </span>
-                    </div>
-
-                    <div class="pro">
-                        <img src="/src/img/img_Jluis/productos/HP/HP_AllInOne.png" alt="destacadosimg">
-                        <div class="des">
-                            <span>Computadora</span>
-                            <h5>Dell Optiplex con Intel core i5</h5>
-                            <div class="star_index">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <h4>$6969</h4>
-                        </div>
-                        <span class="material-symbols-outlined cart">
-                            add_shopping_cart
-                        </span>
-                    </div>
-
-                    <div class="pro">
-                        <img src="/src/img/img_Jluis/productos/HP/HP2_T640_Ryzen.png" alt="destacadosimg">
-                        <div class="des">
-                            <span>Computadora</span>
-                            <h5>Dell Optiplex 3070</h5>
-                            <div class="star_index">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <h4>$6969</h4>
-                        </div>
-                        <span class="material-symbols-outlined cart">
-                            add_shopping_cart
-                        </span>
-                    </div>
-
-                    <div class="pro">
-                        <img src="/src/img/img_Jluis/productos/HP/HP1_800_G2_SFF-Corei5.png" alt="destacadosimg">
-                        <div class="des">
-                            <span>Computadora</span>
-                            <h5>Dell Optiplex SFF 3080</h5>
-                            <div class="star_index">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <h4>$6969</h4>
-                        </div>
-                        <span class="material-symbols-outlined cart">
-                            add_shopping_cart
-                        </span>
-                    </div>
-
-                    <div class="pro">
-                        <img src="/src/img/img_Jluis/productos/HP/HP3_Desktop.png" alt="destacadosimg">
-                        <div class="des">
-                            <span>Computadora</span>
-                            <h5>Lenovo SSF M710s</h5>
-                            <div class="star_index">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <h4>$6969</h4>
-                        </div>
-                        <span class="material-symbols-outlined cart">
-                            add_shopping_cart
-                        </span>
-                    </div>
-
-                    <div class="pro">
-                        <img src="/src/img/img_Jluis/productos/HP/HP_AllInOne.png" alt="destacadosimg">
-                        <div class="des">
-                            <span>Computadora</span>
-                            <h5>HP ALL IN ONE</h5>
-                            <div class="star_index">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <h4>$6969</h4>
-                        </div>
-                        <span class="material-symbols-outlined cart">
-                            add_shopping_cart
-                        </span>
-                    </div>
-
-                    <div class="pro">
-                        <img src="/src/img/img_Jluis/productos/LENOVO/Lenovo3_Tiny_Lenovo_M720Q.png"
-                            alt="destacadosimg">
-                        <div class="des">
-                            <span>Computadora</span>
-                            <h5>Lenovo TinyM720Q</h5>
-                            <div class="star_index">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <h4>$6969</h4>
-                        </div>
-                        <span class="material-symbols-outlined cart">
-                            add_shopping_cart
-                        </span>
-                    </div>
-
-                    <div class="pro">
-                        <img src="/src/img/img_Jluis/productos/HP/HP1_800_G2_SFF-Corei5.png" alt="destacadosimg">
-                        <div class="des">
-                            <span>Computadora</span>
-                            <h5>HP 800 G2 SFF</h5>
-                            <div class="star_index">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <h4>$6969</h4>
-                        </div>
-                        <span class="material-symbols-outlined cart">
-                            add_shopping_cart
-                        </span>
-                    </div>
-
-                    <div class="pro">
-                        <img src="/src/img/img_Jluis/productos/DELL/DELL_OPTIPLEX.png" alt="destacadosimg">
-                        <div class="des">
-                            <span>Computadora</span>
-                            <h5>Dell Optiplex con Intel core i5</h5>
-                            <div class="star_index">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <h4>$6969</h4>
-                        </div>
-                        <span class="material-symbols-outlined cart">
-                            add_shopping_cart
-                        </span>
-                    </div>
-
-            </section>
-
-            <section id="banner" class="section-m1"><!--Banner-->
-                <h4>Renueva tu tecnología, sin afectar tu bolsillo</h4>
-                <h2>¡Nuestras ofertas <span>hasta un 30% de ahorro</span> comparado con otros sitios!</h2>
-                <button class="normal">¡Quiero saber mas!</button>
-            </section>
-
-            <section id="productosDestacados" class="seccionDestacados">
-                <h2 style="background-color: transparent; color: black;"><b>Tecnología de calidad, al alcance de
-                        todxs</b>
-                </h2>
-                <span>
-                    <p style="font-size: 35px; background-color: aqua; border-radius: 7px; margin: 15px;"><i>¡Nuevos
-                            productos todos los dias!</i></p>
-                </span>
-            </section>
-
-
-            <section class="carousel-container">
-                <!-- Carrusel -->
-                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="/src/img/img_Jluis/productos/LENOVO/Lenovo3_Tiny_Lenovo_M720Q_2.png"
-                                class="d-block w-100" alt="carrusel">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/src/img/img_Jluis/productos/HP/HP_AllInOne_2.png" class="d-block w-100"
-                                alt="carrusel">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/src/img/img_Jluis/productos/DELL/DELL4_OPTIPLEX_SFF_3080_INTELCORE-I5-10500T_1.png"
-                                class="d-block w-100" alt="carrusel">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-=======
-            <!-- Index card grid -->
-            <div class="index-card">
+                </div>
+                <!-- <br><br><br><hr><br> -->
+                <!-- SDK de Facebook
+                <div id="fb-root"></div>
+                <script async defer crossorigin="anonymous"
+                    src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v15.0&appId=950183320332574&autoLogAppEvents=1">
+                    </script>-->
+                <!-- Plugin de la página de Facebook --
+                <div class="fb-page" data-tabs="events"
+                    data-href="https://www.facebook.com/people/Infinity-Byte-League/61568204116183/" data-width="480">
+                </div> -->
+                <!-- Widget de Facebook
                 <div>
-                    <img src="./src/img/Logo/logobanner.png" alt="infinitebyteleaguelogobanner" />
-                    <br>
-                    <br>
-                    <hr>
-                    <!-- Decidi usar CSS inline para la manipulacion exacta de esta etiqueta -->
-                    <h3>¡🌐✨ Compromiso con la tecnología accesible y de calidad ✨🌐!
-                    </h3>
-                    <p>"Ofrecemos equipos nuevos y reacondicionados de alta calidad a precios accesibles,
-                        contribuyendo a reducir la brecha digital y generando un impacto social positivo. Aspiramos
-                        a convertirnos en una plataforma líder en la región para la compra y venta de tecnología
-                        garantizada, siendo un referente de sostenibilidad y accesibilidad. Nos comprometemos con
-                        nuestros clientes a brindarles la mejor experiencia mediante excelencia, integridad, trabajo
-                        en equipo, innovación y orientación al cliente, buscando siempre ofrecer soluciones y
-                        servicios de calidad."
-                    </p>
-                    <a href="acerca_nosotros.html"></a>
-                    <hr>
->>>>>>> master
-                </div>
-            </div>
-
-            <div id="banner" class="section-m1">
-                <div class="banner-content">
-                    <br>
-                    <h4>Renueva tu tecnología, sin afectar tu bolsillo</h4><br>
-                    <h2>¡Nuestras ofertas <span>hasta un 30% de ahorro</span> comparado con otros sitios!</h2><br>
-                    <button id="btnQuieroSaberMas" class="normal">¡Quiero saber más!</button>
-                </div>
-                <img src="./src/img/Logo/banneribl.png" alt="bannerdescuentos">
-            </div>
-            <!-- Contenedor del plugin de comentarios -->
-            <div class="fb-comments" data-href="https://mariannth.github.io/IBL/index.html" data-width="100%"
-                data-numposts="5">
-            </div>
-
-            <!-- SDK de Facebook -->
-            <div id="fb-root"></div>
-            <script async defer crossorigin="anonymous"
-                src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v15.0&appId=950183320332574&autoLogAppEvents=1">
-                </script>
-            <br><br>
-        </div>
-
+                    <div class="fb-page" data-href="https://www.facebook.com/profile.php?id=61568204116183"
+                        data-tabs="timeline" data-width="800" data-height="800" data-small-header="false"
+                        data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true">
+                    </div>
+                </div> -->
     </main>
     <!-- Footer cargado desde una funcion.-->
     <div id="footer"></div>
@@ -389,10 +102,8 @@
         loadComponent("header", "./components/header.html");
         loadComponent("footer", "./components/footer.html");
     </script>
-    <script src="./js/script.js"></script>
     <script defer src="./js/index.js"></script>
-
-
+    <script src="./js/script.js"></script>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

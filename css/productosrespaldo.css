@@ -4,7 +4,26 @@
 /* Fuente predeterminada */
 body {
     font-family: 'Codec Pro', sans-serif;
+<<<<<<< HEAD
+<<<<<<< HEAD
     background-color: #ffffff;
+=======
+<<<<<<<< HEAD:productosrespaldo.css
+    background-color: #ffffff;
+========
+    background-color: #020f1f;
+>>>>>>>> 219523a (Actualicé elcódigo):productos.css
+>>>>>>> add7aee (Reacomodo de carpetas)
+=======
+<<<<<<<< HEAD:productosrespaldo.css
+    background-color: #ffffff;
+========
+    background-color: #020f1f;
+>>>>>>>> 219523a (Actualicé elcódigo):productos.css
+=======
+    background-color: #ffffff;
+>>>>>>> c0b4c69b44c2cd95195c07ebcfb1be89aa6303ca
+>>>>>>> e0a0bd974cd7df3c534503e1527aa0168e7f81ad
     color: #20e5f6;
 }
 * {
@@ -66,8 +85,31 @@ body {
 }
 
 .card {
+<<<<<<< HEAD
+<<<<<<< HEAD
     background-color: #ffffff;
     color: #020f1f;
+=======
+<<<<<<<< HEAD:productosrespaldo.css
+    background-color: #ffffff;
+    color: #020f1f;
+=======
+<<<<<<<< HEAD:productosrespaldo.css
+    background-color: #ffffff;
+    color: #020f1f;
+>>>>>>> e0a0bd974cd7df3c534503e1527aa0168e7f81ad
+========
+    background-color: #282120;
+    color: #ffffff;
+>>>>>>>> 219523a (Actualicé elcódigo):productos.css
+<<<<<<< HEAD
+>>>>>>> add7aee (Reacomodo de carpetas)
+=======
+=======
+    background-color: #ffffff;
+    color: #020f1f;
+>>>>>>> c0b4c69b44c2cd95195c07ebcfb1be89aa6303ca
+>>>>>>> e0a0bd974cd7df3c534503e1527aa0168e7f81ad
     border: none;
 }
 
@@ -78,6 +120,16 @@ h1 {
     padding: 20px;
 }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:productosrespaldo.css
+>>>>>>> add7aee (Reacomodo de carpetas)
+=======
+<<<<<<<< HEAD:productosrespaldo.css
+=======
+>>>>>>> c0b4c69b44c2cd95195c07ebcfb1be89aa6303ca
+>>>>>>> e0a0bd974cd7df3c534503e1527aa0168e7f81ad
 /*Productos*/
 /* Estilo para la sección de filtros */
 .filters {
@@ -97,20 +149,128 @@ h1 {
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+========
+.filters {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #020f1f;
+    margin: 20px 0;
+}
+
+.filter {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.filter select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+>>>>>>>> 219523a (Actualicé elcódigo):productos.css
+    gap: 20px;
+    justify-content: center;
+}
+
+<<<<<<<< HEAD:productosrespaldo.css
+=======
+>>>>>>> e0a0bd974cd7df3c534503e1527aa0168e7f81ad
     gap: 20px;
     padding: 20px;
 }
 
+<<<<<<< HEAD
+=======
+========
+.filters {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #020f1f;
+    margin: 20px 0;
+}
+
+.filter {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.filter select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+>>>>>>>> 219523a (Actualicé elcódigo):productos.css
+    gap: 20px;
+    justify-content: center;
+}
+
+<<<<<<<< HEAD:productosrespaldo.css
+>>>>>>> add7aee (Reacomodo de carpetas)
+=======
+>>>>>>> c0b4c69b44c2cd95195c07ebcfb1be89aa6303ca
+>>>>>>> e0a0bd974cd7df3c534503e1527aa0168e7f81ad
 /* Diseño de la tarjeta de producto */
 .product-card {
     background-color: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> e0a0bd974cd7df3c534503e1527aa0168e7f81ad
+========
+.product-card {
+    width: 250px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+>>>>>>>> 219523a (Actualicé elcódigo):productos.css
+<<<<<<< HEAD
+>>>>>>> add7aee (Reacomodo de carpetas)
+=======
+=======
+>>>>>>> c0b4c69b44c2cd95195c07ebcfb1be89aa6303ca
+>>>>>>> e0a0bd974cd7df3c534503e1527aa0168e7f81ad
     text-align: center;
     transition: transform 0.3s ease;
 }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:productosrespaldo.css
+>>>>>>> add7aee (Reacomodo de carpetas)
+=======
+<<<<<<<< HEAD:productosrespaldo.css
+=======
+>>>>>>> c0b4c69b44c2cd95195c07ebcfb1be89aa6303ca
+>>>>>>> e0a0bd974cd7df3c534503e1527aa0168e7f81ad
 .product-card img {
     width: 100%;
     height: auto;
@@ -151,6 +311,64 @@ h1 {
 footer {
     background-color: #000a63;
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> e0a0bd974cd7df3c534503e1527aa0168e7f81ad
+========
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-card .product-info {
+    padding: 15px;
+}
+
+.product-card h4 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.product-card .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .filters {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+footer {
+    background-color: #000a63;
+}
+>>>>>>>> 219523a (Actualicé elcódigo):productos.css
+<<<<<<< HEAD
+>>>>>>> add7aee (Reacomodo de carpetas)
+=======
+=======
+>>>>>>> c0b4c69b44c2cd95195c07ebcfb1be89aa6303ca
+>>>>>>> e0a0bd974cd7df3c534503e1527aa0168e7f81ad
 /*Footer RS*/
 .social-icon {
     display: inline-flexbox;

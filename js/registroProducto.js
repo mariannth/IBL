@@ -166,4 +166,3 @@ document.getElementById("formularioProducto").addEventListener("submit", functio
  document.addEventListener("DOMContentLoaded", actualizarListaDeProductos);
 
 
-
