@@ -294,6 +294,79 @@ hr {
     border-top: 5px solid #00c2ff;
 }
 
+<<<<<<< HEAD
+/* Boton configuracion global
+- Boton banner */
+button.normal {
+    font-size: 30px;
+    font-weight: 600;
+    padding: 20px 20px;
+    color: #ffffff;
+    background-color: transparent;
+    border-radius: 70px;
+    cursor: pointer;
+    border: #0077B5 solid;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Boton dentro de heroe - redirecciona "acerca de" */
+#conocenosBtn {
+    padding: 10px 60px 10px 65px;
+    color: #ffffff;
+    background-color: transparent;
+    border-radius: 25px;
+    cursor: pointer; 
+    border: ridge;
+    background-repeat: no-repeat;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Sub class hover/Efectos en el botón*/
+#conocenosBtn button:hover {
+    background-color: #20e4f67a;
+    color: white;
+}
+
+/* Configuracion mensaje de bienvenida */
+#heroe {
+    background-image: url("/src/img/productos/img_Jluis/petlogo.jpg");
+    width: 100%;
+    height: 500px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+}
+
+/*
+#heroe h4 {
+    padding-bottom: 15px;
+    color: #ffffff;
+    font-size: 2.5em;
+}
+*/
+/*
+#heroe h1 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    font-size: 4rem;
+}
+*/
+/* #heroe h2 {
+    color: #ffffff;
+}
+*/
+
+=======
+>>>>>>> master
 /* Contenedor de la imagen */
 #petlogo {
     width: 100%;               
@@ -561,9 +634,8 @@ h2 {
             rgba(0, 0, 0, 0.7),
             rgba(0, 0, 0, 0.7)), url("./src/img/nosotros/valores.jpeg");
 }
-
-
-/* -----CSS para contáctanos-----*/
+  
+/* -----CSS para contáctanos----*/
 
 #contactanos {
     color: #ffffff;
@@ -580,9 +652,9 @@ h2 {
     background-color: #050c2e;
     color: #20e5f6;
     transition: transform 0.3s ease;
-    justify-content: left;
-    max-width: 650px;
-    margin: auto;
+    justify-content: center;
+    max-width: 100%;
+    margin: 0    auto;
     margin-left: 200px;
     padding: 20px;
 }
@@ -622,12 +694,19 @@ h2 {
 }
 
 #mapaIBL iframe {
-
+    flex-wrap:wrap;
+    flex-grow:initial;
+    flex-shrink:unset;
     display: grid;
     object-position: right;
     position: relative;
+<<<<<<< HEAD
+    width: 660px;
+    height: 350px;
+=======
     width: 500px;
     height: 300px;
+>>>>>>> master
     border: 0;
 }
 
@@ -642,6 +721,44 @@ h2 {
     position: relative;
     padding-right: 370px;
 }
+
+/**/
+  
+  /* Página Responsiva */
+ /* @media (min-width: 768px) {
+
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    section {
+      flex: 1 0 40%;
+      padding: 10px;
+    }
+  
+    #contact_form {
+      flex: 1 0 60%;
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    section {
+      order: 1;
+    }
+  
+    #contact_form {
+      order: 2;
+    }
+  }
+  
+  #mapaIBL iframe {
+    width: 100%;
+    height: 300px;
+    border:#50c878;
+  }
+*/
 
 /* -----CSS para el panel de productos----- */
 /*Productos*/
