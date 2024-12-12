@@ -55,7 +55,7 @@ const products = [
     // ... Más productos aquí
 ];
 
-// Función para renderizar los productos
+Función para renderizar los productos
 function renderProducts(filter = "all") {
     const productGrid = document.getElementById("product-grid");
     productGrid.innerHTML = "";  // Limpiar los productos actuales
@@ -83,6 +83,43 @@ function renderProducts(filter = "all") {
 window.onload = () => {
     renderProducts();
 };
+
+
+// Variable que representa al usuario actual (puedes obtener esta información de un sistema de autenticación)
+const currentUser = {
+    id: 1, // ID del usuario
+    role: "admin" // Rol del usuario (puede ser "admin", "user", etc.)
+};
+
+// Función para renderizar los productos
+function renderProducts(filter = "all") {
+    const productGrid = document.getElementById("product-grid");
+    productGrid.innerHTML = ""; // Limpiar los productos actuales
+
+    const filteredProducts = filter === "all" ? products : products.filter(product => product.category === filter);
+
+    filteredProducts.forEach(product => {
+        const productCard = document.createElement("article");
+        productCard.classList.add("product-card");
+
+        // Renderiza los botones solo si el usuario tiene permisos
+        const adminButtons = currentUser.role === "admin"
+            ? `
+            <button onclick="editProductAndRedirect(${product.id})">Editar</button>
+            <button onclick="deleteProduct(${product.id})">Borrar</button>
+        ` : "";
+
+        productCard.innerHTML = `
+            <img src="${product.img}" alt="${product.name}">
+            <h2>${product.name}</h2>
+            <p>${product.price}</p>
+            <button onclick="redirectToCart()">Agregar al carrito</button>
+            ${adminButtons}
+        `;
+
+        productGrid.appendChild(productCard);
+    });
+}
 
 // Filtrar productos cuando cambie el select
 document.getElementById("category-filter").addEventListener("change", (event) => {
